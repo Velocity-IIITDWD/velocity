@@ -20,6 +20,26 @@ npm install
 
 Make changes to the code in `/src` folder, do not touch the `input.css` and `output.css` file in the styles directory.
 
-### Pushing
+### Running Index.html - in terminal 1
+
+```bash
+
+npm run dev
+
+```
+
+### Building CSS - in terminal 2
+
+```bash
+
+npm run css
+
+```
+
+### Note
+
+Make sure that 2 terminals are running with the above two scripts respectively.
+
+## Pushing
 
 Make a PR and then merge or ask to merge. Do not directly push to the repository.
