@@ -1,0 +1,16 @@
+{
+  "name": "velocity-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "css": "npx tailwindcss -i ./src/styles/tailwind/input.css -o ./src/styles/tailwind/output.css --watch",
+    "dev": "npx vite --port 3000",
+    "build": "npx vite build",
+    "preview": "npx vite preview"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.2.0"
+  }
+}
