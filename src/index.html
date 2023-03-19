@@ -7,13 +7,40 @@
     <meta name="description" content="Velocity Website" />
     <meta name="author" content="Velocity" />
     <meta name="keywords" content="velocity, website, iiit dharwad" />
-
     <link rel="stylesheet" href="./styles/tailwind/output.css" />
-
     <title>Velocity Website</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+
   </head>
-  <body>
-    <div id="app" class="text-xl">Hello World!</div>
+  
+  <body class="bg-bg-color text-white m-0">
+    <nav class="absolute h-32 w-full text-white flex justify-between items-center text-xl font-bold left-0 top-0">
+      <div class="flex items-center justify-around p-16">
+      <img src="logo1.png" alt="logo" class="h-24 w-32 relative ">
+      <h4 class="not-italic font-bold text-4xl font-lato tracking-wide">VELOCITY</h4>
+      </div>
+      <ul class=" flex font-roboto p-16 font-light space-x-12">
+        <li class="text-3xl "><a href="#" class="hover:text-purple-300">Home</a></li>
+        <li class="text-3xl"><a href="#" class="hover:text-purple-300">Team Members</a></li>
+        <li class="text-3xl"><a href="#" class="hover:text-purple-300">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="home"></section>
+      <section id="about"></section>
+      <section id="timeline"></section>
+      <section id="members"></section>
+      <section id="modules"></section>
+      <section id="projects"></section>
+      <section id="events"></section>
+      <section id="testimonials"></section>
+    </main>
+    <footer>
+    </footer>
     <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>

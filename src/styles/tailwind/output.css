@@ -513,12 +513,174 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.m-5 {
+  margin: 1.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.w-32 {
+  width: 8rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3rem * var(--tw-space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-16 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(4rem * var(--tw-space-x-reverse));
+  margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-7 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.bg-bg-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 1 30 / var(--tw-bg-opacity));
+}
+
+.p-16 {
+  padding: 4rem;
+}
+
+.font-lato {
+  font-family: Lato, sans-serif;
+}
+
+.font-roboto {
+  font-family: Roboto, sans-serif;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
-.text-yellow-300 {
+.font-bold {
+  font-weight: 700;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.not-italic {
+  font-style: normal;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.text-white {
   --tw-text-opacity: 1;
-  color: rgb(253 224 71 / var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.hover\:text-purple-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(192 132 252 / var(--tw-text-opacity));
+}
+
+.hover\:text-purple-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(216 180 254 / var(--tw-text-opacity));
 }
