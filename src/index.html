@@ -9,26 +9,34 @@
     <meta name="keywords" content="velocity, website, iiit dharwad" />
     <link rel="stylesheet" href="./styles/tailwind/output.css" />
     <title>Velocity Website</title>
-
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
-
   </head>
   
   <body class="bg-bg-color text-white m-0">
+    
     <nav class="absolute h-32 w-full text-white flex justify-between items-center text-xl font-bold left-0 top-0">
-      <div class="flex items-center justify-around p-16">
-      <img src="logo1.png" alt="logo" class="h-24 w-32 relative ">
-      <h4 class="not-italic font-bold text-4xl font-lato tracking-wide">VELOCITY</h4>
+      <div class="flex items-center justify-around p-14 md:pl-28 ">
+      <img src="../images/navlogo.png" alt="logo" class="w-auto h-16 relative ">
+      <h4 class="not-italic font-bold text-xl lg:text-2xl font-roboto tracking-widest">VELOCITY</h4>
       </div>
-      <ul class=" flex font-roboto p-16 font-light space-x-12">
-        <li class="text-3xl "><a href="#" class="hover:text-purple-300">Home</a></li>
-        <li class="text-3xl"><a href="#" class="hover:text-purple-300">Team Members</a></li>
-        <li class="text-3xl"><a href="#" class="hover:text-purple-300">Contact</a></li>
+      <div class="navlinks md:static absolute bg-bg-color md:bg-bg-color md:min-h-fit min-h-[40vh] left-0 top-[-300%] w-full flex items-center  md:justify-end pl-14 md:pl-0 drop-shadow-2xl md:drop-shadow-none">
+      <ul class="flex flex-col md:flex-row font-roboto font-light gap-8 lg:gap-12">
+        <li class="text-xl lg:text-2xl"><a href="#" class="hover:text-purple-300">Home</a></li>
+        <li class="text-xl lg:text-2xl"><a href="#" class="hover:text-purple-300">Team Members</a></li>
+        <li class="text-xl lg:text-2xl"><a href="#" class="hover:text-purple-300">Contact</a></li>
       </ul>
+      </div>
+      <div class="flex items-center p-14">
+      <ion-icon id="menu" name="menu-outline" class="text-5xl cursor-pointer md:hidden"></ion-icon>
+      </div>
     </nav>
+
     <main>
       <section id="home"></section>
       <section id="about"></section>
@@ -39,8 +47,12 @@
       <section id="events"></section>
       <section id="testimonials"></section>
     </main>
+
     <footer>
     </footer>
-    <script type="module" src="./scripts/main.js"></script>
+
+    <script type="module" src="./scripts/main.js">
+      
+    </script>
   </body>
 </html>
