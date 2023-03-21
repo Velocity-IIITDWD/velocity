@@ -20,26 +20,61 @@
   
   <body class="bg-bg-color text-white m-0">
     
+    <header class=" h-32">
     <nav class="absolute h-32 w-full text-white flex justify-between items-center text-xl font-bold left-0 top-0">
       <div class="flex items-center justify-around p-14 md:pl-28 ">
-      <img src="../images/navlogo.png" alt="logo" class="w-auto h-16 relative ">
-      <h4 class="not-italic font-bold text-xl lg:text-2xl font-roboto tracking-widest">VELOCITY</h4>
+        <img src="../images/navlogo.png" alt="logo" class="w-auto h-16 relative ">
+        <h4 class="not-italic font-bold text-xl lg:text-2xl font-roboto tracking-widest">VELOCITY</h4>
       </div>
-      <div class="navlinks md:static absolute bg-bg-color md:bg-bg-color md:min-h-fit min-h-[40vh] left-0 top-[-300%] w-full flex items-center  md:justify-end pl-14 md:pl-0 drop-shadow-2xl md:drop-shadow-none">
-      <ul class="flex flex-col md:flex-row font-roboto font-light gap-8 lg:gap-12">
-        <li class="text-xl lg:text-2xl"><a href="#" class="hover:text-purple-300">Home</a></li>
-        <li class="text-xl lg:text-2xl"><a href="#" class="hover:text-purple-300">Team Members</a></li>
-        <li class="text-xl lg:text-2xl"><a href="#" class="hover:text-purple-300">Contact</a></li>
-      </ul>
+      <div class="navlinks md:static absolute bg-bg-color md:bg-transparent md:min-h-fit min-h-[35vh] left-0 top-[-300%] w-full flex items-center  md:justify-end pl-14 md:pl-0 drop-shadow-2xl md:drop-shadow-none z-10 md:z-0">
+        <ul class="flex flex-col md:flex-row font-roboto font-light gap-10 lg:gap-12 transition-all lg:transition-none duration-300">
+          <li class="text-xl lg:text-2xl"><a href="#" class="hover:text-purple-300 ">Home</a></li>
+          <li class="text-xl lg:text-2xl"><a href="#" class="hover:text-purple-300">Team Members</a></li>
+          <li class="text-xl lg:text-2xl"><a href="#" class="hover:text-purple-300">Contact</a></li>
+        </ul>
       </div>
-      <div class="flex items-center p-14">
+      <div class="flex items-center p-8">
       <ion-icon id="menu" name="menu-outline" class="text-5xl cursor-pointer md:hidden"></ion-icon>
       </div>
     </nav>
+    </header>
 
     <main>
       <section id="home"></section>
-      <section id="about"></section>
+
+      <section id="about" class="h-auto w-full flex flex-row items-center"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" class="opacity-20 absolute top-[105px] left-[100px] animate-spin-slow"><path stroke="none" fill="#A9A9A9" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
+          <div class="h-72 w-72 bg-[#9558E4] rounded-full opacity-25 blur-[120px] absolute top-4 left-24 z-20 "></div>
+        <div class="flex flex-row h-auto w-full mx-40 gap-6 my-10">
+          <div class="about-info w-1/2 space-y-10">
+
+            <h1 class="text-[70px] font-lato font-semibold ">Who are we?</h1>
+            <p class="font-lato font-normal leading-10 text-justify text-2xl tracking-tight">We are a team of dedicated students who are actively interested in encouraging development culture in our college. Lorem Ipsome sadadaion adandaod asdandiasd asda adsada asdasdna asdasondsda saddsa asdnsad asdasdoa asddnsda asdas asdasd asdasd.</p>
+          </div>
+          <div class="h-72 w-72 bg-[#60FFE7] rounded-full opacity-25 blur-[120px] absolute bottom-4 right-24 -z-30"></div>
+          <div class="w-1/2 mx-8 ">
+              <img src="../images/team.JPG" alt="" class="w-[550px] h-[350px] z-30 mt-10">
+          </div>
+        </div>
+        <div class="overflow-hidden absolute right-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" class="transform rotate-[30deg] relative -right-6">
+            <linearGradient id='grad'>
+              <stop stop-color='#FFA000'/>
+              <stop offset='100%' stop-color='#9C27B0'/>
+            </linearGradient>
+            <path stroke="none" fill="url(#grad)" d="M37 2.8867513459481a10 10 0 0 1 10 0l26.373066958946 15.226497308104a10 10 0 0 1 5 8.6602540378444l0 30.452994616207a10 10 0 0 1 -5 8.6602540378444l-26.373066958946 15.226497308104a10 10 0 0 1 -10 0l-26.373066958946 -15.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -30.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
+        </div>
+        <div class="overflow-hidden absolute bottom-40 ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" class="transform rotate-[30deg] relative -left-8">
+            <linearGradient id='grad'>
+              <stop stop-color='#E1BEE7'/>
+              <stop offset='100%' stop-color='#FFCC68'/>
+            </linearGradient>
+            <path stroke="none" fill="url(#grad)" d="M37 2.8867513459481a10 10 0 0 1 10 0l26.373066958946 15.226497308104a10 10 0 0 1 5 8.6602540378444l0 30.452994616207a10 10 0 0 1 -5 8.6602540378444l-26.373066958946 15.226497308104a10 10 0 0 1 -10 0l-26.373066958946 -15.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -30.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
+          </div>
+
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" class="opacity-20 absolute right-[30rem] animate-spin-slow"><path stroke="none" fill="#A9A9A9" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg> -->
+      </section>
       <section id="timeline"></section>
       <section id="members"></section>
       <section id="modules"></section>
