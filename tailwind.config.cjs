@@ -6,6 +6,9 @@ module.exports = {
       colors:{
         'bg-color': '#11011e',
       },
+      animation:{
+        'spin-slow': 'spin 5s linear infinite',
+      }
     },
     fontFamily:{
       lato: ['Lato', 'sans-serif'],
