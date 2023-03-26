@@ -18,6 +18,7 @@
 </head>
 
 <body class="bg-bg-color text-white m-0">
+  <header class="h-32">
 
   <nav class="absolute h-32 w-full text-white flex justify-between items-center text-xl font-bold left-0">
     <div class="flex items-center justify-around p-14 md:pl-28 ">
@@ -25,7 +26,7 @@
       <h4 class="not-italic font-bold text-xl lg:text-2xl font-roboto tracking-widest">VELOCITY</h4>
     </div>
     <div
-      class="navlinks md:static absolute bg-bg-color md:bg-bg-color md:min-h-fit min-h-[40vh] left-0 top-[-300%] w-full flex items-center  md:justify-end pl-14 md:pl-0 drop-shadow-2xl md:drop-shadow-none z-10">
+      class="navlinks md:static absolute bg-bg-color md:bg-bg-color md:min-h-fit min-h-[40vh] left-0 top-[-300%] w-full flex items-center  md:justify-end pl-14 md:pl-0 drop-shadow-2xl md:drop-shadow-none z-10 md:z-0">
       <ul class="flex flex-col md:flex-row font-roboto font-light gap-8 lg:gap-12">
         <li class="text-xl lg:text-2xl"><a href="#" class="hover:text-purple-300">Home</a></li>
         <li class="text-xl lg:text-2xl"><a href="#" class="hover:text-purple-300">Team Members</a></li>
@@ -36,44 +37,42 @@
       <ion-icon id="menu" name="menu-outline" class="text-5xl cursor-pointer md:hidden"></ion-icon>
     </div>
   </nav>
-
+  </header>
   <main>
     <!-- home section -->
-    <section id="home" class="flex absolute w-full top-36 justify-evenly">
-      <img src="../images/navlogo.png" alt="logo" class="h-[690px] w-auto absolute left-[-240px] top-[-55px] max-sm:opacity-0 max-md:h-[450px] max-md:left-[-300px] max-md:top-[-80px] max-lg:h-[450px] max-lg:top-[-70px] max-lg max-xl:h-[500px] max-xl:top-[-75px]">
-      <!-- 2ellipse -->
-      <div class = "h-72 w-1/3 rounded-full bg-[#7000FF] absolute translate-x-[-120px] translate-y-[-20px] opacity-10 blur-3xl"></div>
-      <div class = "h-72 w-1/3 rounded-full bg-[#BA0893] absolute translate-x-[160px] translate-y-[-20px] opacity-10 blur-2xl"></div>
+    <section id="home" class="h-auto w-full flex flex-row items-center">
 
-      <!-- main div - right side -->
-      <div class="h-80 w-[750px] absolute top-8 right-28 mt-12 space-y-8 max-sm:w-[500px] max-sm:right-[70px] max-md:right-[-90px] max-lg:w-[650px]">
-        <div class="z-0 absolute rotate-90 right-[-30px] top-[-58px] opacity-30 max-sm:top-[-50px] max-sm:right-[-120px] max-sm:opacity-30 max-md:right-[110px] max-md:top-[-45px] max-lg:right-[-130px]">
-          <svg xmlns="http://www.w3.org/2000/svg" width="162" height="162">
-            <path stroke="none" fill="rgb(85, 82, 82)"
-              d="M76 2.8867513459482a10 10 0 0 1 10 0l60.14805770654 34.726497308104a10 10 0 0 1 5 8.6602540378444l0 69.452994616207a10 10 0 0 1 -5 8.6602540378444l-60.14805770654 34.726497308104a10 10 0 0 1 -10 0l-60.14805770654 -34.726497308104a10 10 0 0 1 -5 -8.6602540378444l1.1061499387114e-13 -69.452994616207a10 10 0 0 1 5 -8.6602540378444">
-            </path>
-          </svg>
-        </div>
-        <!-- div 1 - with heading -->
-        <div
-          class=" h-52 w-[700px] font-lato shadow-md  border-[1px] border-[#7C66C0] rounded-[20px] text-7xl flex flex-col items-center justify-center text-center z-20 backdrop-blur-sm mt-5 max-sm:text-4xl max-sm:w-[480px] max-sm:right-[-40px] max-md:text-5xl max-md:w-[560px] max-md:right-[40px]">
-          <h1>Velocity<br> IIIT Dharwad</h1>
-        </div>
+      <img src="../images/navlogo.png" alt="logo" class="h-[690px] w-auto relative left-[-240px] top-[-45px] ">
 
-        <!-- div 2 - containing the aim  -->
-        <div class = "text-[#ACA5B5] text-4xl m-3 font-lato max-sm:text-2xl max-md:text-3xl max-md:mt-10 max-lg:text-3xl ">
-          <p>Establishing, Fostering and Expanding <br> the development culture of IIIT Dharwad</p>
-        </div>
+    <div class="h-[314px] w-[675px] bg-[#7000FF] rounded-full opacity-20 blur-[120px] absolute top-14 left-60 z-10"></div>
+    <div class="h-[314px] w-[675px] bg-[#BA0893] rounded-full opacity-20 blur-[120px] absolute top-14 left-[450px] z-10"></div>
 
-        <!-- div 3 - buttons -->
-        <div class="mt-5 flex max-sm:flex-col">
-          <button class = "bg-gradient-to-r from-[#5800E8] to-[#23036A] p-2 m-3 rounded-[15px] w-[360px] h-[57px] hover:border-[2px]  hover:border-[#21074a] hover:bg-transparent text-[23px] max-sm:w-[250px] max-sm:text-[18px] max-md:w-[300px] max-md:text-[20px] max-lg:w-[310px]">Upcoming Events</button>
-
-          <button class = "p-2 m-3 border-[2px]  hover:border-[#21074a] border-[#7a41d5] rounded-[15px] w-[248px] h-[57px] text-[23px] max-sm:w-[200px] max-sm:text-[18px] max-sm:ml-4 max-md:text-[20px] max-lg:w-[210px] ">Our Projects</button>
-        </div>
+    <!-- main div -->
+    <div class="h-80 w-[750px] relative -top-32 right-[260px] space-y-4">
+      <!-- hexa div -->
+       <div class="z-0 relative rotate-90 right-[-330px] top-[189px] opacity-30">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" class=" " height="200"><path stroke="none" fill="rgb(85, 82, 82)" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
       </div>
+      <!-- div 1 - with heading -->
+      <div
+        class=" h-[260px] w-[680px] font-lato shadow-md  border-[1px] border-[#7C66C0] rounded-[20px] relative -top-44 text-7xl flex flex-col items-center justify-center text-center z-20 backdrop-blur-sm mt-5">
+        <h1>Velocity<br> IIIT Dharwad</h1>
+      </div>
+
+      <!-- div 2 - containing the aim  -->
+      <div class = "text-[#ACA5B5] text-4xl font-lato relative -top-36 left-6 ">
+        <p>Establishing, Fostering and Expanding <br> the development culture of IIIT Dharwad</p>
+      </div>
+
+      <!-- div 3 - buttons -->
+      <div class="flex max-sm:flex-col relative -top-32">
+        <button class = "bg-gradient-to-r from-[#5800E8] to-[#23036A] p-2 m-3 rounded-[15px] w-[360px] h-[57px] text-[23px] hover:shadow-[inset_25rem_0_0_0] hover:text-white hover:border-[2px] hover:border-[#7a41d5] hover:shadow-bg-color duration-[400ms,700ms] transition-[color,box-shadow]">Upcoming Events</button>
+
+        <button class = "p-2 m-3 border-[2px] border-[#7a41d5] rounded-[15px] w-[248px] h-[57px] text-[23px] hover:shadow-[inset_16rem_0_0_0] hover:shadow-[#7a41d5] duration-[400ms,700ms] transition-[color,box-shadow]">Our Projects</button>
+      </div>
+    </div>
     </section>
-    <section id="about"></section>
+    <section id="about" class="h-auto w-full flex flex-row items-center"> </section>
     <section id="timeline"></section>
     <section id="members"></section>
     <section id="modules"></section>
