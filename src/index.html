@@ -46,76 +46,44 @@
 
 
   <main>
-    <!-- home section -->
-    <section id="home" class="h-auto w-auto flex flex-row items-center bg-[#BA0893]">
-      <img src="../images/navlogo.png" alt="logo" class="h-[690px] w-auto relative left-[-250px] top-[-45px] max-sm:h-[500px] max-sm:left-[-340px] max-sm:invisible">
-    <div class="h-[314px] w-[675px] bg-[#7000FF] rounded-full opacity-20 blur-[120px] absolute top-14 left-60 z-10 max-sm:w-[300px] max-sm:-translate-x-44 max-sm:top-32 "></div>
-    <div class="h-[314px] w-[675px] bg-[#BA0893] rounded-full  opacity-20 blur-[120px] absolute top-14 left-[450px] z-10 max-sm:w-[270px] max-sm:-translate-x-64 max-sm:top-32
+    <!-- blured background -->
+    <div class="lg:h-[314px] lg:w-[675px] bg-[#7000FF] rounded-full opacity-20 blur-[120px] absolute lg:top-14 lg:left-60 z-10 w-[300px] -translate-x-44 top-32 "></div>
+    <div class="lg:h-[314px] lg:w-[675px] bg-[#BA0893] rounded-full  opacity-20 blur-[120px] absolute lg:top-14 lg:left-[450px] z-10 w-[270px] -translate-x-64 top-32
     "></div>
 
-    <!-- main div -->
-    <div class="h-100 w-[750px] relative top-10 right-[260px] space-y-4 max-sm:w-auto max-sm:right-[450px] max-sm:top-16 max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:text-center max-sm:space-y-0 max-sm:flex-wrap bg-[#BA0893]">
-      <!-- hexa div -->
-      <div class = "relative rotate-90 right-[-330px] top-[189px] max-sm:-right-48 max-sm:top-[20px] max-sm:hidden">
+    <!-- Home section hexagon design -->
+      <div class = "absolute rotate-90 lg:right-[60px] lg:top-[145px] z-10 md:bg-red-400">
         <svg xmlns="http://www.w3.org/2000/svg" width="200" class="" height="200"><path stroke="none" fill="rgb(85, 82, 82)" class = "opacity-30" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path>
         </svg>
       </div>
-      <!-- div 1 - with heading -->
-      <div
-        class=" h-[260px] w-[680px] font-lato shadow-md  border-[1px] border-[#7C66C0] rounded-[20px] relative -top-44 text-7xl flex flex-col items-center justify-center text-center z-20 backdrop-blur-sm mt-5 max-sm:w-[430px] max-sm:h-[200px] max-sm:text-5xl" > 
-        <!-- -translate-x-36 -->
+
+    <!-- home section -->
+    <section id="home" class="h-auto w-auto flex flex-row flex-wrap mt-10 mb-24">
+      <span class = "w-[35%] ">
+        <img src="../images/logo.png" alt="Logo" class = "lg:h-[580px] m-2 z-30">
+      </span>
+
+      <!-- main div -conataining heading aim and buttons-->
+    <div class = "w-[65%] h-auto z-20 flex flex-col justify-center items-center">
+        <!-- heading div -->
+      <div class=" lg:h-[260px] lg:w-[680px] font-lato shadow-sm shadow-[#BC61F3] border-[1px] border-[#7C66C0] rounded-[20px] lg:text-7xl flex items-center justify-center text-center z-20 backdrop-blur-sm" > 
         <h1>Velocity<br> IIIT Dharwad</h1>
       </div>
 
-      <!-- div 2 - containing the aim  -->
-      <div class = "text-[#ACA5B5] text-4xl font-lato relative -top-36 max-sm:text-2xl">
+      <div class = "lg:text-[#ACA5B5] lg:text-4xl font-lato lg:m-7 lg:-translate-x-4">
         <p>Establishing, Fostering and Expanding <br> the development culture of IIIT Dharwad</p>
       </div>
 
       <!-- div 3 - buttons -->
-      <div class="flex max-sm:flex-col relative -top-32 items-center">
-        <button class = "bg-gradient-to-r from-[#5800E8] to-[#23036A] p-2 rounded-[15px] w-[360px] h-[57px] text-[23px] hover:shadow-[inset_25rem_0_0_0] hover:text-white hover:border-[2px] hover:border-[#7a41d5] hover:shadow-bg-color duration-[400ms,700ms] transition-[color,box-shadow] max-sm:w-[300px] max-sm:h-[50px] max-sm:text-[20px]">Upcoming Events</button>
+      <div class="flex items-center lg:-translate-x-6">
+        <button class = "bg-gradient-to-r from-[#5800E8] to-[#23036A] lg:p-2 rounded-[15px] lg:w-[360px] lg:h-[57px] lg:text-[23px] hover:shadow-[inset_25rem_0_0_0] hover:text-white hover:border-[2px] hover:border-[#7a41d5] hover:shadow-bg-color duration-[400ms,700ms] transition-[color,box-shadow] w-[300px] h-[50px] text-[20px]">Upcoming Events</button>
 
-        <button class = "p-2 ml-3 border-[2px] border-[#7a41d5] rounded-[15px] w-[248px] h-[57px] text-[23px] hover:shadow-[inset_16rem_0_0_0] hover:shadow-[#7a41d5] duration-[400ms,700ms] transition-[color,box-shadow] max-sm:w-[220px] max-sm:m-0 max-sm:mt-3 max-sm:text-[20px] max-sm:h-[50px]">Our Projects</button>
+        <button class = "lg:p-2 lg:ml-3 border-[2px] border-[#7a41d5] rounded-[15px] lg:w-[248px] lg:h-[57px] lg:text-[23px] hover:shadow-[inset_16rem_0_0_0] hover:shadow-[#7a41d5] duration-[400ms,700ms] transition-[color,box-shadow] ">Our Projects</button> 
+        <!-- max-sm:w-[220px] m-0 text-[20px] h-[50px] -->
       </div>
+
     </div>
     </section>
-
-    <section id="about" class="h-auto w-full flex flex-row items-center"></section>
-        <!-- home section -->
-        <section id="home" class="h-auto w-auto flex flex-row items-center">
-          <img src="../images/navlogo.png" alt="logo" class="h-[690px] w-auto relative left-[-250px] top-[-45px] max-sm:h-[500px] max-sm:left-[-340px] max-sm:invisible">
-        <div class="h-[314px] w-[675px] bg-[#7000FF] rounded-full opacity-20 blur-[120px] absolute top-14 left-60 z-10 max-sm:w-[300px] max-sm:-translate-x-44 max-sm:top-32 "></div>
-        <div class="h-[314px] w-[675px] bg-[#BA0893] rounded-full  opacity-20 blur-[120px] absolute top-14 left-[450px] z-10 max-sm:w-[270px] max-sm:-translate-x-64 max-sm:top-32
-        "></div>
-    
-        <!-- main div -->
-        <div class="h-100 w-[750px] relative top-10 right-[260px] space-y-4 max-sm:w-auto max-sm:right-[450px] max-sm:top-16 max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:items-center max-sm:text-center max-sm:space-y-0 max-sm:flex-wrap">
-          <!-- hexa div -->
-          <div class = "relative rotate-90 right-[-330px] top-[189px] max-sm:-right-48 max-sm:top-[20px] max-sm:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="200" class="" height="200"><path stroke="none" fill="rgb(85, 82, 82)" class = "opacity-30" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path>
-            </svg>
-          </div>
-          <!-- div 1 - with heading -->
-          <div
-            class=" h-[260px] w-[680px] font-lato shadow-md  border-[1px] border-[#7C66C0] rounded-[20px] relative -top-44 text-7xl flex flex-col items-center justify-center text-center z-20 backdrop-blur-sm mt-5 max-sm:w-[430px] max-sm:h-[200px] max-sm:text-5xl" > 
-            <!-- -translate-x-36 -->
-            <h1>Velocity<br> IIIT Dharwad</h1>
-          </div>
-    
-          <!-- div 2 - containing the aim  -->
-          <div class = "text-[#ACA5B5] text-4xl font-lato relative -top-36 max-sm:text-2xl">
-            <p>Establishing, Fostering and Expanding <br> the development culture of IIIT Dharwad</p>
-          </div>
-    
-          <!-- div 3 - buttons -->
-          <div class="flex max-sm:flex-col relative -top-32 items-center">
-            <button class = "bg-gradient-to-r from-[#5800E8] to-[#23036A] p-2 rounded-[15px] w-[360px] h-[57px] text-[23px] hover:shadow-[inset_25rem_0_0_0] hover:text-white hover:border-[2px] hover:border-[#7a41d5] hover:shadow-bg-color duration-[400ms,700ms] transition-[color,box-shadow] max-sm:w-[300px] max-sm:h-[50px] max-sm:text-[20px]">Upcoming Events</button>
-    
-            <button class = "p-2 ml-3 border-[2px] border-[#7a41d5] rounded-[15px] w-[248px] h-[57px] text-[23px] hover:shadow-[inset_16rem_0_0_0] hover:shadow-[#7a41d5] duration-[400ms,700ms] transition-[color,box-shadow] max-sm:w-[220px] max-sm:m-0 max-sm:mt-3 max-sm:text-[20px] max-sm:h-[50px]">Our Projects</button>
-          </div>
-        </div>
-        </section>
 
     <section id="about" class="h-auto w-full flex flex-row items-center"> 
       <!-- hexagon 1 -->
