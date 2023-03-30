@@ -637,6 +637,42 @@ video {
   top: 80rem;
 }
 
+.top-\[-300\%\] {
+  top: -300%;
+}
+
+.top-\[48rem\] {
+  top: 48rem;
+}
+
+.bottom-\[20rem\] {
+  bottom: 20rem;
+}
+
+.bottom-\[0rem\] {
+  bottom: 0rem;
+}
+
+.bottom-\[50rem\] {
+  bottom: 50rem;
+}
+
+.top-\[50rem\] {
+  top: 50rem;
+}
+
+.top-\[58rem\] {
+  top: 58rem;
+}
+
+.top-\[60rem\] {
+  top: 60rem;
+}
+
+.top-\[65rem\] {
+  top: 65rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -721,6 +757,10 @@ video {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-\[40vh\] {
+  min-height: 40vh;
 }
 
 .w-1\/2 {
@@ -822,6 +862,10 @@ video {
 
 .gap-12 {
   gap: 3rem;
+}
+
+.gap-8 {
+  gap: 2rem;
 }
 
 .space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -1039,6 +1083,14 @@ video {
   opacity: 0.3;
 }
 
+.opacity-70 {
+  opacity: 0.7;
+}
+
+.opacity-40 {
+  opacity: 0.4;
+}
+
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -1102,6 +1154,11 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-purple-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(216 180 254 / var(--tw-text-opacity));
 }
 
 .hover\:shadow-\[inset_16rem_0_0_0\]:hover {
@@ -1169,6 +1226,11 @@ video {
 
   .md\:bg-transparent {
     background-color: transparent;
+  }
+
+  .md\:bg-bg-color {
+    --tw-bg-opacity: 1;
+    background-color: rgb(17 1 30 / var(--tw-bg-opacity));
   }
 
   .md\:pl-0 {
