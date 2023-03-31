@@ -8,6 +8,7 @@ module.exports = {
       },
       animation:{
         'spin-slow': 'spin 5s linear infinite',
+        'spin-slower': 'spin 12s linear infinite',
       }
     },
     fontFamily:{
