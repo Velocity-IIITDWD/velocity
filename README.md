@@ -2,7 +2,7 @@
 
 ## Deployment
 
-Site is Live at → [https://clubvelocity.netlify.app/](https://clubvelocity.netlify.app/)
+Site is Live at → [https://beta.velocityclub.live/](https://beta.velocityclub.live/)
 
 ### Download NodeJs
 
