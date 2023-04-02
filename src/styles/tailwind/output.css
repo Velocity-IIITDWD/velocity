@@ -517,6 +517,10 @@ video {
   visibility: hidden;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -641,6 +645,50 @@ video {
   top: 80rem;
 }
 
+.left-\[30px\] {
+  left: 30px;
+}
+
+.top-\[60rem\] {
+  top: 60rem;
+}
+
+.top-\[75rem\] {
+  top: 75rem;
+}
+
+.top-\[78rem\] {
+  top: 78rem;
+}
+
+.right-\[25rem\] {
+  right: 25rem;
+}
+
+.right-\[20rem\] {
+  right: 20rem;
+}
+
+.right-\[16rem\] {
+  right: 16rem;
+}
+
+.top-\[82rem\] {
+  top: 82rem;
+}
+
+.top-\[81rem\] {
+  top: 81rem;
+}
+
+.top-\[80\.5rem\] {
+  top: 80.5rem;
+}
+
+.top-\[80\.1rem\] {
+  top: 80.1rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -661,6 +709,10 @@ video {
   z-index: 30;
 }
 
+.z-10 {
+  z-index: 10;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -673,6 +725,30 @@ video {
   margin: 0.75rem;
 }
 
+.m-24 {
+  margin: 6rem;
+}
+
+.m-16 {
+  margin: 4rem;
+}
+
+.m-14 {
+  margin: 3.5rem;
+}
+
+.m-8 {
+  margin: 2rem;
+}
+
+.m-10 {
+  margin: 2.5rem;
+}
+
+.m-12 {
+  margin: 3rem;
+}
+
 .mx-20 {
   margin-left: 5rem;
   margin-right: 5rem;
@@ -681,6 +757,26 @@ video {
 .my-16 {
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.mx-16 {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.mx-14 {
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.mx-10 {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .mb-9 {
@@ -693,6 +789,26 @@ video {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .flex {
@@ -805,6 +921,26 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-2\/3 {
+  width: 66.666667%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-\[70\%\] {
+  width: 70%;
+}
+
+.w-\[0\%\] {
+  width: 0%;
 }
 
 .-translate-x-full {
@@ -1138,6 +1274,11 @@ video {
   line-height: 1.75rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1448,6 +1589,16 @@ video {
     margin-right: 2rem;
   }
 
+  .lg\:mx-36 {
+    margin-left: 9rem;
+    margin-right: 9rem;
+  }
+
+  .lg\:mx-28 {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
   .lg\:hidden {
     display: none;
   }
@@ -1458,6 +1609,10 @@ video {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .lg\:flex-row {
