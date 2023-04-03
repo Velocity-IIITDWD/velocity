@@ -14,6 +14,8 @@ module.exports = {
     fontFamily:{
       lato: ['Lato', 'sans-serif'],
       roboto: ['Roboto', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
+      montserrat: ['Montserrat', 'sans-serif']
     },
 
   },

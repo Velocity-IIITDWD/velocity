@@ -14,19 +14,20 @@
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body class="bg-bg-color text-white m-0">
   <header class="h-32">
 
   <nav class="absolute h-32 w-full text-white flex justify-between items-center text-xl font-bold left-0">
-    <div class="flex items-center justify-around p-14 md:pl-28 ">
+    <div class="flex items-center justify-around p-10 lg:pl-28 ">
       <img src="../images/navlogo.png" alt="logo" class="w-auto h-16 relative ">
       <h4 class="not-italic font-bold text-xl lg:text-2xl font-roboto tracking-widest">VELOCITY</h4>
     </div>
-    <div class="navlinks md:static absolute bg-white bg-opacity-80  md:bg-transparent md:min-h-fit min-h-screen left-[-300%] top-0 w-1/2 lg:w-full flex items-center  md:justify-end pl-14 md:pl-0 drop-shadow-2xl md:drop-shadow-none z-30 transition-all ease-in-out duration-500  backdrop-blur-sm">
-      <ul class="flex flex-col md:flex-row font-roboto font-light gap-16 md:gap-10 lg:gap-12">
+    <div class="navlinks md:static fixed bg-white bg-opacity-90  md:bg-transparent md:min-h-fit min-h-[115vh] left-[-300%] top-0 w-[60%] lg:w-full flex items-start justify-center md:justify-end pl-14 md:pl-0 drop-shadow-2xl md:drop-shadow-none z-30 transition-all ease-in-out duration-500  backdrop-blur-sm pr-14 lg:pr-32">
+      <ul class="flex flex-col md:flex-row font-roboto font-light gap-20 md:gap-10 lg:gap-12 pt-48 md:pt-0">
         <li class="text-3xl md:text-2xl">
           <a href="#" class="text-black md:text-white md-hover:text-purple-300 hover:text-purple-800">Home</a>
         </li>
@@ -38,7 +39,7 @@
         </li>
       </ul>
     </div>
-    <div class="flex items-center p-14">
+    <div class="flex items-center p-10 md:hidden">
       <ion-icon id="menu" name="menu-outline" class="text-5xl cursor-pointer md:hidden"></ion-icon>
     </div>
   </nav>
@@ -55,12 +56,12 @@
       <path stroke="none" fill="#A9A9A9" d="M37 2.8867513459481a10 10 0 0 1 10 0l26.373066958946 15.226497308104a10 10 0 0 1 5 8.6602540378444l0 30.452994616207a10 10 0 0 1 -5 8.6602540378444l-26.373066958946 15.226497308104a10 10 0 0 1 -10 0l-26.373066958946 -15.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -30.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
 
     <!-- home section -->
-    <section id="home" class="h-auto w-full flex flex-row flex-wrap mt-10 mb-24">
+    <section id="home" class="h-auto w-full flex flex-row flex-wrap mt-8 ">
       
       <!-- main div -conataining heading aim and buttons-->
-    <div class = "lg:w-[55%] h-auto z-20 flex flex-col justify-center items-center md:w-[60%] w-[100%]">
+    <div class = "lg:w-[55%] h-auto z-20 flex flex-col justify-center items-center md:w-[60%] w-[100%] gap-y-4 md:gap-y-6">
         <!-- heading div -->
-        <div class=" xl:h-[260px] xl:w-[650px] xl:-translate-x-2 font-lato shadow-sm shadow-[#BC61F3] border-[1px] border-[#7C66C0] rounded-[20px] xl:text-7xl flex items-center justify-center text-center z-20 backdrop-blur-sm lg:text-5xl lg:h-[180px] lg:w-[480px] lg:ml-0 md:h-[150px] md:w-[400px] md:text-4xl md:ml-9 w-[320px] h-[150px] text-[32px]" > 
+        <div class=" xl:h-[260px] xl:w-[650px] xl:-translate-x-2 font-roboto shadow-sm shadow-[#BC61F3] border-[1px] border-[#7C66C0] rounded-[20px] xl:text-7xl flex items-center justify-center text-center z-20 backdrop-blur-sm lg:text-5xl lg:h-[180px] lg:w-[480px] lg:ml-0 md:h-[150px] md:w-[400px] md:text-4xl md:ml-9 w-[320px] h-[150px] text-[32px]" > 
         <h1>Velocity<br> IIIT Dharwad</h1>
       </div>
 
@@ -71,42 +72,44 @@
       <!-- div 3 - buttons -->
       <div class="flex md:flex-row flex-col md:items-center xl:-translate-x-6 md:translate-x-9 lg:translate-x-0 -translate-y-3">
         <button class = "bg-gradient-to-r from-[#5800E8] to-[#23036A] xl:p-2 rounded-[15px] xl:w-[360px] xl:h-[57px] xl:text-[23px] hover:shadow-[inset_25rem_0_0_0] hover:text-white hover:border-[2px] hover:border-[#7a41d5] hover:shadow-bg-color duration-[400ms,700ms] transition-[color,box-shadow] lg:w-[280px] lg:h-[48px] lg:text-[23px] md:w-[210px] md:h-[42px] md:text-[18px] text-15px w-[300px] h-[45px] m-2">Upcoming Events</button>
-
-        <button class = "xl:p-2 md:ml-3 border-[2px] border-[#7a41d5] rounded-[15px] xl:w-[248px] xl:h-[57px] xl:text-[23px] hover:shadow-[inset_20rem_0_0_0] hover:shadow-[#7a41d5] duration-[400ms,700ms] transition-[color,box-shadow] lg:w-[175px] lg:h-[48px] lg:text-[23px] md:h-[42px] md:w-[150px] md:text-[18px] text-15px w-[300px] h-[45px] m-2">Our Projects</button> 
+<!-- 
+        <button class = "xl:p-2 md:ml-3 border-[2px] border-[#7a41d5] rounded-[15px] xl:w-[248px] xl:h-[57px] xl:text-[23px] hover:shadow-[inset_20rem_0_0_0] hover:shadow-[#7a41d5] duration-[400ms,700ms] transition-[color,box-shadow] lg:w-[175px] lg:h-[48px] lg:text-[23px] md:h-[42px] md:w-[150px] md:text-[18px] text-15px w-[300px] h-[45px] m-2">Our Projects</button>  -->
+        <button class = "xl:p-2 md:ml-3 bg-[#7a41d5] rounded-[15px] xl:w-[248px] xl:h-[57px] xl:text-[23px] hover:shadow-[inset_20rem_0_0_0] hover:border-[2px] hover:border-[#7a41d5] hover:shadow-bg-color duration-[400ms,700ms] transition-[color,box-shadow] lg:w-[175px] lg:h-[48px] lg:text-[23px] md:h-[42px] md:w-[150px] md:text-[18px] text-15px w-[300px] h-[45px] m-2">Our Projects</button> 
       </div>
 
     </div>
 
     <span class = "overflow-hidden lg:w-[45%] relative xl:h-[600px] lg:h-[430px] md:h-[380px] md:w-[40%]">
-      <img src="../images/logo.png" alt="Logo" class = "h-full z-30 rounded-[45%] absolute m-3 lg:-top-3 md:hidden lg:block animate-spin-slower">
+      <img src="../images/logo.png" alt="Logo" class = "h-full z-30 rounded-[45%] absolute p-3 m-3 lg:-top-3 md:hidden lg:block animate-spin-slower">
       <img src = "../images/sideLogo.png" alt="Logo" class = "rotate-180 h-full lg:hidden absolute right-0">
     </span>
 
     </section>
 
     <section id="about" class="h-auto w-full flex flex-row items-center"> 
-      <!-- hexagon 1 -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" class="opacity-20 absolute lg:top-[50rem] lg:left-[100px] animate-spin-slow invisible lg:visible"><path stroke="none" fill="#A9A9A9" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" class="opacity-20 absolute top-[52rem] left-[50px] md:left-[90px] animate-spin-slow lg:hidden">
-          <path stroke="none" fill="#A9A9A9" d="M59 2.8867513459481a10 10 0 0 1 10 0l45.425625842204 26.226497308104a10 10 0 0 1 5 8.6602540378444l0 52.452994616207a10 10 0 0 1 -5 8.6602540378444l-45.425625842204 26.226497308104a10 10 0 0 1 -10 0l-45.425625842204 -26.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -52.452994616207a10 10 0 0 1 5 -8.6602540378444"></path>
-        </svg>
       <!-- Purple gradient -->
-        <div class="h-72 w-72 bg-[#9558E4] rounded-full opacity-25 blur-[120px] absolute top-[48rem] left-24 z-20 "></div>
+        <!-- <div class="h-72 w-72 bg-[#9558E4] rounded-full opacity-60 blur-[120px] absolute top-[48rem] lg:left-24 z-20 "></div> -->
         
         <!-- About Content -->
-      <div class="flex flex-col lg:flex-row h-auto w-full mx-20 md:mx-32 lg:mx-40 gap-10 lg:gap-16 my-16">
-      
-        <!-- Blue gradient -->
-        <div class="h-72 w-72 bg-[#60FFE7] rounded-full opacity-25 blur-[120px] absolute top-[65rem] right-40 -z-30"></div>
+      <div class="flex flex-col xl:flex-row h-auto w-full mx-14 lg:mx-32 xl:mx-28 gap-8 xl:gap-16 my-16">
         <!-- Image -->
-        <div class=" w-full lg:w-1/2 lg:mx-8 flex items-center">
-            <img src="../images/team.JPG" alt="team img" class=" z-30 ">
+        <div class=" w-full xl:w-1/2 xl:mx-8 flex items-start order-1 xl:order-0 relative">
+          <!-- Purple gradient -->
+          <div class="h-72 w-72 bg-[#9558E4] rounded-full opacity-25 blur-[120px] absolute -top-[450px] -left-32 md:-top-96 md:-left-32 xl:-left-6 xl:-top-20 z-20 "></div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" class="opacity-20 absolute -top-20 -left-20 animate-spin-slow invisible xl:visible"><path stroke="none" fill="#A9A9A9" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
+            <img src="../images/team.JPG" alt="team img" class=" z-20">
         </div>
             <!-- Text -->
-            <div class="about-info w-full lg:w-1/2 space-y-10">
-              <h1 class="text-3xl md:text-5xl lg:text-[70px] font-lato font-semibold ">Who are we?</h1>
-              <p class="font-lato font-normal leading-8 lg:leading-10 text-justify text-lg md:text-xl lg:text-2xl tracking-tight">We are a team of dedicated students who are actively interested in encouraging development culture in our college. Lorem Ipsome sadadaion adandaod asdandiasd asda adsada asdasdna asdasondsda saddsa asdnsad asdasdoa asddnsda asdas asdasd asdasd.</p>
+            <div class="about-info w-full xl:w-1/2 space-y-12 xl:mr-8 order-0 xl:order-1 relative">
+              <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" class="opacity-20 absolute -left-10 -top-2 md:top-0 animate-spin-slow xl:hidden">
+                <path stroke="none" fill="#A9A9A9" d="M59 2.8867513459481a10 10 0 0 1 10 0l45.425625842204 26.226497308104a10 10 0 0 1 5 8.6602540378444l0 52.452994616207a10 10 0 0 1 -5 8.6602540378444l-45.425625842204 26.226497308104a10 10 0 0 1 -10 0l-45.425625842204 -26.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -52.452994616207a10 10 0 0 1 5 -8.6602540378444"></path>
+              </svg>
+      
+              <h1 class="text-3xl md:text-5xl lg:text-[60px] font-roboto  ">Who are we?</h1>
+              <p class="font-roboto font-normal leading-8 lg:leading-10 text-justify text-lg md:text-xl lg:text-2xl tracking-tight relative">We are a team of dedicated students who are actively interested in encouraging development culture in our college. Lorem Ipsome sadadaion adandaod asdandiasd asda adsada asdasdna asdasondsda saddsa asdnsad asdasdoa asddnsda asdas asdasd asdasd.
+              <!-- Blue gradient -->
+              <div class="h-72 w-72 bg-[#60FFE7] rounded-full opacity-25 blur-[120px] absolute -bottom-56 -right-8 md:right-0 -z-30"></div>
+              </p>
             </div>
       </div>
       <div class="overflow-hidden absolute right-0 top-[320px] lg:top-[63rem] invisible lg:visible">
@@ -125,11 +128,43 @@
           </linearGradient>
           <path stroke="none" fill="url(#grad)" d="M37 2.8867513459481a10 10 0 0 1 10 0l26.373066958946 15.226497308104a10 10 0 0 1 5 8.6602540378444l0 30.452994616207a10 10 0 0 1 -5 8.6602540378444l-26.373066958946 15.226497308104a10 10 0 0 1 -10 0l-26.373066958946 -15.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -30.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
         </div>
-
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" class="opacity-20 absolute right-[30rem] top-[80rem] -z-10  animate-spin-slow "><path stroke="none" fill="#A9A9A9" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg> -->
     </section>    
-    <section id="timeline"></section>
-    <section id="members"></section>
+
+    <section id="timeline" class="flex items-center justify-center h-auto">
+      <div class="w-[80%] h-80 my-8 mx-16 mb-20 rounded-[20px] bg-gradient-to-l from-[#09219F] to-[#2A4DCA] shadow-md relative">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" class="opacity-20 absolute invisible lg:visible right-20 xl;right-16 -top-20 xl:-top-28 -z-10  animate-spin-slow "><path stroke="none" fill="#A9A9A9" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
+      </div>
+    </section>
+
+  <section id="members" class="flex flex-col items-center justify-center h-auto gap-20 w-full">
+
+    <div class="flex flex-col items-center gap-4" ><h2 class="font-lato font-medium text-3xl sm:text-5xl lg:text-[60px] leading-[72px]">Meet our Incredible Team</h2>
+    <div class="h-0 w-[200px] md:w-[412px] border-2 rounded-md border-[#ffa200]"></div>
+    </div>
+
+    <div class="team-roles flex flex-row space-x-10 md:space-x-16 lg:space-x-32 px-5 flex-wrap">
+      <div id="team-card-1" class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+        <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+        <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Tech Lead</span></div>
+      <div id="team-card-2" class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+        <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+        <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">App Dev</span></div>
+      <div id="team-card-3" class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+        <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+        <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Web Dev</span></div>
+      <div id="team-card-4" class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group">
+        <span class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+        <span class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Non Tech</span></div>
+    </div>
+
+    <div class="team-members flex flex-row flex-wrap justify-center gap-16 mb-16">    
+      <div class="team-members-card h-[300px] w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card"></div>
+      <div class="team-members-card h-[300px] w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card"></div>
+      <div class="team-members-card h-[300px] w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card"></div>
+      <div class="team-members-card h-[300px] w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card"></div>
+  </div>
+
+  </section>
     <section id="modules"></section>
     <section id="projects"></section>
     <section id="events"></section>
