@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.0 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -31,6 +31,7 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -47,6 +48,8 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
 }
 
 /*
@@ -557,6 +560,10 @@ video {
   right: -2rem;
 }
 
+.-top-16 {
+  top: -4rem;
+}
+
 .-top-2 {
   top: -0.5rem;
 }
@@ -575,6 +582,10 @@ video {
 
 .left-0 {
   left: 0px;
+}
+
+.left-20 {
+  left: 5rem;
 }
 
 .left-24 {
@@ -601,10 +612,6 @@ video {
   right: 0px;
 }
 
-.right-16 {
-  right: 4rem;
-}
-
 .right-20 {
   right: 5rem;
 }
@@ -627,6 +634,10 @@ video {
 
 .top-\[48rem\] {
   top: 48rem;
+}
+
+.right-16 {
+  right: 4rem;
 }
 
 .-z-10 {
@@ -657,6 +668,10 @@ video {
   margin: 0px;
 }
 
+.m-10 {
+  margin: 2.5rem;
+}
+
 .m-2 {
   margin: 0.5rem;
 }
@@ -684,6 +699,11 @@ video {
   margin-bottom: 4rem;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -697,12 +717,20 @@ video {
   margin-bottom: 5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-9 {
   margin-bottom: 2.25rem;
 }
 
 .ml-9 {
   margin-left: 2.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-8 {
@@ -801,6 +829,10 @@ video {
   width: 250px;
 }
 
+.w-\[30\%\] {
+  width: 30%;
+}
+
 .w-\[300px\] {
   width: 300px;
 }
@@ -835,8 +867,18 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.-translate-y-7 {
+  --tw-translate-y: -1.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .translate-y-40 {
   --tw-translate-y: 10rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-5 {
+  --tw-translate-y: 1.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -904,12 +946,20 @@ video {
   align-items: flex-start;
 }
 
+.items-end {
+  align-items: flex-end;
+}
+
 .items-center {
   align-items: center;
 }
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end;
 }
 
 .justify-center {
@@ -922,6 +972,10 @@ video {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
 }
 
 .gap-16 {
@@ -1082,23 +1136,29 @@ video {
 }
 
 .from-\[\#09219F\] {
-  --tw-gradient-from: #09219F;
-  --tw-gradient-to: rgb(9 33 159 / 0);
+  --tw-gradient-from: #09219F var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(9 33 159 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to-position:  ;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-\[\#5800E8\] {
-  --tw-gradient-from: #5800E8;
-  --tw-gradient-to: rgb(88 0 232 / 0);
+  --tw-gradient-from: #5800E8 var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(88 0 232 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to-position:  ;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .to-\[\#23036A\] {
-  --tw-gradient-to: #23036A;
+  --tw-gradient-to: #23036A var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
 }
 
 .to-\[\#2A4DCA\] {
-  --tw-gradient-to: #2A4DCA;
+  --tw-gradient-to: #2A4DCA var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
 }
 
 .p-10 {
@@ -1107,6 +1167,10 @@ video {
 
 .p-3 {
   padding: 0.75rem;
+}
+
+.p-5 {
+  padding: 1.25rem;
 }
 
 .px-5 {
@@ -1161,13 +1225,27 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-\[17px\] {
   font-size: 17px;
+}
+
+.text-\[20px\] {
+  font-size: 20px;
 }
 
 .text-\[32px\] {
@@ -1743,10 +1821,6 @@ video {
     top: -5rem;
   }
 
-  .xl\:-top-28 {
-    top: -7rem;
-  }
-
   .xl\:left-80 {
     left: 20rem;
   }
@@ -1755,12 +1829,20 @@ video {
     left: 45rem;
   }
 
+  .xl\:right-16 {
+    right: 4rem;
+  }
+
   .xl\:top-36 {
     top: 9rem;
   }
 
   .xl\:top-44 {
     top: 11rem;
+  }
+
+  .xl\:-top-28 {
+    top: -7rem;
   }
 
   .xl\:order-1 {
