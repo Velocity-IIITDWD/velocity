@@ -30,7 +30,7 @@ module.exports = {
       gridTemplateRows:{
         'xlrowminmax': 'repeat(4, minmax(120px, 140px))',
         'mdrowminmax': 'repeat(4, minmax(85px, 140px))',
-        'rowminmax': 'repeat(4, minmax(85px, 200px))'
+        'rowminmax': 'repeat(3, minmax(85px, 200px))'
       }
     },
     fontFamily:{
