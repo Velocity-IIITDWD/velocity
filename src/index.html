@@ -53,7 +53,7 @@
   </header>
 
 
-  <main>
+  <main class = "">
     <!-- blured background -->
     <div class="xl:h-[314px] xl:w-[675px] blur-[120px] bg-[#7000FF] rounded-full md:opacity-20 z-10 absolute xl:left-80 xl:top-44 lg:h-[250px] lg:w-[340px] lg:top-36 md:w-[300px] md:h-[200px] md:top-32 md:left-[12rem] w-[150px] h-[120px] left-24 top-36 opacity-25" ></div>
     <div class= "xl:h-[314px] xl:w-[480px] blur-[120px] bg-[#BA0893] rounded-full md:opacity-20 absolute xl:top-36 xl:left-[45rem] z-10 lg:w-[365px] lg:h-[250px] lg:top-32 md:w-[300px] md:h-[200px] md:top-36 md:left-[23rem] w-[100px] h-[80px] left-44 top-36"></div>
@@ -90,9 +90,9 @@
       <img src="../images/logo.png" alt="Logo" class = "h-full z-30 rounded-[45%] absolute p-3 m-3 lg:-top-3 md:hidden lg:block animate-spin-slower">
       <img src = "../images/sideLogo.png" alt="Logo" class = "rotate-180 h-full lg:hidden absolute right-0">
     </span>
-
     </section>
 
+    <!-- About section -->
     <section id="about" class="h-auto w-full flex flex-row items-center"> 
       <!-- Purple gradient -->
         <!-- <div class="h-72 w-72 bg-[#9558E4] rounded-full opacity-60 blur-[120px] absolute top-[48rem] lg:left-24 z-20 "></div> -->
@@ -103,7 +103,7 @@
         <div class=" w-full xl:w-1/2 xl:mx-8 flex items-start order-1 xl:order-0 relative my-4">
           <!-- Purple gradient -->
           <div class="h-72 w-72 bg-[#9558E4] rounded-full opacity-25 blur-[120px] absolute -top-[450px] -left-32 md:-top-90 md:-left-32 xl:-left-6 xl:-top-20 z-20 "></div>
-          <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" class="opacity-20 absolute -top-20 -left-20 animate-spin-slow invisible xl:visible"><path stroke="none" fill="#A9A9A9" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" class="opacity-20 absolute -top-20 -left-20 animate-spin-slow hidden xl:block"><path stroke="none" fill="#A9A9A9" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
             <img src="../images/team.JPG" alt="team img" class=" z-20">
         </div>
             <!-- Text -->
@@ -119,7 +119,9 @@
               </p>
             </div>
       </div>
-      <div class="overflow-hidden absolute right-0 top-[320px] lg:top-[63rem] invisible lg:visible">
+
+      <!-- left tiny div -->
+      <div class="overflow-hidden absolute right-0 top-[320px] lg:top-[63rem] hidden lg:block">
         <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" class="transform rotate-[30deg] relative -right-6">
           <linearGradient id='grad'>
             <stop stop-color='#FFA000'/>
@@ -127,7 +129,8 @@
           </linearGradient>
           <path stroke="none" fill="url(#grad)" d="M37 2.8867513459481a10 10 0 0 1 10 0l26.373066958946 15.226497308104a10 10 0 0 1 5 8.6602540378444l0 30.452994616207a10 10 0 0 1 -5 8.6602540378444l-26.373066958946 15.226497308104a10 10 0 0 1 -10 0l-26.373066958946 -15.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -30.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
       </div>
-      <div class="overflow-hidden absolute transform translate-y-40 lg:visible invisible">
+      <!-- right tiny div -->
+      <div class="overflow-hidden absolute transform translate-y-40 lg:block hidden">
         <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" class="transform rotate-[30deg] relative -left-8">
           <linearGradient id='grad'>
             <stop stop-color='#E1BEE7'/>
@@ -140,7 +143,7 @@
     <!-- time line section -->
     <section id="timeline" class="flex items-center justify-center h-auto font-lato relative">
       <!-- hexagon -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" class="opacity-20 absolute invisible lg:visible right-20 xl:right-16 -top-16 xl:-top-30 -z-10"><path stroke="none" fill="#A9A9A9" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" class="opacity-20 absolute hidden lg:block right-20 xl:right-16 -top-16 xl:-top-30 -z-10"><path stroke="none" fill="#A9A9A9" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
 
       <div class="w-[80%] h-80 mt-6 md:mt-6 mx-16 mb-6 md:mb-14 lg:mb-20 rounded-[20px] bg-gradient-to-l from-[#09219F] to-[#2A4DCA] shadow-md relative flex items-center justify-evenly ">
         
@@ -156,8 +159,8 @@
           <p class = "text-6xl p-5 font-bold">2022</p>
           <!-- <p class = "text-center lg:text-[20px] font-medium mt-4">Velocity Club, started working offline capacity, recruited more members and did their first event Coding With Coffee</p> -->
         </div>
-<!-- 
-        <svg width="500" height="500" viewbox="0 0 500 500" class="absolute right-20 -translate-y-7 "><path id="path" stroke="#fff" fill="none" stroke-width="2" d="M65,220 c212,-9 172,127 342,119" />
+        <!-- curve 2 -->
+        <!-- <svg width="500" height="500" viewbox="0 0 500 500" class="absolute right-20 -translate-y-7 "><path id="path" stroke="#fff" fill="none" stroke-width="2" d="M65,220 c212,-9 172,127 342,119" />
         </svg> -->
 
         <div class = "flex flex-col justify-end items-end h-48 w-[30%] ">
@@ -167,11 +170,11 @@
       </div>
     </section>
 
-  <section id="members" class="flex flex-col items-center justify-center h-auto gap-8 sm:gap-16 lg:gap-20 w-full mb-28">
+  <section id="members" class="flex flex-col items-center justify-center h-auto gap-8 sm:gap-16 lg:gap-20 w-full">
     <!-- Members heading -->
     <div class="heading flex flex-col items-center -space-y-3 md:space-y-6" ><h2 class="font-lato font-medium text-2xl md:text-5xl lg:text-[60px] leading-[72px]">Meet our Incredible Team</h2>
       <!-- Yellow heading underline -->
-    <div class="h-0 w-[150px] md:w-[350px] lg:w-[412px] border-[1px] md:border-2 rounded-md border-[#ffa200] bg-[#ffa200]"></div>
+    <div class="h-0 w-[150px] md:w-[350px] lg:w-[412px] border-[1px] md:border-2 rounded-md border-[#ffa200]"></div>
     </div>
 
     <!-- Team Roles Buttons -->
@@ -203,7 +206,7 @@
     
     
     <!-- Team Members Carousel -->
-    <div class="team-members flex flex-row flex-wrap justify-center overflow-hidden relative h-auto w-[90%] max-w-full">
+    <div class="team-members flex flex-row flex-wrap justify-center overflow-hidden relative h-auto w-[100%] max-w-full">
       <div class="team-members-container flex gap-16 w-calc[250px*6] animate-scroll">    
 
       <div class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card  flex justify-center group relative overflow-hidden">
@@ -414,13 +417,136 @@
   </div> 
 
   </section>
+    
+  <!-- modules section -->
+  <section id="modules" class = "h-[27rem] md:h-[70rem] xl:h-[1030px] flex flex-col relative overflow-hidden xl:mt-24 lg:mt-16">
+  <div class="flex flex-col items-center gap-4 md:mt-0 translate-y-3 z-10" >
+    <h2 class="font-lato z-10 font-medium text-2xl md:text-5xl lg:text-[60px] leading-[72px] md:translate-y-16 ">Modules Made in Veloris</h2>
+    <div class="h-0 w-[150px] md:w-[350px] lg:w-[412px] border-[1px] md:border-2 rounded-md border-[#ffa200] z-10 md:translate-y-16 -translate-y-8"></div>
+  </div>
+  
+  <!-- tilted background -->
+    <div class = "xl:h-[55rem] w-[105rem] md:h-[60rem] h-[22rem] rotate-[-5deg] -translate-x-28 bg-gradient-to-r from-[#471162] to-[#230535] mb-48 z-0 flex items-center justify-center absolute xl:mt-20 md:mt-16"></div>
+    
+    <div class = "flex h-[20%] md:h-[68%] lg:w-[85%] md:flex-wrap  justify-evenly items-center absolute xl:left-[115px] lg:left-[85px] mt-44 flex-row w-calc[250px*5] animate-scrollOpposite md:animate-none">
+      <!-- 5 modules -->
+      <div class = "h-[200px] w-[300px] md:h-[250px] md:w-[350px] bg-white rounded-[20px] md:m-3  m-4"></div>
+      <div class = "h-[200px] w-[300px] md:h-[250px] md:w-[350px] bg-white rounded-[20px] md:m-3 m-4"></div>
+      <div class = "h-[200px] w-[300px] md:h-[250px] md:w-[350px] bg-white rounded-[20px] md:m-3 m-4"></div>
+      <div class = "h-[200px] w-[300px] md:h-[250px] md:w-[350px] bg-white rounded-[20px] md:m-3 xl:translate-x-12 m-4"></div>
+      <div class = "h-[200px] w-[300px] md:h-[250px] md:w-[350px] bg-white rounded-[20px] md:m-3 xl:-translate-x-12 m-4"></div>
+    </div>
 
-    <section id="modules" class="w-full h-auto flex items-center justify-center"></section>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="flex flex-col h-auto w-full mb-16"></section>
+
+    <section id="projects"></section>
     <section id="events"></section>
-    <section id="testimonials"></section>
+
+    <section id="testimonials" class = "h-auto w-full relative">
+      <!-- red hexagon -->
+      <div class ="absolute overflow-hidden -rotate-[30deg] top-[35rem] hidden md:block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+          <linearGradient id='redgrad'>
+            <stop  stop-color='#FF7B5F'/>
+            <stop offset='100%' stop-color='#FF1F00'/>
+          </linearGradient>
+          <path stroke="none" fill="url(#redgrad)" d="M31 2.8867513459481a10 10 0 0 1 10 0l21.17691453624 12.226497308104a10 10 0 0 1 5 8.6602540378444l0 24.452994616207a10 10 0 0 1 -5 8.6602540378444l-21.17691453624 12.226497308104a10 10 0 0 1 -10 0l-21.17691453624 -12.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -24.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
+      </div>
+
+      <!-- overflow-hidden absolute right-0 top-[320px] lg:top-[63rem] hidden lg:block -->
+      <!-- grey hexagon -->
+      <div class = "absolute opacity-20 right-0 -top-16 hidden lg:block overflow-hidden" >
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" class="relative rotate-[30deg] -right-12"><path stroke="none" fill="#A9A9A9" d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444"></path></svg>
+      </div>
+
+      <!-- seaGreen hexagon -->
+      <div class ="absolute right-20 top-8 rotate-[25deg] lg:rotate-0 lg:right-16 lg:top-12 hidden md:block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="94">
+          <linearGradient id='bluegrad'>
+            <stop  stop-color='#00D1FF'/>
+            <stop offset='80%' stop-color='#1F9ABC'/>
+          </linearGradient>
+          <path stroke="none" fill="url(#bluegrad)" d="M42 2.8867513459481a10 10 0 0 1 10 0l30.703193977869 17.726497308104a10 10 0 0 1 5 8.6602540378444l0 35.452994616207a10 10 0 0 1 -5 8.6602540378444l-30.703193977869 17.726497308104a10 10 0 0 1 -10 0l-30.703193977869 -17.726497308104a10 10 0 0 1 -5 -8.6602540378444l0 -35.452994616207a10 10 0 0 1 5 -8.6602540378444"></path>
+        </svg>
+      </div>
+
+      <div class="flex flex-col items-center z-10 lg:gap-4" >
+        <!-- heading -->
+        <h6 class="font-Montserrat z-10 font-small text-sm md:text-xl lg:text-[30px] text-[#ffa200]">What IIITDWD says</h6>
+        <h2 class="font-lato z-10 font-medium text-3xl md:text-5xl lg:text-[65px]">Testimonials</h2>
+      </div>
+
+      <!-- grid divs -->
+      <div class="grid gap-4 lg:p-24 md:p-12 p-8 lg:grid-cols-xlcolminmax grid-cols-colminmax xl:grid-rows-xlrowminmax md:grid-rows-mdrowminmax grid-rows-rowminmax">
+        <!-- box 1 -->
+          <div class="bg-purplergba rounded-[20px] md:row-start-1 md:row-end-3 flex flex-col justify-center p-6 z-10">
+            <!-- profile and name div -->
+            <div class = "flex mb-5">
+              <img src = "../images/sampleImg.jpeg" class = "h-10 w-10 rounded-full mr-4"/>
+              <h3 class = "text-3xl">John</h3>
+            </div>
+            <!-- comment div -->
+            <div class="font-lato overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque, natus tempore, rerum dolore harum officia labore, iusto eum dolorum alias optio ab nam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta modi rem qui placeat vitae, quo.</div>
+          </div>
+
+          <!-- box -2 -->
+          <div class="bg-purplergba rounded-[20px] md:row-start-3 md:row-end-5 flex flex-col justify-center p-6 z-10">
+            <!-- profile and name div -->
+            <div class = "flex mb-5">
+              <img src = "../images/sampleImg.jpeg" class = "h-10 w-10 rounded-full mr-4"/>
+              <h3 class = "text-3xl">John</h3>
+            </div>
+            <!-- comment div -->
+            <div class="font-lato overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque, natus tempore, rerum dolore harum officia labore, iusto eum dolorum alias optio ab nam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta modi rem qui placeat vitae, quo.</div>
+          </div>
+
+          <!-- box-3 -->
+          <div class="bg-purplergba rounded-[20px] flex flex-col justify-center p-6">
+            <!-- profile and name div -->
+            <div class = "flex mb-3">
+              <img src = "../images/sampleImg.jpeg" class = "h-8 w-8 rounded-full mr-4"/>
+              <h3 class = "text-2xl">John</h3>
+            </div>
+            <!-- comment div -->
+            <div class="font-lato overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque, natus tempore, rerum dolore harum officia labore, iusto eum dolorum alias optio ab nam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta modi rem qui placeat vitae, quo.</div>
+          </div>
+
+          <!-- box-4  -->
+          <div class="bg-purplergba rounded-[20px] md:row-start-2 md:row-end-5 md:flex flex-col justify-center p-6 hidden">
+            <!-- profile and name div -->
+            <div class = "flex mb-5">
+              <img src = "../images/sampleImg.jpeg" class = "h-10 w-10 rounded-full mr-4"/>
+              <h3 class = "text-3xl">John</h3>
+            </div>
+            <!-- comment div -->
+            <div class="font-lato overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque, natus tempore, rerum dolore harum officia labore, iusto eum dolorum alias optio ab nam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta modi rem qui placeat vitae, quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt tempore laudantium tenetur, error maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quibusdam ex fugit ipsum ad qui amet harum repellendus deleniti minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis culpa aliquid mollitia earum vero odio delectus perferendis tenetur autem consequatur.</div>
+          </div>
+
+          <!-- box-5 -->
+          <div class="bg-purplergba rounded-[20px] md:row-start-1 md:row-end-4 md:flex flex-col justify-center p-6 hidden">
+            <!-- profile and name div -->
+            <div class = "flex mb-5">
+              <img src = "../images/sampleImg.jpeg" class = "h-10 w-10 rounded-full mr-4"/>
+              <h3 class = "text-3xl">John</h3>
+            </div>
+            <!-- comment div -->
+            <div class="font-lato overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque, natus tempore, rerum dolore harum officia labore, iusto eum dolorum alias optio ab nam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta modi rem qui placeat vitae, quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt tempore laudantium tenetur, error maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quibusdam ex fugit ipsum ad qui amet harum repellendus deleniti minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis culpa aliquid mollitia earum vero odio delectus perferendis tenetur autem consequatur.</div>
+            </div>
+          
+          <!-- box-6 -->
+          <div class="bg-purplergba rounded-[20px]
+            md:flex flex-col justify-center p-6 hidden">
+            <!-- profile and name div -->
+            <div class = "flex mb-3">
+              <img src = "../images/sampleImg.jpeg" class = "h-8 w-8 rounded-full mr-4"/>
+              <h3 class = "text-2xl">John</h3>
+            </div>
+            <!-- comment div -->
+            <div class="font-lato overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque, natus tempore, rerum dolore harum officia labore, iusto eum dolorum alias optio ab nam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta modi rem qui placeat vitae, quo.</div>
+          </div>
+      </div>
+    </section>
   </main>
 
 <!-- Footer Section -->
@@ -434,7 +560,7 @@
         <div class="flex flex-col items-center md:items-start gap-6 md:gap-10 md:ml-12">
           <p class="text-2xl lg:text-3xl">Get In Touch</p>
          <!-- Social Media Links -->
-          <div id="footer-social-media-link" class="space-y-6 lg:space-y-10 text-lg md:text-xl lg:text-2xl text-[#D7CBCB] " >
+          <div id="footer-social-media-link" class="space-y-6 lg:space-y-10 text-lg md:text-xl lg:text-2xl text-purple-200 " >
             <a href=""  class="flex gap-4 sm:gap-8">
              <img src="../images/linkedin.png" alt="" class=" h-6 w-6 md:h-10 md:w-10 ">
               <p class="md:mt-2 hover:text-white">velocityIIITDWD</p>
@@ -461,14 +587,19 @@
       <div class="w-full md:w-1/2 lg:w-[40%] h-full flex flex-col items-center justify-center  ">
         <div class="w-[55%] md:w-1/2 font-roboto space-y-6 lg:space-y-10 flex flex-col items-center md:items-start">
         <p class="text-2xl lg:text-3xl">Address</p>
-        <p class="text-base md:text-xl lg:text-2xl text-justify md:text-left tracking-tight md:tracking-wide text-[#D7CBCB]">IIIT Dharwad, Ittigatti Road, Near Sattur Colony, Dharwad 580009. </p>
+        <p class="text-base md:text-xl lg:text-2xl text-justify md:text-left tracking-tight md:tracking-wide text-purple-200 "">IIIT Dharwad, Ittigatti Road, Near Sattur Colony, Dharwad 580009. </p>
         <img src="../images/iiitdwd-logo.png" alt="" class="w-40 md:w-[200px]">
         </div>
       </div>
       </div>
-      <div class="flex lg:hidden justify-center items-center mb-4 mt-6 md:mb-10 md:mt-0">
+
+      <!-- velocity logo bottom -->
+      <div class="flex flex-col lg:hidden justify-center items-center relative">
+        <div class="h-[1px] w-full bg-slate-400 absolute top-0"></div>
+        <div class="flex justify-center items-center p-4">
         <img src="../images/navlogo.png" alt="" class="h-20">
         <h1 class="text-3xl md:text-4xl">VELOCITY</h1>
+        </div>
       </div>
     </div>
 
