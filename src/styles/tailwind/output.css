@@ -550,10 +550,6 @@ video {
   }
 }
 
-.visible {
-  visibility: visible;
-}
-
 .fixed {
   position: fixed;
 }
@@ -1171,10 +1167,6 @@ video {
 
 .grid-cols-colminmax {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-}
-
-.grid-rows-rowminmax {
-  grid-template-rows: repeat(3, minmax(85px, 200px));
 }
 
 .flex-row {
@@ -2151,10 +2143,6 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
-  }
-
-  .md\:overflow-hidden {
-    overflow: hidden;
   }
 
   .md\:border-2 {
