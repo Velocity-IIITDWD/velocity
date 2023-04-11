@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.0 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -31,7 +31,6 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
-6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -48,8 +47,6 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
-  font-variation-settings: normal;
-  /* 6 */
 }
 
 /*
@@ -1169,6 +1166,10 @@ video {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 
+.grid-rows-rowminmax {
+  grid-template-rows: repeat(3, minmax(85px, 200px));
+}
+
 .flex-row {
   flex-direction: row;
 }
@@ -1348,11 +1349,6 @@ video {
   background-color: rgb(19 1 28 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#201043\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(32 16 67 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#5600e8\] {
   --tw-bg-opacity: 1;
   background-color: rgb(86 0 232 / var(--tw-bg-opacity));
@@ -1424,43 +1420,44 @@ video {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
+.bg-gradient-to-t {
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+}
+
+.from-\[\#050443\] {
+  --tw-gradient-from: #050443;
+  --tw-gradient-to: rgb(5 4 67 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-\[\#09219F\] {
-  --tw-gradient-from: #09219F var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgb(9 33 159 / 0)  var(--tw-gradient-from-position);
-  --tw-gradient-to-position:  ;
+  --tw-gradient-from: #09219F;
+  --tw-gradient-to: rgb(9 33 159 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-\[\#471162\] {
-  --tw-gradient-from: #471162 var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgb(71 17 98 / 0)  var(--tw-gradient-from-position);
-  --tw-gradient-to-position:  ;
+  --tw-gradient-from: #471162;
+  --tw-gradient-to: rgb(71 17 98 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-\[\#5800E8\] {
-  --tw-gradient-from: #5800E8 var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgb(88 0 232 / 0)  var(--tw-gradient-from-position);
-  --tw-gradient-to-position:  ;
+  --tw-gradient-from: #5800E8;
+  --tw-gradient-to: rgb(88 0 232 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .to-\[\#23036A\] {
-  --tw-gradient-to: #23036A var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
+  --tw-gradient-to: #23036A;
 }
 
 .to-\[\#230535\] {
-  --tw-gradient-to: #230535 var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
+  --tw-gradient-to: #230535;
 }
 
 .to-\[\#2A4DCA\] {
-  --tw-gradient-to: #2A4DCA var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
+  --tw-gradient-to: #2A4DCA;
 }
 
 .p-10 {
@@ -1510,6 +1507,10 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pl-14 {
@@ -1688,6 +1689,10 @@ video {
 
 .opacity-60 {
   opacity: 0.6;
+}
+
+.opacity-80 {
+  opacity: 0.8;
 }
 
 .shadow-\[inset_25rem_0_0_0\] {
@@ -2376,6 +2381,30 @@ video {
     margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
   }
 
+  .lg\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-7 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+  }
+
   .lg\:p-24 {
     padding: 6rem;
   }
@@ -2386,6 +2415,10 @@ video {
 
   .lg\:pr-32 {
     padding-right: 8rem;
+  }
+
+  .lg\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .lg\:text-2xl {
@@ -2590,6 +2623,12 @@ video {
 
   .xl\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .xl\:space-y-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
   }
 
   .xl\:p-2 {
