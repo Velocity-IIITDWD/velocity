@@ -1349,11 +1349,6 @@ video {
   background-color: rgb(19 1 28 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#201043\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(32 16 67 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#5600e8\] {
   --tw-bg-opacity: 1;
   background-color: rgb(86 0 232 / var(--tw-bg-opacity));
@@ -1429,6 +1424,12 @@ video {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
+.from-\[\#050443\] {
+  --tw-gradient-from: #050443;
+  --tw-gradient-to: rgb(5 4 67 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
 .from-\[\#09219F\] {
   --tw-gradient-from: #09219F;
   --tw-gradient-to: rgb(9 33 159 / 0);
@@ -1444,12 +1445,6 @@ video {
 .from-\[\#5800E8\] {
   --tw-gradient-from: #5800E8;
   --tw-gradient-to: rgb(88 0 232 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.from-\[\#050443\] {
-  --tw-gradient-from: #050443;
-  --tw-gradient-to: rgb(5 4 67 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1512,6 +1507,10 @@ video {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.pb-10 {
+  padding-bottom: 2.5rem;
 }
 
 .pl-14 {
@@ -1824,11 +1823,6 @@ video {
 
 .hover\:shadow-bg-color:hover {
   --tw-shadow-color: #11011e;
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.hover\:shadow-\[\#7a41d5\]:hover {
-  --tw-shadow-color: #7a41d5;
   --tw-shadow: var(--tw-shadow-colored);
 }
 
@@ -2176,10 +2170,6 @@ video {
     padding-top: 0px;
   }
 
-  .md\:pb-8 {
-    padding-bottom: 2rem;
-  }
-
   .md\:text-left {
     text-align: left;
   }
@@ -2389,6 +2379,30 @@ video {
     --tw-space-y-reverse: 0;
     margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-8 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-7 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+  }
+
+  .lg\:space-y-6 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
   }
 
   .lg\:p-24 {
@@ -2609,6 +2623,12 @@ video {
 
   .xl\:gap-6 {
     gap: 1.5rem;
+  }
+
+  .xl\:space-y-10 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
   }
 
   .xl\:p-2 {
