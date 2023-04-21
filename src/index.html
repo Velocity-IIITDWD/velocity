@@ -36,13 +36,13 @@
     <div class="navlinks md:static fixed bg-white bg-opacity-90  md:bg-transparent md:min-h-fit min-h-[115vh] left-[-300%] top-0 w-[60%] lg:w-full flex items-start justify-center md:justify-end pl-14 md:pl-0 drop-shadow-2xl md:drop-shadow-none z-30 transition-all ease-in-out duration-500  backdrop-blur-sm pr-14 lg:pr-32">
       <ul class="flex flex-col md:flex-row font-roboto font-light gap-20 md:gap-10 lg:gap-12 pt-48 md:pt-0">
         <li class="text-3xl md:text-2xl">
-          <a href="#" class="text-black md:text-white md-hover:text-purple-300 hover:text-purple-800">Home</a>
+          <a href="#home" class="text-black md:text-white md-hover:text-purple-300 hover:text-purple-800">Home</a>
         </li>
         <li class="text-3xl md:text-2xl">
-          <a href="#" class="text-black md:text-white md-hover:text-purple-300 hover:text-purple-800">Team Members</a>
+          <a href="#members" class="text-black md:text-white md-hover:text-purple-300 hover:text-purple-800">Team Members</a>
         </li>
         <li class="text-3xl md:text-2xl">
-          <a href="#" class="text-black md:text-white  md-hover:text-purple-300 hover:text-purple-800">Contact</a>
+          <a href="#footer" class="text-black md:text-white  md-hover:text-purple-300 hover:text-purple-800">Contact</a>
         </li>
       </ul>
     </div>
@@ -169,6 +169,7 @@
       </div>
     </section>
 
+    <!-- Members-section -->
   <section id="members" class="flex flex-col items-center justify-center h-auto gap-8 sm:gap-16 lg:gap-20 w-full">
     <!-- Members heading -->
     <div class="heading flex flex-col items-center -space-y-3 md:space-y-6" ><h2 class="font-lato font-medium text-2xl md:text-5xl lg:text-[60px] leading-[72px]">Meet our Incredible Team</h2>
@@ -438,10 +439,60 @@
 
   </section>
 
+  <!-- Project Section -->
+  <section id="projects flex flex-col">
 
-    <section id="projects"></section>
+    <!-- Projects heading -->
+    <div class="heading flex flex-col items-center -space-y-3 md:space-y-6" ><h2 class="font-lato font-medium text-2xl md:text-5xl lg:text-[60px] leading-[72px]">Other Projects Made By Us</h2>
+      <!-- Yellow heading underline -->
+    <div class="h-0 w-[150px] md:w-[350px] lg:w-[412px] border-[1px] md:border-2 rounded-md border-[#ffa200]"></div>
+    </div>
+
+    <div id="timeline-box" class="p-[35px] sm:p-[60px] md:p-[100px] overflow-hidden
+    font-roboto relative before:content-[' '] before:bg-light-primary before:w-[5px] before:h-[94%] md:before:h-[88%] lg:before:h-[85%] before:absolute before:left-[50px] md:before:left-1/2 before:translate-x-[-50%]">
+      <div class="container">
+        <div class="timeline-item w-full mb-[70px] after:content-[' '] after:block after:clear-both">
+          <div class="timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[50px] md:left-1/2 mt-[25px] ml-[-15px]"></div>
+          <div class="timeline-content  js--fadeInLeft max-w-full space-y-8 relative auto md:w-[45%] py-[20px] px-[30px] rounded-[10px] bg-[#4B6CB7] bg-opacity-40 shadow-[0_25px_20px_-15px_rgba(0,0,0,0.3)] ml-[40px] md:ml-0">
+            <h2 class="text-4xl">Title</h2>
+            <p>Project Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a class="bnt-more bg-primary text-text py-[8px] px-[20px] uppercase text-[14px] mb-[20px] mt-[10px] inline-block rounded-2 shadow-[0_1px_3px_-1px_rgba(0,0,0,0.6)] hover:bg-dark-primary" href="javascript:void(0)">More</a>
+          </div>
+        </div> 
+    
+        <div class="timeline-item w-full mb-[70px] after:content-[' '] after:block after:clear-both ">
+          <div class="timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[50px] md:left-1/2 mt-[25px] ml-[-15px]"></div>    
+          <div class="timeline-content js--fadeInRight float-none md:float-right px-[30px] space-y-8 relative w-auto md:w-[45%] py-[20px] rounded-[10px] bg-[#4B6CB7] bg-opacity-40 shadow-[0_25px_20px_-15px_rgba(0,0,0,0.3)] max-w-full ml-[40px] md:ml-0">
+            <h2 class="text-4xl">Title</h2>
+            <p>Project Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a class="bnt-more bg-primary text-text py-[8px] px-[20px] uppercase text-[14px] mb-[20px] mt-[10px] inline-block rounded-2 shadow-[0_1px_3px_-1px_rgba(0,0,0,0.6)] hover:bg-dark-primary " href="javascript:void(0)">More</a>
+          </div>
+ 
+        </div>   
+    
+        <div class="timeline-item w-full mb-[70px] after:content-[' '] after:block after:clear-both">    
+          <div class="timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[50px] md:left-1/2 mt-[25px] ml-[-15px]"></div>
+          <div class="timeline-content js--fadeInLeft space-y-8 relative w-auto md:w-[45%] max-w-full ml-[40px] md:ml-0 py-[20px] px-[30px] rounded-[10px] bg-[#4B6CB7] bg-opacity-40  shadow-[0_25px_20px_-15px_rgba(0,0,0,0.3)]">
+            <h2 class="text-4xl">Title</h2>
+            <p>Project Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a class="bnt-more bg-primary text-text py-[8px] px-[20px] uppercase text-[14px] mb-[20px] mt-[10px] inline-block rounded-2 shadow-[0_1px_3px_-1px_rgba(0,0,0,0.6)] hover:bg-dark-primary " href="javascript:void(0)">More</a>
+          </div>
+        </div> 
+
+        <div class="timeline-item w-full mb-[70px] after:content-[' '] after:block after:clear-both"> 
+          <div class="timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[50px] md:left-1/2 mt-[25px] ml-[-15px]"></div>
+          <div class="timeline-content js--fadeInRight float-none md:float-right py-[20px] px-[30px]  after:content-[' '] after:block after:clear-both space-y-8 relative ml-[40px] md:ml-0 max-w-full w-auto md:w-[45%] py-[20px] px-[30px] rounded-[10px] bg-[#4B6CB7] bg-opacity-40  shadow-[0_25px_20px_-15px_rgba(0,0,0,0.3)]">            
+            <h2 class="text-4xl">Title</h2>
+            <p>Project Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a class="bnt-more bg-primary text-text py-[8px] px-[20px] uppercase text-[14px] mb-[20px] mt-[10px] inline-block rounded-2 shadow-[0_1px_3px_-1px_rgba(0,0,0,0.6)] hover:bg-dark-primary " href="javascript:void(0)">More</a>
+          </div>
+        </div>   
+     </div>
+    
+    </div>
     <section id="events"></section>
 
+    <!-- Testimonial Section -->
     <section id="testimonials" class = "h-auto w-full relative">
       <!-- red hexagon -->
       <div class ="absolute overflow-hidden -rotate-[30deg] top-[35rem] hidden md:block">
@@ -555,7 +606,7 @@
   </main>
 
 <!-- Footer Section -->
-  <footer class="w-full h-auto">
+  <footer id="footer" class="w-full h-auto">
     <!-- Footer container -->
     <div id="footer-container" class="w-full h-[650px] md:h-[500px] bg-gradient-to-t from-[#050443] flex flex-col ">
       <div class="flex flex-col md:flex-row h-full">
@@ -609,6 +660,9 @@
     </div>
 
   </footer>
+
+  <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+
 <script type="module" src="./scripts/main.js">
   
 </script>

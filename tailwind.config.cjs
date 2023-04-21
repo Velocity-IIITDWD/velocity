@@ -5,7 +5,11 @@ module.exports = {
     extend: {
       colors:{
         'bg-color': '#11011e',
-        'purplergba' : '#38215F'
+        'purplergba' : '#38215F',
+        'primary': '#3F51B5',
+        'dark-primary': '#303F9F', 
+        'light-primary': '#C5CAE9',
+        'text': '#FFFFFF',
       },
       animation:{
         'spin-slow': 'spin 5s linear infinite',
