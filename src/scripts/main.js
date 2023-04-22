@@ -31,3 +31,55 @@ testimonialBtn.addEventListener('click' , () =>{
         testimonialBtn.innerText = "Show more";
     }
 });
+
+
+// Projects Section
+
+window.addEventListener("load", function() {
+    const sr = ScrollReveal();
+  
+    if (window.innerWidth < 768) {
+      const timelineContent = document.querySelector(".timeline-content");
+      if (timelineContent.classList.contains("js--fadeInLeft")) {
+        timelineContent.classList.remove("js--fadeInLeft");
+        timelineContent.classList.add("js--fadeInRight");
+      }
+  
+      sr.reveal(".js--fadeInRight", {
+        origin: "right",
+        distance: "300px",
+        easing: "ease-in-out",
+        duration: 800
+      });
+    } else {
+      sr.reveal(".js--fadeInLeft", {
+        origin: "left",
+        distance: "300px",
+        easing: "ease-in-out",
+        duration: 800
+      });
+  
+      sr.reveal(".js--fadeInRight", {
+        origin: "right",
+        distance: "300px",
+        easing: "ease-in-out",
+        duration: 800
+      });
+    }
+  
+    sr.reveal(".js--fadeInLeft", {
+      origin: "left",
+      distance: "300px",
+      easing: "ease-in-out",
+      duration: 800
+    });
+  
+    sr.reveal(".js--fadeInRight", {
+      origin: "right",
+      distance: "300px",
+      easing: "ease-in-out",
+      duration: 800
+    });
+  });
+  
+  
