@@ -84,28 +84,13 @@ window.addEventListener("load", function () {
 
 
 
-// events section
-
+// ===================================== events section carousel for desktop =============================
 
 const carousel = document.querySelector("#carousel");
 const caroudchildren = [...carousel.children];
 
 let isDragging = false;
 let startX, startScrollLeft;
-
-// // infinite loop
-// let cardperView = Math.round(carousel.offsetWidth / firstCardWidth); //number of cards that can fit in the carousel at once
-
-
-// // insert firt card copies to the end
-// caroudchildren.slice(-cardperView).forEach(card => {
-//   carousel.insertAdjacentHTML("beforeend" , card.outerHTML);
-// });
-
-
-// caroudchildren.slice(-cardperView).reverse().forEach(card => {
-//   carousel.insertAdjacentHTML("afterbegin" , card.outerHTML);
-// });
 
 const dragStart = (e) => {
   isDragging = true;
@@ -131,3 +116,20 @@ const dragStop = (e) => {
 carousel.addEventListener('mousedown', dragStart);
 carousel.addEventListener('mousemove', dragging);
 carousel.addEventListener('mouseup', dragStop);
+carousel.addEventListener('mouseleave', () => {
+  isDragging = false;
+});
+
+
+// ====================== event carousel for mobile ===============
+const container = document.querySelector('#carousel');
+const items = document.querySelectorAll('.card');
+let scrollPos = 0;
+
+container.addEventListener('touchstart', function (event) {
+  scrollPos = this.scrollLeft + event.touches[0].clientX;
+});
+
+container.addEventListener('touchmove', function (event) {
+  this.scrollLeft = scrollPos - event.touches[0].clientX;
+});
