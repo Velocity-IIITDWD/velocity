@@ -708,6 +708,10 @@ video {
   top: 5%;
 }
 
+.top-\[85rem\] {
+  top: 85rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1017,6 +1021,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
+}
+
+.h-\[600px\] {
+  height: 600px;
 }
 
 .min-h-\[115vh\] {
