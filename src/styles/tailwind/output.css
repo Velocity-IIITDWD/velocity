@@ -652,6 +652,10 @@ video {
   left: 0%;
 }
 
+.left-\[23\%\] {
+  left: 23%;
+}
+
 .left-\[50px\] {
   left: 50px;
 }
@@ -690,6 +694,14 @@ video {
 
 .top-\[48rem\] {
   top: 48rem;
+}
+
+.top-\[5\%\] {
+  top: 5%;
+}
+
+.top-\[80\%\] {
+  top: 80%;
 }
 
 .-z-10 {
@@ -851,6 +863,10 @@ video {
   margin-top: 25px;
 }
 
+.mt-\[40px\] {
+  margin-top: 40px;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -919,10 +935,6 @@ video {
   height: 20rem;
 }
 
-.h-\[100vh\] {
-  height: 100vh;
-}
-
 .h-\[120px\] {
   height: 120px;
 }
@@ -963,6 +975,10 @@ video {
   height: 27rem;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
 .h-\[30px\] {
   height: 30px;
 }
@@ -975,16 +991,20 @@ video {
   height: 45px;
 }
 
+.h-\[500px\] {
+  height: 500px;
+}
+
 .h-\[650px\] {
   height: 650px;
 }
 
-.h-\[800px\] {
-  height: 800px;
-}
-
 .h-\[80px\] {
   height: 80px;
+}
+
+.h-\[97\%\] {
+  height: 97%;
 }
 
 .h-auto {
@@ -993,10 +1013,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[600px\] {
-  height: 600px;
 }
 
 .min-h-\[115vh\] {
@@ -1097,6 +1113,10 @@ video {
 
 .w-\[90px\] {
   width: 90px;
+}
+
+.w-\[97\%\] {
+  width: 97%;
 }
 
 .w-auto {
@@ -1975,6 +1995,10 @@ video {
   transition-duration: 150ms;
 }
 
+.duration-200 {
+  transition-duration: 200ms;
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -1989,6 +2013,10 @@ video {
 
 .duration-\[400ms\2c 700ms\] {
   transition-duration: 400ms,700ms;
+}
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
 .ease-in-out {
@@ -2055,6 +2083,10 @@ video {
   background-color: rgb(48 63 159 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-purple-300\/30:hover {
+  background-color: rgb(216 180 254 / 0.3);
+}
+
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -2085,6 +2117,12 @@ video {
 .hover\:shadow-bg-color:hover {
   --tw-shadow-color: #11011e;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.hover\:backdrop-opacity-10:hover {
+  --tw-backdrop-opacity: opacity(0.1);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .group:hover .group-hover\:bottom-0 {
