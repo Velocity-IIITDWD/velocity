@@ -11,7 +11,6 @@
 <!-- icons -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="https://cdn.tailwindcss.com"></script>
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +21,15 @@
   .team-members-container:hover {
     animation-play-state: paused;
   }
-
   .carousel.dragging.card {
     cursor: grab;
     user-select: none;
   }
+
+  #eventsCard:hover h1{
+    top:35%;
+  }
+
 </style>
 
 </head>
@@ -647,7 +650,7 @@
       </div>
     </section>
 
-    <section id="events" class="h-[600px] mb-[30px]">
+    <section id="events" class="h-[500px] mb-[30px]">
       <div class="heading flex flex-col items-center -space-y-3 md:space-y-6">
         <h2 class="font-lato font-medium text-2xl md:text-5xl lg:text-[60px] leading-[72px]">Events Conducted By Us</h2>
         <!-- Yellow heading underline -->
@@ -655,13 +658,21 @@
       </div>
 
       <!-- events card -->
-      <div class="flex items-center justify-center h-[100vh] ">
-        <div id="wrapper" class="relative h-[400px] w-full p-[20px]">
-          <ul id="carousel" class="flex h-[400px] overflow-hidden pl-[45px]">
+      <div class="flex items-center justify-center">
+        <div id="wrapper" class="relative h-[400px] w-full p-[20px] mt-[40px]">
+          <ul id="carousel" class="flex h-[300px] overflow-hidden pl-[45px]">
 
             <!-- card 1 -->
-            <li class="card flex">
-              <div class="h-[235px] w-[350px] bg-white rounded-[15px] z-10"></div>
+            <li id = "cardUp" class="card flex cursor-pointer h-[235px]">
+
+              <div class="h-[235px] w-[350px] bg-white rounded-[15px] z-10 overflow-hidden relative flex justify-center items-center image-container">
+                <img src="../images/cssBattles.jpg" class="h-[97%] w-[97%] rounded-[15px]">
+                <div id = "eventsCard" class = "h-full w-full absolute bg-transparent ease-in duration-200 hover:backdrop-opacity-10 hover:bg-purple-300/30">
+                  <h1 id = "text" class="absolute text-black font-semibold text-4xl font-lato top-[80%] left-[23%] ease-in duration-300">CSS Battles</h1>
+                </div>                
+              </div>
+
+              <!-- connecting lines -->
               <div
                 class="h-[120px] w-[90px] z-0 translate-y-[50px] border-t-2 border-r-2 border-dotted border-white rounded-tr-[5px]">
               </div>
@@ -669,8 +680,15 @@
             </li>
 
             <!-- card 2 -->
-            <li class="card flex">
-              <div class="h-[235px] w-[350px] bg-white rounded-[15px] z-10 translate-y-[60px]"></div>
+            <li id = "cardDown" class="card flex cursor-pointer h-[235px]">
+              <div class="h-[235px] w-[350px] bg-white rounded-[15px] z-10 translate-y-[60px] overflow-hidden relative flex justify-center items-center image-container">
+                <img src="../images/velodictory.JPG" class="h-[97%] w-[97%] rounded-[15px]">
+                <div id = "eventsCard" class = "h-full w-full absolute bg-transparent ease-in duration-200 hover:backdrop-opacity-10 hover:bg-purple-300/30">
+                  <h1 id = "text" class="absolute text-black font-semibold text-4xl font-lato top-[5%] left-[23%] ease-in duration-300">Valedictory</h1>
+                </div>   
+              </div>
+
+              <!-- connecting lines -->
               <div class="h-[120px] w-[90px] z-0 translate-y-[100px] border-b-2 border-white border-dotted"></div>
               <div
                 class="h-[120px] w-[90px] z-0 translate-y-[100px] border-t-2 border-l-2 rounded-tl-[5px] border-white border-dotted">
@@ -678,8 +696,13 @@
             </li>
             
             <!-- card 3 -->
-            <li class="card flex">
-              <div class="h-[235px] w-[350px] bg-white rounded-[15px] z-10"></div>
+            <li id = "cardUp" class="card flex cursor-pointer h-[235px]">
+              <div class="h-[235px] w-[350px] bg-white rounded-[15px] z-10 overflow-hidden relative flex justify-center items-center image-container">
+                <img src="../images/CwCoffee.JPG" class="h-[97%] w-[97%] rounded-[15px]">
+                <div id = "eventsCard" class = "h-full w-full absolute bg-transparent ease-in duration-200 hover:backdrop-opacity-10 hover:bg-purple-300/30">
+                  <h1 id = "text" class="absolute text-black font-semibold text-4xl font-lato top-[80%] left-[23%] ease-in duration-300">Codding with Coffee</h1>
+                </div> 
+              </div>
               <div
                 class="h-[120px] w-[90px] z-0 translate-y-[50px] border-t-2 border-r-2 border-dotted border-white rounded-tr-[5px]">
               </div>
@@ -687,8 +710,13 @@
             </li>
 
             <!-- card 4 -->
-            <li class="card flex">
-              <div class="h-[235px] w-[350px] bg-white rounded-[15px] z-10 translate-y-[60px]"></div>
+            <li id = "cardDown" class="card flex cursor-pointer h-[235px]">
+              <div class="h-[235px] w-[350px] bg-white rounded-[15px] z-10 translate-y-[60px] overflow-hidden relative flex justify-center items-center image-container">
+                <img src="../images/velohack.JPG" class="h-[97%] w-[97%] rounded-[15px]">
+                <div id = "eventsCard" class = "h-full w-full absolute bg-transparent ease-in duration-200 hover:backdrop-opacity-10 hover:bg-purple-300/30">
+                  <h1 id = "text" class="absolute text-black font-semibold text-4xl font-lato top-[5%] left-[23%] ease-in duration-300">Velohack</h1>
+                </div> 
+              </div>
               <div
                 class="h-[120px] w-[90px] z-0 translate-y-[50px] border-b-2 border-r-2 border-white border-dotted rounded-br-[5px]">
               </div>
@@ -700,7 +728,7 @@
     </section>
 
     <!-- Testimonial Section -->
-    <section id="testimonials" class="h-auto w-full relative">
+    <section id = "Testimonial" class = "h-full w-full relative">
       <!-- red hexagon -->
       <div class="absolute overflow-hidden -rotate-[30deg] top-[35rem] hidden md:block">
         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72">
@@ -914,9 +942,8 @@
   </footer>
 
   <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
-  <script type="module" src="./scripts/main.js">
-
-  </script>
+  <script type="module" src="./scripts/main.js"></script>
 </body>
 
 </html>
+   
