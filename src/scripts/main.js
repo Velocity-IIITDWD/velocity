@@ -3,11 +3,10 @@ const navLinks = document.querySelector('.navlinks')
 menuIcon.onclick = () => {
   menuIcon.name = menuIcon.name === "menu-outline" ? "close-outline" : "menu-outline";
   navLinks.classList.toggle("left-[0%]")
+  menuIcon.classList.toggle("fixed")
+  menuIcon.classList.toggle("right-[10%]")
+  menuIcon.classList.toggle("z-[100]")
 }
-
-
-
-
 
 // testimonials section 
 
@@ -132,4 +131,36 @@ container.addEventListener('touchstart', function (event) {
 
 container.addEventListener('touchmove', function (event) {
   this.scrollLeft = scrollPos - event.touches[0].clientX;
+});
+
+
+//Modules Section Card Carousel
+var swiper = new Swiper('.card_slider',{
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  spaceBetween: 50,
+  slidesPerView: "2",
+  loop:true,
+  autoplay: true,
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        320: {
+          slidesPerView: 1,
+        },
+        480:{
+            slidesPerView: 2,
+        },
+      },
+
 });
