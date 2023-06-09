@@ -3,6 +3,9 @@ const navLinks = document.querySelector('.navlinks')
 menuIcon.onclick = () => {
   menuIcon.name = menuIcon.name === "menu-outline" ? "close-outline" : "menu-outline";
   navLinks.classList.toggle("left-[0%]")
+  menuIcon.classList.toggle("fixed")
+  menuIcon.classList.toggle("right-[10%]")
+  menuIcon.classList.toggle("z-[100]")
 }
 
 // testimonials section 
@@ -131,7 +134,7 @@ container.addEventListener('touchmove', function (event) {
 });
 
 
-//Modules Section
+//Modules Section Card Carousel
 var swiper = new Swiper('.card_slider',{
   effect: "coverflow",
   grabCursor: true,
