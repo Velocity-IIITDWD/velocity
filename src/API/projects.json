@@ -1,0 +1,36 @@
+[
+    {
+        "id" : 1,
+        "name" : "ProjectX",
+        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
+        "link" : "https://github.com/Velocity-IIITDWD/velocity"
+    },
+
+    {
+        "id" : 2,
+        "name" : "Iridisence",
+        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
+        "link" : "https://github.com/Velocity-IIITDWD/velocity"
+    },
+
+    {
+        "id" : 3,
+        "name" : "Quantum computing",
+        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
+        "link" : "https://github.com/Velocity-IIITDWD/velocity"
+    },
+
+    {
+        "id" : 4,
+        "name" : "Technosys",
+        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
+        "link" : "https://github.com/Velocity-IIITDWD/velocity"
+    },
+
+    {
+        "id" : 5,
+        "name" : "Velocity",
+        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
+        "link" : "https://github.com/Velocity-IIITDWD/velocity"
+    }
+]
