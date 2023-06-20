@@ -1,0 +1,37 @@
+[
+    {
+        "id" : 1,
+        "name" : "CSS battles",
+        "link" : "https://velocity-iiitdwd.netlify.app/",
+        "img" : "../images/cssBattles.jpg"
+    },
+    
+    {
+        "id" : 2,
+        "name" : "Velohack",
+        "link" : "https://velocity-iiitdwd.netlify.app/",
+        "img" : "../images/cssBattles.jpg"
+    },
+
+    {
+        "id" : 3,
+        "name" : "Codding with Coffee",
+        "link" : "https://velocity-iiitdwd.netlify.app/",
+        "img" : "../images/cssBattles.jpg"
+    },
+
+    {
+        "id" : 4,
+        "name" : "Velodictory",
+        "link" : "https://velocity-iiitdwd.netlify.app/",
+        "img" : "../images/cssBattles.jpg"
+    },
+
+    {
+        "id" : 5,
+        "name" : "New event",
+        "link" : "https://velocity-iiitdwd.netlify.app/",
+        "img" : "../images/cssBattles.jpg"
+    }
+
+]
