@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -31,6 +31,7 @@
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
+6. Use the user's configured `sans` font-variation-settings by default.
 */
 
 html {
@@ -47,6 +48,8 @@ html {
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
 }
 
 /*
@@ -433,6 +436,9 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -480,6 +486,9 @@ video {
   --tw-pan-y:  ;
   --tw-pinch-zoom:  ;
   --tw-scroll-snap-strictness: proximity;
+  --tw-gradient-from-position:  ;
+  --tw-gradient-via-position:  ;
+  --tw-gradient-to-position:  ;
   --tw-ordinal:  ;
   --tw-slashed-zero:  ;
   --tw-numeric-figure:  ;
@@ -1608,39 +1617,39 @@ video {
 }
 
 .from-\[\#050443\] {
-  --tw-gradient-from: #050443;
-  --tw-gradient-to: rgb(5 4 67 / 0);
+  --tw-gradient-from: #050443 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(5 4 67 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-\[\#09219F\] {
-  --tw-gradient-from: #09219F;
-  --tw-gradient-to: rgb(9 33 159 / 0);
+  --tw-gradient-from: #09219F var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(9 33 159 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-\[\#471162\] {
-  --tw-gradient-from: #471162;
-  --tw-gradient-to: rgb(71 17 98 / 0);
+  --tw-gradient-from: #471162 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(71 17 98 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .from-\[\#5800E8\] {
-  --tw-gradient-from: #5800E8;
-  --tw-gradient-to: rgb(88 0 232 / 0);
+  --tw-gradient-from: #5800E8 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(88 0 232 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .to-\[\#23036A\] {
-  --tw-gradient-to: #23036A;
+  --tw-gradient-to: #23036A var(--tw-gradient-to-position);
 }
 
 .to-\[\#230535\] {
-  --tw-gradient-to: #230535;
+  --tw-gradient-to: #230535 var(--tw-gradient-to-position);
 }
 
 .to-\[\#2A4DCA\] {
-  --tw-gradient-to: #2A4DCA;
+  --tw-gradient-to: #2A4DCA var(--tw-gradient-to-position);
 }
 
 .p-10 {

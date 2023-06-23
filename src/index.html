@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta charset="UTF-8" />
-<link rel="icon" type="image/svg+xml" href="/velocity.svg" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Velocity Website" />
-<meta name="author" content="Velocity" />
-<meta name="keywords" content="velocity, website, iiit dharwad" />
-<link rel="stylesheet" href="./styles/tailwind/output.css" />
-<title>Velocity Website</title>
 
-<link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-/>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/velocity.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velocity Website" />
+  <meta name="author" content="Velocity" />
+  <meta name="keywords" content="velocity, website, iiit dharwad" />
+  <link rel="stylesheet" href="./styles/tailwind/output.css" />
+  <title>Velocity Website</title>
 
-<!-- icons -->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&family=Roboto&display=swap"
-  rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-<style>
-  .team-members-container:hover {
-    animation-play-state: paused;
-  }
-  .carousel.dragging.card {
-    cursor: grab;
-    user-select: none;
-  }
+  <!-- icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&family=Roboto&display=swap"
+    rel="stylesheet">
 
-  #eventsCard:hover h1{
-    top:35%;
-  }
+  <style>
+    .team-members-container:hover {
+      animation-play-state: paused;
+    }
 
-  html{
-    scroll-behavior: smooth;
-  }
+    .carousel.dragging.card {
+      cursor: grab;
+      user-select: none;
+    }
 
-</style>
+    #eventsCard:hover h1 {
+      top: 35%;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 
 </head>
 
@@ -49,7 +48,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 
     <nav class="absolute h-32 w-full text-white flex justify-between items-center text-xl font-bold left-0">
       <div class="flex items-center justify-around p-10 lg:pl-28 ">
-        <img src="../images/navlogo.png" alt="logo" class="w-auto h-16 relative ">
+        <img src="./images/navlogo.png" alt="logo" class="w-auto h-16 relative ">
         <h4 class="not-italic font-bold text-xl lg:text-2xl font-roboto tracking-widest">VELOCITY</h4>
       </div>
       <div
@@ -124,9 +123,9 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
       </div>
 
       <span class="overflow-hidden lg:w-[45%] relative xl:h-[600px] lg:h-[430px] md:h-[380px] md:w-[40%]">
-        <img src="../images/logo.png" alt="Logo"
+        <img src="./images/logo.png" alt="Logo"
           class="h-full z-30 rounded-[45%] absolute p-3 m-3 lg:-top-3 md:hidden lg:block animate-spin-slower">
-        <img src="../images/sideLogo.png" alt="Logo" class="rotate-180 h-full lg:hidden absolute right-0">
+        <img src="./images/sideLogo.png" alt="Logo" class="rotate-180 h-full lg:hidden absolute right-0">
       </span>
     </section>
 
@@ -149,7 +148,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444">
             </path>
           </svg>
-          <img src="../images/team.JPG" alt="team img" class=" z-20">
+          <img src="./images/team.JPG" alt="team img" class=" z-20">
         </div>
         <!-- Text -->
         <div class="about-info w-full xl:w-1/2 xl:mr-8 order-0 xl:order-1 relative">
@@ -311,15 +310,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <!-- member image div -->
               <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
                 <!-- member image -->
-                <img src="../images/members-img.jpg">
+                <img src="./images/members-img.jpg">
               </div>
               <p class="font-roboto">Name1</p>
               <!-- member's social media -->
               <div
                 class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
-                <a href=""><img src="../images/github.png" class="h-6 w-6"></a>
-                <a href=""><img src="../images/linkedin.png" class="h-5 w-5"></a>
-                <a href=""><img src="../images/gmail-logo.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
               </div>
             </div>
           </div>
@@ -331,15 +330,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <!-- member image div -->
               <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
                 <!-- member image -->
-                <img src="../images/members-img.jpg">
+                <img src="./images/members-img.jpg">
               </div>
               <p class="font-roboto">Name2</p>
               <!-- member's social media -->
               <div
                 class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
-                <a href=""><img src="../images/github.png" class="h-6 w-6"></a>
-                <a href=""><img src="../images/linkedin.png" class="h-5 w-5"></a>
-                <a href=""><img src="../images/gmail-logo.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
               </div>
             </div>
           </div>
@@ -351,15 +350,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <!-- member image div -->
               <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
                 <!-- member image -->
-                <img src="../images/members-img.jpg">
+                <img src="./images/members-img.jpg">
               </div>
               <p class="font-roboto">Name3</p>
               <!-- member's social media -->
               <div
                 class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
-                <a href=""><img src="../images/github.png" class="h-6 w-6"></a>
-                <a href=""><img src="../images/linkedin.png" class="h-5 w-5"></a>
-                <a href=""><img src="../images/gmail-logo.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
               </div>
             </div>
           </div>
@@ -371,15 +370,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <!-- member image div -->
               <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
                 <!-- member image -->
-                <img src="../images/members-img.jpg">
+                <img src="./images/members-img.jpg">
               </div>
               <p class="font-roboto">Name4</p>
               <!-- member's social media -->
               <div
                 class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
-                <a href=""><img src="../images/github.png" class="h-6 w-6"></a>
-                <a href=""><img src="../images/linkedin.png" class="h-5 w-5"></a>
-                <a href=""><img src="../images/gmail-logo.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
               </div>
             </div>
           </div>
@@ -391,15 +390,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <!-- member image div -->
               <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
                 <!-- member image -->
-                <img src="../images/members-img.jpg">
+                <img src="./images/members-img.jpg">
               </div>
               <p class="font-roboto">Name5</p>
               <!-- member's social media -->
               <div
                 class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
-                <a href=""><img src="../images/github.png" class="h-6 w-6"></a>
-                <a href=""><img src="../images/linkedin.png" class="h-5 w-5"></a>
-                <a href=""><img src="../images/gmail-logo.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
               </div>
             </div>
           </div>
@@ -411,15 +410,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <!-- member image div -->
               <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
                 <!-- member image -->
-                <img src="../images/members-img.jpg">
+                <img src="./images/members-img.jpg">
               </div>
               <p class="font-roboto">Name6</p>
               <!-- member's social media -->
               <div
                 class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
-                <a href=""><img src="../images/github.png" class="h-6 w-6"></a>
-                <a href=""><img src="../images/linkedin.png" class="h-5 w-5"></a>
-                <a href=""><img src="../images/gmail-logo.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
               </div>
             </div>
           </div>
@@ -431,15 +430,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <!-- member image div -->
               <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
                 <!-- member image -->
-                <img src="../images/members-img.jpg">
+                <img src="./images/members-img.jpg">
               </div>
               <p class="font-roboto">Name1</p>
               <!-- member's social media -->
               <div
                 class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
-                <a href=""><img src="../images/github.png" class="h-6 w-6"></a>
-                <a href=""><img src="../images/linkedin.png" class="h-5 w-5"></a>
-                <a href=""><img src="../images/gmail-logo.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
               </div>
             </div>
           </div>
@@ -451,15 +450,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <!-- member image div -->
               <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
                 <!-- member image -->
-                <img src="../images/members-img.jpg">
+                <img src="./images/members-img.jpg">
               </div>
               <p class="font-roboto">Name2</p>
               <!-- member's social media -->
               <div
                 class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
-                <a href=""><img src="../images/github.png" class="h-6 w-6"></a>
-                <a href=""><img src="../images/linkedin.png" class="h-5 w-5"></a>
-                <a href=""><img src="../images/gmail-logo.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
               </div>
             </div>
           </div>
@@ -471,15 +470,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <!-- member image div -->
               <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
                 <!-- member image -->
-                <img src="../images/members-img.jpg">
+                <img src="./images/members-img.jpg">
               </div>
               <p class="font-roboto">Name3</p>
               <!-- member's social media -->
               <div
                 class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
-                <a href=""><img src="../images/github.png" class="h-6 w-6"></a>
-                <a href=""><img src="../images/linkedin.png" class="h-5 w-5"></a>
-                <a href=""><img src="../images/gmail-logo.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
               </div>
             </div>
           </div>
@@ -491,15 +490,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <!-- member image div -->
               <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
                 <!-- member image -->
-                <img src="../images/members-img.jpg">
+                <img src="./images/members-img.jpg">
               </div>
               <p class="font-roboto">Name4</p>
               <!-- member's social media -->
               <div
                 class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
-                <a href=""><img src="../images/github.png" class="h-6 w-6"></a>
-                <a href=""><img src="../images/linkedin.png" class="h-5 w-5"></a>
-                <a href=""><img src="../images/gmail-logo.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
               </div>
             </div>
           </div>
@@ -511,15 +510,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <!-- member image div -->
               <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
                 <!-- member image -->
-                <img src="../images/members-img.jpg">
+                <img src="./images/members-img.jpg">
               </div>
               <p class="font-roboto">Name5</p>
               <!-- member's social media -->
               <div
                 class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
-                <a href=""><img src="../images/github.png" class="h-6 w-6"></a>
-                <a href=""><img src="../images/linkedin.png" class="h-5 w-5"></a>
-                <a href=""><img src="../images/gmail-logo.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
               </div>
             </div>
           </div>
@@ -531,15 +530,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <!-- member image div -->
               <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
                 <!-- member image -->
-                <img src="../images/members-img.jpg">
+                <img src="./images/members-img.jpg">
               </div>
               <p class="font-roboto">Name6</p>
               <!-- member's social media -->
               <div
                 class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
-                <a href=""><img src="../images/github.png" class="h-6 w-6"></a>
-                <a href=""><img src="../images/linkedin.png" class="h-5 w-5"></a>
-                <a href=""><img src="../images/gmail-logo.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
               </div>
             </div>
           </div>
@@ -565,25 +564,26 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         class="xl:h-[37rem] l:h-[37rem] w-[105rem] md:h-[32rem] h-[21rem] rotate-[-5deg] -translate-x-28 bg-gradient-to-r from-[#471162] to-[#230535] opacity-80 z-0 flex items-center justify-center absolute xl:mt-20 md:mt-16">
       </div>
 
-        <div class="slider_container flex justify-center items-center w-full absolute top-[16%] md:top-[25%] px-10 lg:px-0 ">
-          <div class="container w-full h-auto py-[50px] ">
-              <div class="swiper card_slider w-[300px] md:w-[85%] h-[200px] md:h-[250px] py-[50px] " >
-                  <div class="swiper-wrapper text-white w-full ">
-                    <div class="swiper-slide h-[250px] w-[350px] rounded-md bg-white">
-                    </div>  
-                    <div class="swiper-slide h-[250px] w-[350px] rounded-md bg-white">
-                    </div>  
-                    <div class="swiper-slide h-[250px] w-[350px] rounded-md bg-white">
-                    </div>  
-                    <div class="swiper-slide h-[250px] w-[350px] rounded-md bg-white">
-                    </div>  
-                    <div class="swiper-slide h-[250px] w-[350px] rounded-md bg-white">
-                    </div>  
-                  </div>
-                  <div class="swiper-button-next text-blue-500"></div>
-                  <div class="swiper-button-prev text-blue-500"></div>
+      <div
+        class="slider_container flex justify-center items-center w-full absolute top-[16%] md:top-[25%] px-10 lg:px-0 ">
+        <div class="container w-full h-auto py-[50px] ">
+          <div class="swiper card_slider w-[300px] md:w-[85%] h-[200px] md:h-[250px] py-[50px] ">
+            <div class="swiper-wrapper text-white w-full ">
+              <div class="swiper-slide h-[250px] w-[350px] rounded-md bg-white">
               </div>
+              <div class="swiper-slide h-[250px] w-[350px] rounded-md bg-white">
+              </div>
+              <div class="swiper-slide h-[250px] w-[350px] rounded-md bg-white">
+              </div>
+              <div class="swiper-slide h-[250px] w-[350px] rounded-md bg-white">
+              </div>
+              <div class="swiper-slide h-[250px] w-[350px] rounded-md bg-white">
+              </div>
+            </div>
+            <div class="swiper-button-next text-blue-500"></div>
+            <div class="swiper-button-prev text-blue-500"></div>
           </div>
+        </div>
       </div>
 
     </section>
@@ -601,20 +601,20 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 
       <div id="timeline-box"
         class="p-[35px] sm:p-[60px] md:p-[100px] md:pb-[60px] overflow-hidden
-    font-roboto relative before:content-[' '] before:bg-light-primary before:w-[5px] before:h-[94%] md:before:h-[88%] lg:before:h-[85%] before:absolute before:left-[50px] md:before:left-1/2 before:translate-x-[-50%]">
+        font-roboto relative before:content-[' '] before:bg-light-primary before:w-[5px] before:h-[94%] md:before:h-[88%] lg:before:h-[85%] before:absolute before:left-[50px] md:before:left-1/2 before:translate-x-[-50%]">
 
-    <div class="container relative" id = "projects">
+        <div class="container relative" id="projects">
 
-      <!-- Blurred background -->
-      <div
-      class="blur-[150px] bg-blue-800 rounded-full -z-[40] absolute w-[150px] h-[120px] opacity-100 top-[18rem] left-[10rem]">
-      </div>
-      <div
-      class="blur-[150px] bg-blue-800 rounded-full -z-[40] absolute w-[200px] h-[150px] opacity-100 top-[12rem] -right-[10rem]">
-      </div>
-      <div
-      class="blur-[180px] bg-blue-800 rounded-full -z-[40] absolute w-[200px] h-[150px] opacity-100 bottom-[12rem] right-[25rem]">
-      </div>
+          <!-- Blurred background -->
+          <div
+            class="blur-[150px] bg-blue-800 rounded-full -z-[40] absolute w-[150px] h-[120px] opacity-100 top-[18rem] left-[10rem]">
+          </div>
+          <div
+            class="blur-[150px] bg-blue-800 rounded-full -z-[40] absolute w-[200px] h-[150px] opacity-100 top-[12rem] -right-[10rem]">
+          </div>
+          <div
+            class="blur-[180px] bg-blue-800 rounded-full -z-[40] absolute w-[200px] h-[150px] opacity-100 bottom-[12rem] right-[25rem]">
+          </div>
 
           <!-- <div class="timeline-item w-full mb-[70px] after:content-[' '] after:block after:clear-both">
             <div
@@ -629,9 +629,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
               <a class="bnt-more bg-primary text-text py-[8px] px-[20px] uppercase text-[14px] mb-[20px] mt-[10px] inline-block rounded-2 shadow-[0_1px_3px_-1px_rgba(0,0,0,0.6)] hover:bg-dark-primary "
                 href="javascript:void(0)">More</a>
             </div> -->
-          </div> 
         </div>
-
       </div>
     </section>
 
@@ -645,13 +643,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
       <!-- events card -->
       <div class="flex items-center justify-center">
         <div id="wrapper" class="relative h-[400px] w-full p-[20px] mt-[40px]">
-          <ul id="carousel" class="flex h-[300px] overflow-hidden pl-[45px]"></ul>
+          <ul id="carousel" class="flex h-[300px] overflow-hidden pl-[45px]">
+            <!-- <li>hello</li> -->
+          </ul>
         </div>
       </div>
     </section>
 
     <!-- Testimonial Section -->
-    <section id = "Testimonial" class = "h-full w-full relative">
+    <section id="Testimonial" class="h-full w-full relative">
       <!-- red hexagon -->
       <div class="absolute overflow-hidden -rotate-[30deg] top-[35rem] hidden md:block">
         <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72">
@@ -701,7 +701,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         <div class="bg-purplergba rounded-[20px] md:row-start-1 md:row-end-3 flex flex-col justify-center p-6 z-10">
           <!-- profile and name div -->
           <div class="flex mb-5">
-            <img src="../images/sampleImg.jpeg" class="h-10 w-10 rounded-full mr-4" />
+            <img src="./images/sampleImg.jpeg" class="h-10 w-10 rounded-full mr-4" />
             <h3 class="text-3xl">John</h3>
           </div>
           <!-- comment div -->
@@ -715,7 +715,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         <div class="bg-purplergba rounded-[20px] md:row-start-3 md:row-end-5 flex flex-col justify-center p-6 z-10">
           <!-- profile and name div -->
           <div class="flex mb-5">
-            <img src="../images/sampleImg.jpeg" class="h-10 w-10 rounded-full mr-4" />
+            <img src="./images/sampleImg.jpeg" class="h-10 w-10 rounded-full mr-4" />
             <h3 class="text-3xl">John</h3>
           </div>
           <!-- comment div -->
@@ -729,7 +729,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
         <div class="bg-purplergba rounded-[20px] flex flex-col justify-center p-6">
           <!-- profile and name div -->
           <div class="flex mb-3">
-            <img src="../images/sampleImg.jpeg" class="h-8 w-8 rounded-full mr-4" />
+            <img src="./images/sampleImg.jpeg" class="h-8 w-8 rounded-full mr-4" />
             <h3 class="text-2xl">John</h3>
           </div>
           <!-- comment div -->
@@ -744,7 +744,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
           class="bg-purplergba rounded-[20px] md:row-start-2 md:row-end-5 md:flex flex-col justify-center p-6 hidden moreContent">
           <!-- profile and name div -->
           <div class="flex mb-5">
-            <img src="../images/sampleImg.jpeg" class="h-10 w-10 rounded-full mr-4" />
+            <img src="./images/sampleImg.jpeg" class="h-10 w-10 rounded-full mr-4" />
             <h3 class="text-3xl">John</h3>
           </div>
           <!-- comment div -->
@@ -763,7 +763,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
           class="bg-purplergba rounded-[20px] md:row-start-1 md:row-end-4 md:flex flex-col justify-center p-6 hidden moreContent">
           <!-- profile and name div -->
           <div class="flex mb-5">
-            <img src="../images/sampleImg.jpeg" class="h-10 w-10 rounded-full mr-4" />
+            <img src="./images/sampleImg.jpeg" class="h-10 w-10 rounded-full mr-4" />
             <h3 class="text-3xl">John</h3>
           </div>
           <!-- comment div -->
@@ -782,7 +782,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
             md:flex flex-col justify-center p-6 hidden moreContent">
           <!-- profile and name div -->
           <div class="flex mb-3">
-            <img src="../images/sampleImg.jpeg" class="h-8 w-8 rounded-full mr-4" />
+            <img src="./images/sampleImg.jpeg" class="h-8 w-8 rounded-full mr-4" />
             <h3 class="text-2xl">John</h3>
           </div>
           <!-- comment div -->
@@ -818,15 +818,15 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
             <div id="footer-social-media-link"
               class="space-y-6 lg:space-y-10 text-lg md:text-xl lg:text-2xl text-purple-200 ">
               <a href="" class="flex gap-4 sm:gap-8">
-                <img src="../images/linkedin.png" alt="" class=" h-6 w-6 md:h-10 md:w-10 ">
+                <img src="./images/linkedin.png" alt="" class=" h-6 w-6 md:h-10 md:w-10 ">
                 <p class="md:mt-2 hover:text-white">velocityIIITDWD</p>
               </a>
               <a href="" class="flex gap-4 sm:gap-8">
-                <img src="../images/gmail-logo.png" alt="" class="h-6 w-6 md:h-10 md:w-10 ">
+                <img src="./images/gmail-logo.png" alt="" class="h-6 w-6 md:h-10 md:w-10 ">
                 <p class="md:mt-2 hover:text-white">velocity@iiitdwd.ac.in</p>
               </a>
               <a href="" class="flex gap-4 sm:gap-8">
-                <img src="../images/instagram.png" alt="" class="h-6 w-6 md:h-10 md:w-10">
+                <img src="./images/instagram.png" alt="" class="h-6 w-6 md:h-10 md:w-10">
                 <p class="md:mt-2 hover:text-white">velocity.iiitdwd</p>
               </a>
             </div>
@@ -835,7 +835,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 
         <!-- middle div -->
         <div class="w-[20%] h-full hidden lg:flex flex-col items-center justify-center gap-4 xl:gap-6">
-          <img src="../images/navlogo.png" alt="">
+          <img src="./images/navlogo.png" alt="">
           <h1 class="text-4xl">VELOCITY</h1>
         </div>
 
@@ -847,7 +847,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
             <p
               class="text-base md:text-xl lg:text-2xl text-justify md:text-left tracking-tight md:tracking-wide text-purple-200">
               IIIT Dharwad, Ittigatti Road, Near Sattur Colony, Dharwad 580009. </p>
-            <img src="../images/iiitdwd-logo.png" alt="" class="w-40 md:w-[200px]">
+            <img src="./images/iiitdwd-logo.png" alt="" class="w-40 md:w-[200px]">
           </div>
         </div>
       </div>
@@ -856,7 +856,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
       <div class="flex flex-col lg:hidden justify-center items-center relative">
         <div class="h-[1px] w-full bg-slate-400 absolute top-0"></div>
         <div class="flex justify-center items-center p-4">
-          <img src="../images/navlogo.png" alt="" class="h-20">
+          <img src="./images/navlogo.png" alt="" class="h-20">
           <h1 class="text-3xl md:text-4xl">VELOCITY</h1>
         </div>
       </div>
@@ -869,4 +869,3 @@ href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 </body>
 
 </html>
-   
