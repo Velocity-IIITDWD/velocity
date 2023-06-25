@@ -9,6 +9,21 @@ menuIcon.onclick = () => {
   menuIcon.classList.toggle('z-[100]')
 }
 
+// home section buttons
+// upcoming button
+var button = document.getElementById("upcoming");
+
+button.addEventListener("click", function() {
+  window.location.hash = "#timeline";
+});
+
+// upcoming button
+var button = document.getElementById("ourProjects");
+
+button.addEventListener("click", function() {
+  window.location.hash = "#projects";
+});
+
 // testimonials section
 
 const content = document.querySelectorAll('.moreContent')
