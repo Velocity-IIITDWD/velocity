@@ -1,0 +1,56 @@
+{
+    "Tech":[
+        {
+            "id": 1,
+            "name": "Aman",
+            "img": "./images/membersImg/members-img.jpg",
+            "githubLink": "",
+            "linkedinLink": "",
+            "gmailLink": ""
+        },
+        {
+            "id": 2,
+            "name": "Pratik",
+            "img": "./images/membersImg/members-img.jpg",
+            "githubLink": "",
+            "linkedinLink": "",
+            "gmailLink": ""
+        },
+        {
+            "id": 3,
+            "name": "Nancy",
+            "img": "./images/membersImg/members-img.jpg",
+            "githubLink": "",
+            "linkedinLink": "",
+            "gmailLink": ""
+        }
+    ]
+    ,
+
+    "Frontend":[
+        {
+            "id": 1,
+            "name": "Imroz",
+            "img": "./images/membersImg/members-img.jpg",
+            "githubLink": "",
+            "linkedinLink": "",
+            "gmailLink": ""
+        },
+        {
+            "id": 2,
+            "name": "Aayushi",
+            "img": "./images/membersImg/members-img.jpg",
+            "githubLink": "",
+            "linkedinLink": "",
+            "gmailLink": ""
+        },
+        {
+            "id": 3,
+            "name": "Nancy",
+            "img": "./images/membersImg/members-img.jpg",
+            "githubLink": "",
+            "linkedinLink": "",
+            "gmailLink": ""
+        }
+    ]
+}
