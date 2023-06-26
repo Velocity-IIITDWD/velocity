@@ -2458,6 +2458,10 @@ video {
     height: 60%;
   }
 
+  .md\:h-\[250px\] {
+    height: 250px;
+  }
+
   .md\:min-h-fit {
     min-height: -moz-fit-content;
     min-height: fit-content;
