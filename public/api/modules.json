@@ -1,36 +1,26 @@
 [
     {
         "id": 1,
-        "title": "GSAP Animation",
-        "img": "./images/eventsImg/velohack.jpg",
-        "link": "https://github.com/Velocity-IIITDWD/velocity"
+        "link": "https://iiitdwd.ac.in/"
     },
 
     {
         "id": 2,
-        "title": "GSAP Animation",
-        "img": "./images/eventsImg/velohack.jpg",
-        "link": "https://github.com/Velocity-IIITDWD/velocity"
+        "link": "https://iiitdwd.ac.in/"
     },
 
     {
         "id": 3,
-        "title": "GSAP Animation",
-        "img": "./images/eventsImg/velohack.jpg",
-        "link": "https://github.com/Velocity-IIITDWD/velocity"
+        "link": "https://iiitdwd.ac.in/"
     },
 
     {
         "id": 4,
-        "title": "GSAP Animation",
-        "img": "./images/eventsImg/velohack.jpg",
-        "link": "https://github.com/Velocity-IIITDWD/velocity"
+        "link": "https://iiitdwd.ac.in/"
     },
 
     {
         "id": 5,
-        "title": "GSAP Animation",
-        "img": "./images/eventsImg/velohack.jpg",
-        "link": "https://github.com/Velocity-IIITDWD/velocity"
+        "link": "https://iiitdwd.ac.in/"
     }
 ]

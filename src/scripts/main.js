@@ -375,54 +375,81 @@ fetch('./api/events.json')
 
 
   // fetch api for modules section
+
+  // ========                    if blog              ===========
+  // fetch('./api/modules.json')
+  // .then((response) => response.json())
+  // .then((data) => {
+
+  //   console.log(data)
+  //   const module = document.getElementById('blogCard')
+
+  //   for(const t of data){
+
+  //     const moduleParent = document.createElement('div')
+  //     moduleParent.classList = "swiper-slide h-[250px] w-[350px] rounded-lg bg-white"
+
+  //     const moduleDiv = document.createElement('div');
+  //     moduleDiv.classList = "flex flex-row md:flex-col lg:flex-row justify-around items-center h-full w-full"
+
+  //     const image = document.createElement('img')
+  //     image.classList = "h-[95%] w-[55%] md:w-[95%] md:h-[60%] lg:h-[95%] lg:w-[55%] shadow-lg shadow-black rounded-md mt-0 md:mt-4 lg:mt-0"
+  //     image.src = t.img;
+
+  //     moduleDiv.appendChild(image)
+
+  //     const titleDiv = document.createElement('div')
+  //     titleDiv.classList = "w-[34%] h-[95%] md:w-full lg:w-[28%] lg:mr-6 md:mr-0 md:mt-4 lg:h-[95%] gap-2 flex flex-col justify-around items-center"
+
+  //     const h = document.createElement('h1')
+  //     h.classList = "text-[25px]  md:text-3xl xl:text-4xl font-lato text-center shadowText"
+  //     h.textContent = t.title
+
+  //     titleDiv.appendChild(h)
+
+  //     const btnM = document.createElement('button')
+  //     btnM.classList = "w-full md:w-2/3 lg:w-full h-auto bg-gradient-to-r from-[#270263] to-[#201042] text-white p-2 rounded-md md:mb-4 lg:mb-0 mb-0 text-[10px] md:text-xl"
+
+  //     btnM.textContent = "Go to blog"
+
+  //     btnM.addEventListener('click', () => {
+  //       window.location.href = t.link
+  //     })
+
+  //     titleDiv.appendChild(btnM)
+
+
+  //     moduleDiv.appendChild(titleDiv)
+
+  //     moduleParent.appendChild(moduleDiv)
+  //     module.appendChild(moduleParent)
+  //   }
+  // })
+
+
+
+  // using iframe 
+
   fetch('./api/modules.json')
   .then((response) => response.json())
   .then((data) => {
 
     console.log(data)
-    const module = document.getElementById('blogCard')
+      const module = document.getElementById('blogCard')
 
-    for(const t of data){
+      for(const p of data){
 
-      const moduleParent = document.createElement('div')
-      moduleParent.classList = "swiper-slide h-[250px] w-[350px] rounded-lg bg-white"
+        const div = document.createElement('div')
+        div.classList = "swiper-slide rounded-lg bg-white overflow-hidden"
+        const frame = document.createElement('iframe')
+        frame.classList = "h-full w-full"
+        frame.src = p.link
 
-      const moduleDiv = document.createElement('div');
-      moduleDiv.classList = "flex flex-row md:flex-col lg:flex-row justify-around items-center h-full w-full"
+        div.appendChild(frame)
+        module.appendChild(div)
+      }
 
-      const image = document.createElement('img')
-      image.classList = "h-[95%] w-[55%] md:w-[95%] md:h-[60%] lg:h-[95%] lg:w-[55%] shadow-lg shadow-black rounded-md mt-0 md:mt-4 lg:mt-0"
-      image.src = t.img;
-
-      moduleDiv.appendChild(image)
-
-      const titleDiv = document.createElement('div')
-      titleDiv.classList = "w-[34%] h-[95%] md:w-full lg:w-[28%] lg:mr-6 md:mr-0 md:mt-4 lg:h-[95%] gap-2 flex flex-col justify-around items-center"
-
-      const h = document.createElement('h1')
-      h.classList = "text-[25px]  md:text-3xl xl:text-4xl font-lato text-center shadowText"
-      h.textContent = t.title
-
-      titleDiv.appendChild(h)
-
-      const btnM = document.createElement('button')
-      btnM.classList = "w-full md:w-2/3 lg:w-full h-auto bg-gradient-to-r from-[#270263] to-[#201042] text-white p-2 rounded-md md:mb-4 lg:mb-0 mb-0 text-[10px] md:text-xl"
-
-      btnM.textContent = "Go to blog"
-
-      btnM.addEventListener('click', () => {
-        window.location.href = t.link
-      })
-
-      titleDiv.appendChild(btnM)
-
-
-      moduleDiv.appendChild(titleDiv)
-
-      moduleParent.appendChild(moduleDiv)
-      module.appendChild(moduleParent)
-    }
-  })
+    })
 
 
   .catch((error) => {
