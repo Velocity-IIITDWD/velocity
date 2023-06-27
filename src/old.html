@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/velocity.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Velocity Website" />
+  <meta name="author" content="Velocity" />
+  <meta name="keywords" content="velocity, website, iiit dharwad" />
+  <link rel="stylesheet" href="./styles/tailwind/output.css" />
+  <title>Velocity IIIT Dharwad</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&family=Roboto&display=swap"
+    rel="stylesheet">
+
+  <style>
+    .team-members-container:hover {
+      animation-play-state: paused;
+    }
+
+    .carousel.dragging.card {
+      cursor: grab;
+      user-select: none;
+    }
+
+    #eventsCard:hover h1 {
+      top: 35%;
+    }
+
+    .shadowText{
+      text-shadow: 1px 1px 5px #443e4b;
+      color : #000000;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+</head>
+
+<body class="bg-bg-color text-white m-0">
+  <header class="h-32">
+
+    <nav class="absolute h-32 w-full text-white flex justify-between items-center text-xl font-bold left-0">
+      <div class="flex items-center justify-around p-10 lg:pl-28 ">
+        <img src="./images/navlogo.png" alt="logo" class="w-auto h-16 relative ">
+        <h4 class="not-italic font-bold text-xl lg:text-2xl font-roboto tracking-widest">VELOCITY</h4>
+      </div>
+      <div
+        class="navlinks md:static fixed bg-white bg-opacity-90  md:bg-transparent md:min-h-fit min-h-[115vh] left-[-300%] top-0 w-[60%] lg:w-full flex items-start justify-center md:justify-end pl-14 md:pl-0 drop-shadow-2xl md:drop-shadow-none z-30 transition-all ease-in-out duration-500  backdrop-blur-sm pr-14 lg:pr-32">
+        <ul class="flex flex-col md:flex-row font-roboto font-light gap-20 md:gap-10 lg:gap-12 pt-48 md:pt-0">
+          <li class="text-3xl md:text-2xl">
+            <a href="#home" class="text-black md:text-white md-hover:text-purple-300 hover:text-purple-800">Home</a>
+          </li>
+          <li class="text-3xl md:text-2xl">
+            <a href="#members" class="text-black md:text-white md-hover:text-purple-300 hover:text-purple-800">Team
+              Members</a>
+          </li>
+          <li class="text-3xl md:text-2xl">
+            <a href="#footer"
+              class="text-black md:text-white  md-hover:text-purple-300 hover:text-purple-800">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex items-center p-10 md:hidden">
+        <ion-icon id="menu" name="menu-outline" class="text-5xl cursor-pointer md:hidden"></ion-icon>
+      </div>
+    </nav>
+  </header>
+
+  <main class="">
+    <!-- blured background -->
+    <div
+      class="xl:h-[314px] xl:w-[675px] blur-[120px] bg-[#7000FF] rounded-full md:opacity-20 z-10 absolute xl:left-80 xl:top-44 lg:h-[250px] lg:w-[340px] lg:top-36 md:w-[300px] md:h-[200px] md:top-32 md:left-[12rem] w-[150px] h-[120px] left-24 top-36 opacity-25">
+    </div>
+    <div
+      class="xl:h-[314px] xl:w-[480px] blur-[120px] bg-[#BA0893] rounded-full md:opacity-20 absolute xl:top-36 xl:left-[45rem] z-10 lg:w-[365px] lg:h-[250px] lg:top-32 md:w-[300px] md:h-[200px] md:top-36 md:left-[23rem] w-[100px] h-[80px] left-44 top-36">
+    </div>
+
+    <!-- hexa -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84"
+      class="transform rotate-[30deg] opacity-20 absolute md:left-4 md:top-[152px] lg:hidden top-[128px] left-4">
+      <path stroke="none" fill="#A9A9A9"
+        d="M37 2.8867513459481a10 10 0 0 1 10 0l26.373066958946 15.226497308104a10 10 0 0 1 5 8.6602540378444l0 30.452994616207a10 10 0 0 1 -5 8.6602540378444l-26.373066958946 15.226497308104a10 10 0 0 1 -10 0l-26.373066958946 -15.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -30.452994616207a10 10 0 0 1 5 -8.6602540378444">
+      </path>
+    </svg>
+
+    <!-- home section -->
+    <section id="home" class="h-auto w-full flex flex-row flex-wrap mt-8 ">
+
+      <!-- main div -conataining heading aim and buttons-->
+      <div
+        class="lg:w-[55%] h-auto z-20 flex flex-col justify-center items-center md:w-[60%] w-[100%] gap-y-4 md:gap-y-6">
+        <!-- heading div -->
+        <div
+          class=" xl:h-[260px] xl:w-[650px] xl:-translate-x-2 font-roboto shadow-sm shadow-[#BC61F3] border-[1px] border-[#7C66C0] rounded-[20px] xl:text-7xl flex items-center justify-center text-center z-20 backdrop-blur-sm lg:text-5xl lg:h-[180px] lg:w-[480px] lg:ml-0 md:h-[150px] md:w-[400px] md:text-4xl md:ml-9 w-[320px] h-[150px] text-[32px]">
+          <h1>Velocity<br> IIIT Dharwad</h1>
+        </div>
+
+        <div
+          class="text-[#ACA5B5] xl:text-4xl font-lato xl:m-7 xl:-translate-x-4 lg:text-[27px] md:text-[23px] md:m-6 md:translate-x-3 text-[17px] m-6">
+          <p>Establishing, Fostering and Expanding <br> the development culture of IIIT Dharwad</p>
+        </div>
+
+        <!-- div 3 - buttons -->
+        <div
+          class="flex md:flex-row flex-col md:items-center xl:-translate-x-6 md:translate-x-9 lg:translate-x-0 -translate-y-3">
+          <button id = "upcoming"
+            class="bg-gradient-to-r from-[#5800E8] to-[#23036A] xl:p-2 rounded-[15px] xl:w-[360px] xl:h-[57px] xl:text-[23px] hover:shadow-[inset_25rem_0_0_0] hover:text-white hover:border-[2px] hover:border-[#7a41d5] hover:shadow-bg-color duration-[400ms,700ms] transition-[color,box-shadow] lg:w-[280px] lg:h-[48px] lg:text-[23px] md:w-[210px] md:h-[42px] md:text-[18px] text-15px w-[300px] h-[45px] m-2">Upcoming
+            Events</button>
+
+          <button id = "ourProjects"
+            class="xl:p-2 md:ml-3 bg-[#7a41d5] rounded-[15px] xl:w-[248px] xl:h-[57px] xl:text-[23px] hover:shadow-[inset_20rem_0_0_0] hover:border-[2px] hover:border-[#7a41d5] hover:shadow-bg-color duration-[400ms,700ms] transition-[color,box-shadow] lg:w-[175px] lg:h-[48px] lg:text-[23px] md:h-[42px] md:w-[150px] md:text-[18px] text-15px w-[300px] h-[45px] m-2">Our
+            Projects</button>
+        </div>
+
+      </div>
+
+      <span class="overflow-hidden lg:w-[45%] relative xl:h-[600px] lg:h-[430px] md:h-[380px] md:w-[40%]">
+        <img src="./images/logo.png" alt="Logo"
+          class="h-full z-30 rounded-[45%] absolute p-3 m-3 lg:-top-3 md:hidden lg:block animate-spin-slower">
+        <img src="./images/sideLogo.png" alt="Logo" class="rotate-180 h-full lg:hidden absolute right-0">
+      </span>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="h-auto w-full flex flex-row items-center">
+      <!-- Purple gradient -->
+      <!-- <div class="h-72 w-72 bg-[#9558E4] rounded-full opacity-60 blur-[120px] absolute top-[48rem] lg:left-24 z-20 "></div> -->
+
+      <!-- About Content -->
+      <div class="flex flex-col xl:flex-row h-auto w-full mx-14 lg:mx-32 xl:mx-28 gap-8 xl:gap-16 mb-8 mt-16 md:my-16">
+        <!-- Image -->
+        <div class=" w-full xl:w-1/2 xl:mx-8 flex items-start order-1 xl:order-0 relative my-4">
+          <!-- Purple gradient -->
+          <div
+            class="h-72 w-72 bg-[#9558E4] rounded-full opacity-25 blur-[120px] absolute -top-[450px] -left-32 md:-top-90 md:-left-32 xl:-left-6 xl:-top-20 z-20 ">
+          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"
+            class="opacity-20 absolute -top-20 -left-20 animate-spin-slow hidden xl:block">
+            <path stroke="none" fill="#A9A9A9"
+              d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444">
+            </path>
+          </svg>
+          <img src="./images/team.JPG" alt="team img" class=" z-20">
+        </div>
+        <!-- Text -->
+        <div class="about-info w-full xl:w-1/2 xl:mr-8 order-0 xl:order-1 relative">
+          <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128"
+            class="opacity-20 absolute -left-10 -top-14 md:-top-12 animate-spin-slow xl:hidden">
+            <path stroke="none" fill="#A9A9A9"
+              d="M59 2.8867513459481a10 10 0 0 1 10 0l45.425625842204 26.226497308104a10 10 0 0 1 5 8.6602540378444l0 52.452994616207a10 10 0 0 1 -5 8.6602540378444l-45.425625842204 26.226497308104a10 10 0 0 1 -10 0l-45.425625842204 -26.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -52.452994616207a10 10 0 0 1 5 -8.6602540378444">
+            </path>
+          </svg>
+
+          <h1 class="text-3xl md:text-5xl lg:text-[60px] font-roboto mb-8  ">Who are we?</h1>
+          <p
+            class="font-roboto font-normal leading-8 lg:leading-10 text-justify text-lg md:text-xl lg:text-2xl tracking-tighter relative">
+            We are a team of dedicated students who are actively interested in encouraging development culture in our
+            college. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque similique adipisci commodi saepe
+            eligendi praesentium nam, mollitia voluptatibus sunt corrupti? Perspiciatis harum repellat eveniet, modi
+            dolore voluptas nihil expedita accusantium!
+            <!-- Blue gradient -->
+          <div
+            class="h-72 w-72 bg-[#60FFE7] rounded-full opacity-25 blur-[120px] absolute -bottom-56 -right-8 md:right-0 -z-30">
+          </div>
+          </p>
+        </div>
+      </div>
+
+      <!-- left tiny div -->
+      <div class="overflow-hidden absolute right-0 top-[320px] lg:top-[63rem] hidden lg:block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84"
+          class="transform rotate-[30deg] relative -right-6">
+          <linearGradient id='grad'>
+            <stop stop-color='#FFA000' />
+            <stop offset='100%' stop-color='#9C27B0' />
+          </linearGradient>
+          <path stroke="none" fill="url(#grad)"
+            d="M37 2.8867513459481a10 10 0 0 1 10 0l26.373066958946 15.226497308104a10 10 0 0 1 5 8.6602540378444l0 30.452994616207a10 10 0 0 1 -5 8.6602540378444l-26.373066958946 15.226497308104a10 10 0 0 1 -10 0l-26.373066958946 -15.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -30.452994616207a10 10 0 0 1 5 -8.6602540378444">
+          </path>
+        </svg>
+      </div>
+      <!-- right tiny div -->
+      <div class="overflow-hidden absolute transform translate-y-40 lg:block hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84"
+          class="transform rotate-[30deg] relative -left-8">
+          <linearGradient id='grad'>
+            <stop stop-color='#E1BEE7' />
+            <stop offset='100%' stop-color='#FFCC68' />
+          </linearGradient>
+          <path stroke="none" fill="url(#grad)"
+            d="M37 2.8867513459481a10 10 0 0 1 10 0l26.373066958946 15.226497308104a10 10 0 0 1 5 8.6602540378444l0 30.452994616207a10 10 0 0 1 -5 8.6602540378444l-26.373066958946 15.226497308104a10 10 0 0 1 -10 0l-26.373066958946 -15.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -30.452994616207a10 10 0 0 1 5 -8.6602540378444">
+          </path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- time line section -->
+    <section id="timeline" class="flex items-center justify-center h-auto font-lato relative">
+      <!-- hexagon -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200"
+        class="opacity-20 absolute hidden lg:block right-20 xl:right-16 -top-16 xl:-top-30 -z-10">
+        <path stroke="none" fill="#A9A9A9"
+          d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444">
+        </path>
+      </svg>
+      
+
+      <div
+        class="w-[80%] h-80 mt-6 md:mt-6 mx-16 mb-6 md:mb-14 lg:mb-20 rounded-[20px] bg-gradient-to-l from-[#09219F] to-[#2A4DCA] shadow-md relative flex items-center justify-evenly ">
+
+        <div class="flex flex-col justify-end items-start h-48 w-[30%]">
+          <p class="text-4xl m-10 mb-4 ">2021</p>
+          <!-- <p class = "text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis dignissimos unde incidunt rerum possimus dolorem, molestias laboriosam magni repudiandae </p> -->
+        </div>
+        <!-- curve 1-->
+        <!-- <svg width="500" height="500" viewbox="0 0 500 500" class="absolute left-20 translate-y-5 "><path id="path" stroke="#fff" fill="none" stroke-width="2" d="M91,294 c175,6 126,-117 340,-125" />
+        </svg> -->
+
+        <div class="flex flex-col justify-center items-center h-48 w-[30%] ">
+          <p class="text-6xl p-5 font-bold">2022</p>
+          <!-- <p class = "text-center lg:text-[20px] font-medium mt-4">Velocity Club, started working offline capacity, recruited more members and did their first event Coding With Coffee</p> -->
+        </div>
+        <!-- curve 2 -->
+        <!-- <svg width="500" height="500" viewbox="0 0 500 500" class="absolute right-20 -translate-y-7 "><path id="path" stroke="#fff" fill="none" stroke-width="2" d="M65,220 c212,-9 172,127 342,119" />
+        </svg> -->
+
+        <div class="flex flex-col justify-end items-end h-48 w-[30%] ">
+          <p class="text-4xl m-10 mb-4">2023</p>
+          <!-- <p class = "text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem sit aspernatur laudantium magni sed exercitationem. Sequi at quos error adipisci commodi .</p> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Members-section -->
+    <section id="members" class="flex flex-col items-center justify-center h-auto gap-8 sm:gap-16 lg:gap-20 w-full">
+      <!-- Members heading -->
+      <div class="heading flex flex-col items-center -space-y-3 md:space-y-6">
+        <h2 class="font-lato font-medium text-2xl md:text-5xl lg:text-[60px] leading-[72px]">Meet our Incredible Team
+        </h2>
+        <!-- Yellow heading underline -->
+        <div class="h-0 w-[150px] md:w-[350px] lg:w-[412px] border-[1px] md:border-2 rounded-md border-[#ffa200]"></div>
+      </div>
+
+      <!-- Team Roles Buttons -->
+      <div class="team-roles hidden md:flex flex-row space-x-2 md:space-x-16 lg:space-x-32 px-5 ">
+        <div id="team-card-1"
+          class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer">
+          <span
+            class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+          <span
+            class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Tech
+            Lead</span>
+        </div>
+        <div id="team-card-2"
+          class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer">
+          <span
+            class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+          <span
+            class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">App
+            Dev</span>
+        </div>
+        <div id="team-card-3"
+          class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer">
+          <span
+            class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+          <span
+            class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Web
+            Dev</span>
+        </div>
+        <div id="team-card-4"
+          class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer">
+          <span
+            class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+          <span
+            class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white">Non
+            Tech</span>
+        </div>
+      </div>
+
+      <div class="md:hidden">
+        <div
+          class="mb-3 w-40 text-sm font-roboto relative inline-flex items-center justify-start  overflow-hidden font-medium transition-all duration-150 ease-out rounded-[5px] group cursor-pointer hover:bg-white bg-purple-600 ">
+          <select data-te-select-init
+            class="bg-transparent px-4 py-2 font-semibold cursor-pointer text-white group-hover:text-black h-full w-full">
+            <option value="1">Tech Lead</option>
+            <option value="2">App Dev</option>
+            <option value="3">Web Dev</option>
+            <option value="4">Non Tech</option>
+          </select>
+        </div>
+      </div>
+
+
+      <!-- Team Members Carousel -->
+      <div
+        class="team-members flex flex-row flex-wrap justify-center overflow-hidden relative h-auto w-[100%] max-w-full">
+        <div class="team-members-container flex gap-16 w-calc[250px*6] animate-scroll">
+
+          <div
+            class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card  flex justify-center group relative overflow-hidden">
+            <div
+              class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]">
+              <!-- member image div -->
+              <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
+                <!-- member image -->
+                <img src="./images/membersImg/members-img.jpg">
+              </div>
+              <p class="font-roboto">Name1</p>
+              <!-- member's social media -->
+              <div
+                class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
+                <a href=""><img src="./images/socials/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/socials/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/socials/gmail-logo.png" class="h-5 w-5"></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card  flex justify-center group relative overflow-hidden">
+            <div
+              class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]">
+              <!-- member image div -->
+              <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
+                <!-- member image -->
+                <img src="./images/membersImg/members-img.jpg">
+              </div>
+              <p class="font-roboto">Name2</p>
+              <!-- member's social media -->
+              <div
+                class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
+                <a href=""><img src="./images/socials/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/socials/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/socials/gmail-logo.png" class="h-5 w-5"></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card   flex justify-center group relative overflow-hidden">
+            <div
+              class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]">
+              <!-- member image div -->
+              <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
+                <!-- member image -->
+                <img src="./images/membersImg/members-img.jpg">
+              </div>
+              <p class="font-roboto">Name3</p>
+              <!-- member's social media -->
+              <div
+                class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
+                <a href=""><img src="./images/socials/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/socials/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/socials/gmail-logo.png" class="h-5 w-5"></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden">
+            <div
+              class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]">
+              <!-- member image div -->
+              <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
+                <!-- member image -->
+                <img src="./images/membersImg/members-img.jpg">
+              </div>
+              <p class="font-roboto">Name4</p>
+              <!-- member's social media -->
+              <div
+                class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
+                <a href=""><img src="./images/socials/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/socials/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/socials/gmail-logo.png" class="h-5 w-5"></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card   flex justify-center group relative overflow-hidden">
+            <div
+              class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]">
+              <!-- member image div -->
+              <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
+                <!-- member image -->
+                <img src="./images/membersImg/members-img.jpg">
+              </div>
+              <p class="font-roboto">Name5</p>
+              <!-- member's social media -->
+              <div
+                class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
+                <a href=""><img src="./images/socials/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/socials/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/socials/gmail-logo.png" class="h-5 w-5"></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden">
+            <div
+              class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]">
+              <!-- member image div -->
+              <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
+                <!-- member image -->
+                <img src="./images/membersImg/members-img.jpg">
+              </div>
+              <p class="font-roboto">Name6</p>
+              <!-- member's social media -->
+              <div
+                class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
+              </div>
+            </div>
+          </div>
+          <!-- Loop -->
+          <div
+            class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card  flex justify-center group relative overflow-hidden">
+            <div
+              class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]">
+              <!-- member image div -->
+              <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
+                <!-- member image -->
+                <img src="./images/membersImg/members-img.jpg">
+              </div>
+              <p class="font-roboto">Name1</p>
+              <!-- member's social media -->
+              <div
+                class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
+                <a href=""><img src="./images/socials/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/socials/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/socials/gmail-logo.png" class="h-5 w-5"></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card  flex justify-center group relative overflow-hidden">
+            <div
+              class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]">
+              <!-- member image div -->
+              <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
+                <!-- member image -->
+                <img src="./images/members-img.jpg">
+              </div>
+              <p class="font-roboto">Name2</p>
+              <!-- member's social media -->
+              <div
+                class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card   flex justify-center group relative overflow-hidden">
+            <div
+              class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]">
+              <!-- member image div -->
+              <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
+                <!-- member image -->
+                <img src="./images/members-img.jpg">
+              </div>
+              <p class="font-roboto">Name3</p>
+              <!-- member's social media -->
+              <div
+                class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card   flex justify-center group relative overflow-hidden">
+            <div
+              class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]">
+              <!-- member image div -->
+              <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
+                <!-- member image -->
+                <img src="./images/members-img.jpg">
+              </div>
+              <p class="font-roboto">Name4</p>
+              <!-- member's social media -->
+              <div
+                class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card   flex justify-center group relative overflow-hidden">
+            <div
+              class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]">
+              <!-- member image div -->
+              <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
+                <!-- member image -->
+                <img src="./images/members-img.jpg">
+              </div>
+              <p class="font-roboto">Name5</p>
+              <!-- member's social media -->
+              <div
+                class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden">
+            <div
+              class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]">
+              <!-- member image div -->
+              <div class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm">
+                <!-- member image -->
+                <img src="./images/members-img.jpg">
+              </div>
+              <p class="font-roboto">Name6</p>
+              <!-- member's social media -->
+              <div
+                class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px]  group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3">
+                <a href=""><img src="./images/github.png" class="h-6 w-6"></a>
+                <a href=""><img src="./images/linkedin.png" class="h-5 w-5"></a>
+                <a href=""><img src="./images/gmail-logo.png" class="h-5 w-5"></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- modules section -->
+    <section id="modules"
+      class="h-[26rem] md:h-[43rem] l:h-[700px] xl:h-[780px] flex flex-col relative overflow-hidden xl:mt-24 lg:mt-16 mt-8">
+      <div class="flex flex-col items-center gap-4 md:mt-0 translate-y-3 z-10">
+        <h2 class="font-lato z-10 font-medium text-2xl md:text-5xl lg:text-[60px] leading-[72px] md:translate-y-16 ">
+          Modules Made in Veloris</h2>
+        <div
+          class="h-0 w-[150px] md:w-[350px] lg:w-[412px] border-[1px] md:border-2 rounded-md border-[#ffa200] z-10 md:translate-y-16 -translate-y-8">
+        </div>
+      </div>
+
+      <!-- tilted background -->
+      <div
+        class="xl:h-[37rem] l:h-[37rem] w-[105rem] md:h-[32rem] h-[21rem] rotate-[-5deg] -translate-x-28 bg-gradient-to-r from-[#471162] to-[#230535] opacity-80 z-0 flex items-center justify-center absolute xl:mt-20 md:mt-16">
+      </div>
+
+      <div
+        class="slider_container flex justify-center items-center w-full absolute top-[16%] md:top-[25%] px-10 lg:px-0 ">
+        <div class="container w-full h-auto py-[50px]">
+          <div class="swiper card_slider w-[300px] md:w-[85%] h-[200px] md:h-[270px] py-[50px]">
+            <div class="swiper-wrapper text-black w-full h-[200px] md:h-[270px]" id = "blogCard">
+
+              <!-- cards -->
+              <!-- <div class="swiper-slide h-[250px] w-[350px] rounded-lg bg-white ">
+
+               <div class = "flex flex-row md:flex-col lg:flex-row
+                justify-around items-center h-full w-full">
+                <img src = "./images/eventsImg/velohack.jpg" class="h-[95%] w-[55%] md:w-[95%] md:h-[60%] lg:h-[95%] lg:w-[55%] shadow-lg shadow-black rounded-md mt-0 md:mt-4 lg:mt-0">
+
+                <div class = "w-[34%] h-[95%] md:w-full lg:w-[28%] lg:mr-6 md:mr-0 md:mt-4 lg:h-[95%] gap-2 flex flex-col justify-around items-center">
+                  <h1 class = "text-[25px]  md:text-3xl xl:text-4xl font-lato text-center shadowText">GSAP Animation</h1>
+                  <button class = "w-full md:w-2/3 lg:w-full h-auto bg-gradient-to-r from-[#270263] to-[#201042] text-white p-2 rounded-md md:mb-4 lg:mb-0 mb-0 text-[10px] md:text-xl">Go to blog</button>
+                </div>
+
+               </div>
+
+              </div> -->
+<!-- 
+              <div class="swiper-slide h-[250px] w-[350px] rounded-lg bg-white overflow-hidden ">
+                <iframe src = "https://iiitdwd.ac.in/" scrolling="no " class = "w-full h-full overflow-hidden"></iframe>
+              </div> -->
+
+              <!-- <iframe src = "https://iiitdwd.ac.in/" height="250px" width="350px" scrolling = "no" class = "swiper-slide rounded-lg bg-white overflow-hidden "></iframe> -->
+              <!-- <iframe src = "https://iiitdwd.ac.in/" class = "swiper-slide h-[250px] w-[350px] rounded-lg bg-white overflow-hidden "></iframe>
+              <iframe src = "https://iiitdwd.ac.in/" class = "swiper-slide h-[250px] w-[350px] rounded-lg bg-white overflow-hidden "></iframe>
+              <iframe src = "https://iiitdwd.ac.in/" class = "swiper-slide h-[250px] w-[350px] rounded-lg bg-white overflow-hidden "></iframe> -->
+             
+
+            </div>
+            <div class="swiper-button-next text-blue-500"></div>
+            <div class="swiper-button-prev text-blue-500"></div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects ">
+
+      <!-- Projects heading -->
+      <div class="heading flex flex-col items-center -space-y-3 md:space-y-6">
+        <h2 class="font-lato font-medium text-2xl md:text-5xl lg:text-[60px] leading-[72px]">Other Projects Made By Us
+        </h2>
+        <!-- Yellow heading underline -->
+        <div class="h-0 w-[150px] md:w-[350px] lg:w-[412px] border-[1px] md:border-2 rounded-md border-[#ffa200]"></div>
+      </div>
+
+      <div id="timeline-box"
+        class="p-[35px] sm:p-[60px] md:p-[100px] md:pb-[60px] overflow-hidden
+        font-roboto relative before:content-[' '] before:bg-light-primary before:w-[5px] before:h-[94%] md:before:h-[88%] lg:before:h-[85%] before:absolute before:left-[50px] md:before:left-1/2 before:translate-x-[-50%]">
+
+        <div class="container relative" id="projects">
+
+          <!-- Blurred background -->
+          <div
+            class="blur-[150px] bg-blue-800 rounded-full -z-[40] absolute w-[150px] h-[120px] opacity-100 top-[18rem] left-[10rem]">
+          </div>
+          <div
+            class="blur-[150px] bg-blue-800 rounded-full -z-[40] absolute w-[200px] h-[150px] opacity-100 top-[12rem] -right-[10rem]">
+          </div>
+          <div
+            class="blur-[180px] bg-blue-800 rounded-full -z-[40] absolute w-[200px] h-[150px] opacity-100 bottom-[12rem] right-[25rem]">
+          </div>
+
+          <!-- <div class="timeline-item w-full mb-[70px] after:content-[' '] after:block after:clear-both">
+            <div
+              class="timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[50px] md:left-1/2 mt-[25px] ml-[-15px]">
+            </div>
+            <div
+              class="timeline-content js--fadeInRight float-none md:float-right py-[20px] px-[30px]  after:content-[' '] after:block after:clear-both space-y-8 relative ml-[40px] md:ml-0 max-w-full w-auto md:w-[45%] py-[20px] px-[30px] rounded-[10px] bg-[#4B6CB7] bg-opacity-40  shadow-[0_25px_20px_-15px_rgba(0,0,0,0.3)]">
+              <h2 class="text-4xl">Title</h2>
+              <p>Project Details: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis
+                alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet
+                in dolores. Alias, ullam.</p>
+              <a class="bnt-more bg-primary text-text py-[8px] px-[20px] uppercase text-[14px] mb-[20px] mt-[10px] inline-block rounded-2 shadow-[0_1px_3px_-1px_rgba(0,0,0,0.6)] hover:bg-dark-primary "
+                href="javascript:void(0)">More</a>
+            </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="h-[500px] mb-[30px]">
+      <div class="heading flex flex-col items-center -space-y-3 md:space-y-6">
+        <h2 class="font-lato font-medium text-2xl md:text-5xl lg:text-[60px] leading-[72px]">Events Conducted By Us</h2>
+        <!-- Yellow heading underline -->
+        <div class="h-0 w-[150px] md:w-[350px] lg:w-[412px] border-[1px] md:border-2 rounded-md border-[#ffa200]"></div>
+      </div>
+
+      <!-- events card -->
+      <div class="flex items-center justify-center">
+        <div id="wrapper" class="relative h-[400px] w-full p-[20px] mt-[40px]">
+          <ul id="carousel" class="flex h-[300px] overflow-hidden pl-[45px]">
+            <!-- <li>hello</li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="Testimonial" class="h-full w-full relative">
+      <!-- red hexagon -->
+      <div class="absolute overflow-hidden -rotate-[30deg] top-[35rem] hidden md:block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+          <linearGradient id='redgrad'>
+            <stop stop-color='#FF7B5F' />
+            <stop offset='100%' stop-color='#FF1F00' />
+          </linearGradient>
+          <path stroke="none" fill="url(#redgrad)"
+            d="M31 2.8867513459481a10 10 0 0 1 10 0l21.17691453624 12.226497308104a10 10 0 0 1 5 8.6602540378444l0 24.452994616207a10 10 0 0 1 -5 8.6602540378444l-21.17691453624 12.226497308104a10 10 0 0 1 -10 0l-21.17691453624 -12.226497308104a10 10 0 0 1 -5 -8.6602540378444l0 -24.452994616207a10 10 0 0 1 5 -8.6602540378444">
+          </path>
+        </svg>
+      </div>
+
+      <!-- grey hexagon -->
+      <div class="absolute opacity-20 right-0 -top-16 hidden lg:block overflow-hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" class="relative rotate-[30deg] -right-12">
+          <path stroke="none" fill="#A9A9A9"
+            d="M95 2.8867513459482a10 10 0 0 1 10 0l76.602540378444 44.226497308104a10 10 0 0 1 5 8.6602540378444l0 88.452994616207a10 10 0 0 1 -5 8.6602540378444l-76.602540378444 44.226497308104a10 10 0 0 1 -10 0l-76.602540378444 -44.226497308104a10 10 0 0 1 -5 -8.6602540378444l1.4087553044217e-13 -88.452994616207a10 10 0 0 1 5 -8.6602540378444">
+          </path>
+        </svg>
+      </div>
+
+      <!-- seaGreen hexagon -->
+      <div class="absolute right-20 top-8 rotate-[25deg] lg:rotate-0 lg:right-16 lg:top-12 hidden md:block">
+        <svg xmlns="http://www.w3.org/2000/svg" width="94" height="94">
+          <linearGradient id='bluegrad'>
+            <stop stop-color='#00D1FF' />
+            <stop offset='80%' stop-color='#1F9ABC' />
+          </linearGradient>
+          <path stroke="none" fill="url(#bluegrad)"
+            d="M42 2.8867513459481a10 10 0 0 1 10 0l30.703193977869 17.726497308104a10 10 0 0 1 5 8.6602540378444l0 35.452994616207a10 10 0 0 1 -5 8.6602540378444l-30.703193977869 17.726497308104a10 10 0 0 1 -10 0l-30.703193977869 -17.726497308104a10 10 0 0 1 -5 -8.6602540378444l0 -35.452994616207a10 10 0 0 1 5 -8.6602540378444">
+          </path>
+        </svg>
+      </div>
+
+      <div class="flex flex-col items-center z-10 lg:gap-4">
+        <!-- heading -->
+        <h6 class="font-Montserrat z-10 font-small text-sm md:text-xl lg:text-[30px] text-[#ffa200]">What IIITDWD says
+        </h6>
+        <h2 class="font-lato z-10 font-medium text-3xl md:text-5xl lg:text-[65px]">Testimonials</h2>
+      </div>
+
+      <!-- grid divs -->
+      <div
+        class="grid gap-4 lg:p-24 md:p-12 p-8 lg:pb-10 lg:grid-cols-xlcolminmax grid-cols-colminmax xl:grid-rows-xlrowminmax md:grid-rows-mdrowminmax grid-rows-rowminmax">
+        <!-- box 1 -->
+        <div class="bg-purplergba rounded-[20px] md:row-start-1 md:row-end-3 flex flex-col justify-center p-6 z-10">
+          <!-- profile and name div -->
+          <div class="flex mb-5">
+            <img src="./images/sampleImg.jpeg" class="h-10 w-10 rounded-full mr-4" />
+            <h3 class="text-3xl">John</h3>
+          </div>
+          <!-- comment div -->
+          <div class="font-lato overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi!
+            Ex animi pariatur unde neque, natus tempore, rerum dolore harum officia labore, iusto eum dolorum alias
+            optio ab nam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta modi rem qui
+            placeat vitae, quo.</div>
+        </div>
+
+        <!-- box -2 -->
+        <div class="bg-purplergba rounded-[20px] md:row-start-3 md:row-end-5 flex flex-col justify-center p-6 z-10">
+          <!-- profile and name div -->
+          <div class="flex mb-5">
+            <img src="./images/sampleImg.jpeg" class="h-10 w-10 rounded-full mr-4" />
+            <h3 class="text-3xl">John</h3>
+          </div>
+          <!-- comment div -->
+          <div class="font-lato overflow-hidden ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi!
+            Ex animi pariatur unde neque, natus tempore, rerum dolore harum officia labore, iusto eum dolorum alias
+            optio ab nam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta modi rem qui
+            placeat vitae, quo.</div>
+        </div>
+
+        <!-- box-3 -->
+        <div class="bg-purplergba rounded-[20px] flex flex-col justify-center p-6">
+          <!-- profile and name div -->
+          <div class="flex mb-3">
+            <img src="./images/sampleImg.jpeg" class="h-8 w-8 rounded-full mr-4" />
+            <h3 class="text-2xl">John</h3>
+          </div>
+          <!-- comment div -->
+          <div class="font-lato overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi!
+            Ex animi pariatur unde neque, natus tempore, rerum dolore harum officia labore, iusto eum dolorum alias
+            optio ab nam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta modi rem qui
+            placeat vitae, quo.</div>
+        </div>
+
+        <!-- box-4  -->
+        <div
+          class="bg-purplergba rounded-[20px] md:row-start-2 md:row-end-5 md:flex flex-col justify-center p-6 hidden moreContent">
+          <!-- profile and name div -->
+          <div class="flex mb-5">
+            <img src="./images/sampleImg.jpeg" class="h-10 w-10 rounded-full mr-4" />
+            <h3 class="text-3xl">John</h3>
+          </div>
+          <!-- comment div -->
+          <div class="font-lato overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi!
+            Ex animi pariatur unde neque, natus tempore, rerum dolore harum officia labore, iusto eum dolorum alias
+            optio ab nam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta modi rem qui
+            placeat vitae, quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt tempore
+            laudantium tenetur, error maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quibusdam
+            ex fugit ipsum ad qui amet harum repellendus deleniti minus. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Blanditiis culpa aliquid mollitia earum vero odio delectus perferendis tenetur autem
+            consequatur.</div>
+        </div>
+
+        <!-- box-5 -->
+        <div
+          class="bg-purplergba rounded-[20px] md:row-start-1 md:row-end-4 md:flex flex-col justify-center p-6 hidden moreContent">
+          <!-- profile and name div -->
+          <div class="flex mb-5">
+            <img src="./images/sampleImg.jpeg" class="h-10 w-10 rounded-full mr-4" />
+            <h3 class="text-3xl">John</h3>
+          </div>
+          <!-- comment div -->
+          <div class="font-lato overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi!
+            Ex animi pariatur unde neque, natus tempore, rerum dolore harum officia labore, iusto eum dolorum alias
+            optio ab nam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta modi rem qui
+            placeat vitae, quo Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deserunt tempore
+            laudantium tenetur, error maiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quibusdam
+            ex fugit ipsum ad qui amet harum repellendus deleniti minus. Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Blanditiis culpa aliquid mollitia earum vero odio delectus perferendis tenetur autem
+            consequatur.</div>
+        </div>
+
+        <!-- box-6 -->
+        <div class="bg-purplergba rounded-[20px]
+            md:flex flex-col justify-center p-6 hidden moreContent">
+          <!-- profile and name div -->
+          <div class="flex mb-3">
+            <img src="./images/sampleImg.jpeg" class="h-8 w-8 rounded-full mr-4" />
+            <h3 class="text-2xl">John</h3>
+          </div>
+          <!-- comment div -->
+          <div class="font-lato overflow-hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi!
+            Ex animi pariatur unde neque, natus tempore, rerum dolore harum officia labore, iusto eum dolorum alias
+            optio ab nam dignissimos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos soluta modi rem qui
+            placeat vitae, quo.</div>
+        </div>
+      </div>
+
+      <!-- more button -->
+      <div class="flex justify-center mb-10 md:hidden">
+
+        <button id="testimonialBtn"
+          class="rounded-[10px] shadow-[inset_25rem_0_0_0] text-white border-[2px] border-[#7a41d5] shadow-bg-color duration-[400ms,700ms] transition-[color,box-shadow] text-[15px] w-[180px] h-[45px] -translate-y-2">Show
+          more</button>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer id="footer" class="w-full h-auto">
+    <!-- Footer container -->
+    <div id="footer-container" class="w-full h-[650px] md:h-[500px] bg-gradient-to-t from-[#050443] flex flex-col ">
+      <div class="flex flex-col md:flex-row h-full">
+        <!-- left div -->
+        <div class="w-full md:w-1/2 lg:w-[40%] h-full flex items-center justify-center flex-col font-roboto">
+          <!-- Contact Info -->
+          <div class="flex flex-col items-center md:items-start gap-6 md:gap-10 md:ml-12">
+            <p class="text-2xl lg:text-3xl">Get In Touch</p>
+            <!-- Social Media Links -->
+            <div id="footer-social-media-link"
+              class="space-y-6 lg:space-y-10 text-lg md:text-xl lg:text-2xl text-purple-200 ">
+              <a href="" class="flex gap-4 sm:gap-8">
+                <img src="./images/socials/linkedin.png" alt="" class=" h-6 w-6 md:h-10 md:w-10 ">
+                <p class="md:mt-2 hover:text-white">velocityIIITDWD</p>
+              </a>
+              <a href="" class="flex gap-4 sm:gap-8">
+                <img src="./images/socials/gmail-logo.png" alt="" class="h-6 w-6 md:h-10 md:w-10 ">
+                <p class="md:mt-2 hover:text-white">velocity@iiitdwd.ac.in</p>
+              </a>
+              <a href="" class="flex gap-4 sm:gap-8">
+                <img src="./images/footerImages/instagram.png" alt="" class="h-6 w-6 md:h-10 md:w-10">
+                <p class="md:mt-2 hover:text-white">velocity.iiitdwd</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- middle div -->
+        <div class="w-[20%] h-full hidden lg:flex flex-col items-center justify-center gap-4 xl:gap-6">
+          <img src="./images/navlogo.png" alt="">
+          <h1 class="text-4xl">VELOCITY</h1>
+        </div>
+
+        <!-- right div -->
+        <div class="w-full md:w-1/2 lg:w-[40%] h-full flex flex-col items-center justify-center  ">
+          <div
+            class="w-[55%] font-roboto space-y-6 lg:space-y-8 xl:space-y-10 flex flex-col items-center md:items-start">
+            <p class="text-2xl lg:text-3xl">Address</p>
+            <p
+              class="text-base md:text-xl lg:text-2xl text-justify md:text-left tracking-tight md:tracking-wide text-purple-200">
+              IIIT Dharwad, Ittigatti Road, Near Sattur Colony, Dharwad 580009. </p>
+            <img src="./images/footerImages/iiitdwd-logo.png" alt="" class="w-40 md:w-[200px]">
+          </div>
+        </div>
+      </div>
+
+      <!-- velocity logo bottom -->
+      <div class="flex flex-col lg:hidden justify-center items-center relative">
+        <div class="h-[1px] w-full bg-slate-400 absolute top-0"></div>
+        <div class="flex justify-center items-center p-4">
+          <img src="./images/navlogo.png" alt="" class="h-20">
+          <h1 class="text-3xl md:text-4xl">VELOCITY</h1>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>

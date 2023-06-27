@@ -1,0 +1,21 @@
+.team-members-container:hover {
+  animation-play-state: paused;
+}
+
+.carousel.dragging.card {
+  cursor: grab;
+  user-select: none;
+}
+
+#eventsCard:hover h1 {
+  top: 35%;
+}
+
+.shadowText {
+  text-shadow: 1px 1px 5px #443e4b;
+  color: #000000;
+}
+
+html {
+  scroll-behavior: smooth;
+}
