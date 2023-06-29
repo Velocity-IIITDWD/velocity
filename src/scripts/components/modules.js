@@ -29,7 +29,7 @@ var swiper = new Swiper('.card_slider', {
   })
 
 // fetch api
-.fetch('../api/modules.json')
+fetch('./api/modules.json')
   .then((response) => response.json())
   .then((data) => {
 

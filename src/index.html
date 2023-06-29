@@ -47,7 +47,7 @@
         id="modules"
         class="h-[26rem] md:h-[43rem] l:h-[700px] xl:h-[780px] flex flex-col relative overflow-hidden xl:mt-24 lg:mt-16 mt-8"
       ></section>
-      <section id="projects "></section>
+      <section id="projects ">  </section>
       <section id="events" class="h-[500px] mb-[30px]"></section>
       <section id="Testimonial" class="h-full w-full relative"></section>
     </main>
@@ -55,20 +55,24 @@
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
-  <script src="./scripts/old.js"></script>
   <script type="module">
     import { include } from './scripts/libs/include.js'
 
     include('components/head.html', 'head')
-    include('components/header.html', 'header')
-    include('components/home.html', 'home')
+    include('components/header.html', 'header', 'scripts/components/header.js')
+    include('components/home.html', 'home', 'scripts/components/home.js')
     include('components/about.html', 'about')
     include('components/timeline.html', 'timeline')
-    include('components/members.html', 'members')
-    include('components/modules.html', 'modules')
-    include('components/projects.html', 'projects ')
-    include('components/events.html', 'events')
-    include('components/testimonial.html', 'Testimonial')
+    include('components/members.html', 'members', 
+    'scripts/components/members.js')
+    include('components/modules.html', 'modules'
+    , 'scripts/components/modules.js')
+    include('components/projects.html', 'projects ',
+    'scripts/components/projects.js')
+    include('components/events.html', 'events'
+    , 'scripts/components/events.js')
+    include('components/testimonial.html', 'Testimonial'
+    , 'scripts/components/testimonials.js')
     include('components/footer.html', 'footer')
   </script>
 </html>
