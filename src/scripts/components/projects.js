@@ -1,5 +1,6 @@
 // Projects Section
 
+function fadeProjects(){
 window.addEventListener('load', function () {
     const sr = ScrollReveal()
   
@@ -46,12 +47,13 @@ window.addEventListener('load', function () {
       duration: 800,
     })
   })
-
+}
   
 // Fetching APIs
 
 // For project section
 
+function loadProjects(){
 fetch('./api/projects.json')
   .then((response) => response.json())
   .then((data) => {
@@ -68,7 +70,8 @@ fetch('./api/projects.json')
 
         const temp = document.createElement('div')
         temp.classList =
-          'timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[50px] md:left-1/2 mt-[25px] ml-[-15px]'
+          'timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[15px] md:left-1/2 mt-[25px] ml-[-15px]'
+          
 
         parentDiv.append(temp)
 
@@ -105,7 +108,8 @@ fetch('./api/projects.json')
 
         const temp = document.createElement('div')
         temp.classList =
-          'timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[50px] md:left-1/2 mt-[25px] ml-[-15px]'
+          'timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[15px] md:left-1/2 mt-[25px] ml-[-15px]'
+
         parentDiv.append(temp)
 
         const projectDiv = document.createElement('div')
@@ -137,8 +141,13 @@ fetch('./api/projects.json')
       }
     }
   })
-
-
   .catch((error) => {
     console.error('Error:', error)
   })
+  .finally(() => {
+    fadeProjects();
+  });
+
+}
+
+loadProjects()
