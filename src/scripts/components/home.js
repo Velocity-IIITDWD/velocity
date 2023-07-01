@@ -2,8 +2,8 @@
 var button = document.getElementById("upcoming");
 
 button.addEventListener("click", function() {
-//   window.location.hash = "#timeline";
-alert("bttj");
+  window.location.hash = "#timeline";
+// alert("bttj");
 });
 
 // upcoming button
