@@ -1,87 +1,57 @@
 <!-- Footer container -->
-<div
-  id="footer-container"
-  class="w-full h-[650px] md:h-[500px] bg-gradient-to-t from-[#050443] flex flex-col"
->
-  <div class="flex flex-col md:flex-row h-full">
-    <!-- left div -->
-    <div
-      class="w-full md:w-1/2 lg:w-[40%] h-full flex items-center justify-center flex-col font-roboto"
-    >
-      <!-- Contact Info -->
-      <div
-        class="flex flex-col items-center md:items-start gap-6 md:gap-10 md:ml-12"
-      >
-        <p class="text-2xl lg:text-3xl">Get In Touch</p>
-        <!-- Social Media Links -->
-        <div
-          id="footer-social-media-link"
-          class="space-y-6 lg:space-y-10 text-lg md:text-xl lg:text-2xl text-purple-200"
-        >
-          <a href="" class="flex gap-4 sm:gap-8">
-            <img
-              src="./images/socials/linkedin.png"
-              alt=""
-              class="h-6 w-6 md:h-10 md:w-10"
-            />
-            <p class="md:mt-2 hover:text-white">velocityIIITDWD</p>
-          </a>
-          <a href="" class="flex gap-4 sm:gap-8">
-            <img
-              src="./images/socials/gmail-logo.png"
-              alt=""
-              class="h-6 w-6 md:h-10 md:w-10"
-            />
-            <p class="md:mt-2 hover:text-white">velocity@iiitdwd.ac.in</p>
-          </a>
-          <a href="" class="flex gap-4 sm:gap-8">
-            <img
-              src="./images/footerImages/instagram.png"
-              alt=""
-              class="h-6 w-6 md:h-10 md:w-10"
-            />
-            <p class="md:mt-2 hover:text-white">velocity.iiitdwd</p>
-          </a>
+<footer id="footer" class="w-full h-auto">
+  <div id="footer-container" class="w-full h-[650px] md:h-[500px] bg-gradient-to-t from-[#050443] flex flex-col">
+    <div class="flex flex-col md:flex-row h-full">
+      <!-- left div -->
+      <div class="w-full md:w-1/2 lg:w-[40%] h-full flex items-center justify-center flex-col font-roboto">
+        <!-- Contact Info -->
+        <div class="flex flex-col items-center md:items-start gap-6 md:gap-10 md:ml-12">
+          <p class="text-2xl lg:text-3xl">Get In Touch</p>
+          <!-- Social Media Links -->
+          <div id="footer-social-media-link"
+            class="space-y-6 lg:space-y-10 text-lg md:text-xl lg:text-2xl text-purple-200">
+            <a href="" class="flex gap-4 sm:gap-8">
+              <img src="../images/socials/github.png" alt="" class="h-6 w-6 md:h-10 md:w-10" />
+              <p class="md:mt-2 hover:text-white">velocityIIITDWD</p>
+            </a>
+            <a href="" class="flex gap-4 sm:gap-8">
+              <img src="../images/socials/gmail-logo.png" alt="" class="h-6 w-6 md:h-10 md:w-10" />
+              <p class="md:mt-2 hover:text-white">velocity@iiitdwd.ac.in</p>
+            </a>
+            <a href="" class="flex gap-4 sm:gap-8">
+              <img src="../images/footerImages/instagram.png" alt="" class="h-6 w-6 md:h-10 md:w-10" />
+              <p class="md:mt-2 hover:text-white">velocity.iiitdwd</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- middle div -->
+      <div class="w-[20%] h-full hidden lg:flex flex-col items-center justify-center gap-4 xl:gap-6">
+        <img src="../images/navlogo.png" alt="" />
+        <h1 class="text-4xl">VELOCITY</h1>
+      </div>
+
+      <!-- right div -->
+      <div class="w-full md:w-1/2 lg:w-[40%] h-full flex flex-col items-center justify-center">
+        <div class="w-[55%] font-roboto space-y-6 lg:space-y-8 xl:space-y-10 flex flex-col items-center md:items-start">
+          <p class="text-2xl lg:text-3xl">Address</p>
+          <p
+            class="text-base md:text-xl lg:text-2xl text-justify md:text-left tracking-tight md:tracking-wide text-purple-200">
+            IIIT Dharwad, Ittigatti Road, Near Sattur Colony, Dharwad 580009.
+          </p>
+          <img src="../images/footerImages/iiitdwd-logo.png" alt="" class="w-40 md:w-[200px]" />
         </div>
       </div>
     </div>
 
-    <!-- middle div -->
-    <div
-      class="w-[20%] h-full hidden lg:flex flex-col items-center justify-center gap-4 xl:gap-6"
-    >
-      <img src="./images/navlogo.png" alt="" />
-      <h1 class="text-4xl">VELOCITY</h1>
-    </div>
-
-    <!-- right div -->
-    <div
-      class="w-full md:w-1/2 lg:w-[40%] h-full flex flex-col items-center justify-center"
-    >
-      <div
-        class="w-[55%] font-roboto space-y-6 lg:space-y-8 xl:space-y-10 flex flex-col items-center md:items-start"
-      >
-        <p class="text-2xl lg:text-3xl">Address</p>
-        <p
-          class="text-base md:text-xl lg:text-2xl text-justify md:text-left tracking-tight md:tracking-wide text-purple-200"
-        >
-          IIIT Dharwad, Ittigatti Road, Near Sattur Colony, Dharwad 580009.
-        </p>
-        <img
-          src="./images/footerImages/iiitdwd-logo.png"
-          alt=""
-          class="w-40 md:w-[200px]"
-        />
+    <!-- velocity logo bottom -->
+    <div class="flex flex-col lg:hidden justify-center items-center relative">
+      <div class="h-[1px] w-full bg-slate-400 absolute top-0"></div>
+      <div class="flex justify-center items-center p-4">
+        <img src="../images/navlogo.png" alt="" class="h-20" />
+        <h1 class="text-3xl md:text-4xl">VELOCITY</h1>
       </div>
     </div>
   </div>
-
-  <!-- velocity logo bottom -->
-  <div class="flex flex-col lg:hidden justify-center items-center relative">
-    <div class="h-[1px] w-full bg-slate-400 absolute top-0"></div>
-    <div class="flex justify-center items-center p-4">
-      <img src="./images/navlogo.png" alt="" class="h-20" />
-      <h1 class="text-3xl md:text-4xl">VELOCITY</h1>
-    </div>
-  </div>
-</div>
+</footer>

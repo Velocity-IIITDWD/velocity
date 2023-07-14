@@ -1,4 +1,4 @@
-// testimonials section
+export default function testimonialjs(){// testimonials section
 
 const content = document.querySelectorAll('.moreContent')
 const fullContent = document.querySelectorAll('.fullContent')
@@ -17,4 +17,4 @@ testimonialBtn.addEventListener('click', () => {
 
     testimonialBtn.innerText = 'Show more'
   }
-})
+})}

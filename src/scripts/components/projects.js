@@ -1,153 +1,158 @@
-// Projects Section
+// const fetch = require('node-fetch')
 
-function fadeProjects(){
-window.addEventListener('load', function () {
-    const sr = ScrollReveal()
+// import fetch from 'node-fetch';
+
+export default function projectjs() {// Projects Section
   
-    if (window.innerWidth < 768) {
-      const timelineContent = document.querySelector('.timeline-content')
-      if (timelineContent.classList.contains('js--fadeInLeft')) {
-        timelineContent.classList.remove('js--fadeInLeft')
-        timelineContent.classList.add('js--fadeInRight')
+  function fadeProjects() {
+    window.addEventListener('load', function () {
+      const sr = ScrollReveal()
+
+      if (window.innerWidth < 768) {
+        const timelineContent = document.querySelector('.timeline-content')
+        if (timelineContent.classList.contains('js--fadeInLeft')) {
+          timelineContent.classList.remove('js--fadeInLeft')
+          timelineContent.classList.add('js--fadeInRight')
+        }
+
+        sr.reveal('.js--fadeInRight', {
+          origin: 'right',
+          distance: '300px',
+          easing: 'ease-in-out',
+          duration: 800,
+        })
+      } else {
+        sr.reveal('.js--fadeInLeft', {
+          origin: 'left',
+          distance: '300px',
+          easing: 'ease-in-out',
+          duration: 800,
+        })
+
+        sr.reveal('.js--fadeInRight', {
+          origin: 'right',
+          distance: '300px',
+          easing: 'ease-in-out',
+          duration: 800,
+        })
       }
-  
-      sr.reveal('.js--fadeInRight', {
-        origin: 'right',
-        distance: '300px',
-        easing: 'ease-in-out',
-        duration: 800,
-      })
-    } else {
+
       sr.reveal('.js--fadeInLeft', {
         origin: 'left',
         distance: '300px',
         easing: 'ease-in-out',
         duration: 800,
       })
-  
+
       sr.reveal('.js--fadeInRight', {
         origin: 'right',
         distance: '300px',
         easing: 'ease-in-out',
         duration: 800,
       })
-    }
-  
-    sr.reveal('.js--fadeInLeft', {
-      origin: 'left',
-      distance: '300px',
-      easing: 'ease-in-out',
-      duration: 800,
     })
-  
-    sr.reveal('.js--fadeInRight', {
-      origin: 'right',
-      distance: '300px',
-      easing: 'ease-in-out',
-      duration: 800,
-    })
-  })
-}
-  
-// Fetching APIs
+  }
 
-// For project section
+  // Fetching APIs
 
-function loadProjects(){
-fetch('./api/projects.json')
-  .then((response) => response.json())
-  .then((data) => {
-    const projectApi = document.getElementById('projects')
-    let count = 0
+  // For project section
 
-    for (const p of data) {
-      count++
+  function loadProjects() {
+    fetch("../../api/projects.json")
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        const projectApi = document.getElementById('projects')
+        let count = 0
 
-      if (count % 2 == 1) {
-        const parentDiv = document.createElement('div')
-        parentDiv.classList =
-          "timeline-item w-full mb-[70px] after:content-[' '] after:block after:clear-both"
+        for (const p of data) {
+          count++
 
-        const temp = document.createElement('div')
-        temp.classList =
-          'timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[15px] md:left-1/2 mt-[25px] ml-[-15px]'
-          
+          if (count % 2 == 1) {
+            const parentDiv = document.createElement('div')
+            parentDiv.classList =
+              "timeline-item w-full mb-[70px] after:content-[' '] after:block after:clear-both"
 
-        parentDiv.append(temp)
+            const temp = document.createElement('div')
+            temp.classList =
+              'timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[15px] md:left-1/2 mt-[25px] ml-[-15px]'
 
-        const projectDiv = document.createElement('div')
-        projectDiv.classList =
-          'timeline-content  js--fadeInLeft max-w-full space-y-8 relative auto md:w-[45%] py-[20px] px-[30px] rounded-[10px] bg-[#4B6CB7] bg-opacity-40 shadow-[0_25px_20px_-15px_rgba(0,0,0,0.3)] ml-[40px] md:ml-0'
 
-        const name = document.createElement('h2')
-        name.classList = 'text-4xl'
-        name.textContent = p.name
-        projectDiv.appendChild(name)
+            parentDiv.append(temp)
 
-        const description = document.createElement('p')
-        description.textContent = p.description
-        projectDiv.appendChild(description)
+            const projectDiv = document.createElement('div')
+            projectDiv.classList =
+              'timeline-content  js--fadeInLeft max-w-full space-y-8 relative auto md:w-[45%] py-[20px] px-[30px] rounded-[10px] bg-[#4B6CB7] bg-opacity-40 shadow-[0_25px_20px_-15px_rgba(0,0,0,0.3)] ml-[40px] md:ml-0'
 
-        const btn = document.createElement('a')
-        btn.classList =
-          'bnt-more bg-primary text-text py-[8px] px-[20px] uppercase text-[14px] mb-[20px] mt-[10px] inline-block rounded-2 shadow-[0_1px_3px_-1px_rgba(0,0,0,0.6)] hover:bg-dark-primary cursor-pointer'
-        btn.textContent = 'More'
-        const link = p.link
-        btn.addEventListener('click', () => {
-          window.location.href = link
-        })
+            const name = document.createElement('h2')
+            name.classList = 'text-4xl'
+            name.textContent = p.name
+            projectDiv.appendChild(name)
 
-        projectDiv.appendChild(btn)
+            const description = document.createElement('p')
+            description.textContent = p.description
+            projectDiv.appendChild(description)
 
-        parentDiv.appendChild(projectDiv)
-        projectApi.appendChild(parentDiv)
-      } else {
-        const parentDiv = document.createElement('div')
-        parentDiv.classList =
-          "timeline-item w-full mb-[70px] after:content-[' '] after:block after:clear-both "
+            const btn = document.createElement('a')
+            btn.classList =
+              'bnt-more bg-primary text-text py-[8px] px-[20px] uppercase text-[14px] mb-[20px] mt-[10px] inline-block rounded-2 shadow-[0_1px_3px_-1px_rgba(0,0,0,0.6)] hover:bg-dark-primary cursor-pointer'
+            btn.textContent = 'More'
+            const link = p.link
+            btn.addEventListener('click', () => {
+              window.location.href = link
+            })
 
-        const temp = document.createElement('div')
-        temp.classList =
-          'timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[15px] md:left-1/2 mt-[25px] ml-[-15px]'
+            projectDiv.appendChild(btn)
 
-        parentDiv.append(temp)
+            parentDiv.appendChild(projectDiv)
+            projectApi.appendChild(parentDiv)
+          } else {
+            const parentDiv = document.createElement('div')
+            parentDiv.classList =
+              "timeline-item w-full mb-[70px] after:content-[' '] after:block after:clear-both "
 
-        const projectDiv = document.createElement('div')
-        projectDiv.classList =
-          'timeline-content js--fadeInRight float-none md:float-right px-[30px] space-y-8 relative w-auto md:w-[45%] py-[20px] rounded-[10px] bg-[#4B6CB7] bg-opacity-40 shadow-[0_25px_20px_-15px_rgba(0,0,0,0.3)] max-w-full ml-[40px] md:ml-0'
+            const temp = document.createElement('div')
+            temp.classList =
+              'timeline-img w-[30px] h-[30px] bg-primary rounded-[50%] absolute left-[15px] md:left-1/2 mt-[25px] ml-[-15px]'
 
-        const name = document.createElement('h2')
-        name.className = 'text-4xl'
-        name.textContent = p.name
-        projectDiv.appendChild(name)
+            parentDiv.append(temp)
 
-        const description = document.createElement('p')
-        description.textContent = p.description
-        projectDiv.appendChild(description)
+            const projectDiv = document.createElement('div')
+            projectDiv.classList =
+              'timeline-content js--fadeInRight float-none md:float-right px-[30px] space-y-8 relative w-auto md:w-[45%] py-[20px] rounded-[10px] bg-[#4B6CB7] bg-opacity-40 shadow-[0_25px_20px_-15px_rgba(0,0,0,0.3)] max-w-full ml-[40px] md:ml-0'
 
-        const btn = document.createElement('a')
-        btn.classList =
-          'bnt-more bg-primary text-text py-[8px] px-[20px] uppercase text-[14px] mb-[20px] mt-[10px] inline-block rounded-2 shadow-[0_1px_3px_-1px_rgba(0,0,0,0.6)] hover:bg-dark-primary cursor-pointer'
-        btn.textContent = 'More'
-        const link = p.link
-        btn.addEventListener('click', () => {
-          window.location.href = link
-        })
+            const name = document.createElement('h2')
+            name.className = 'text-4xl'
+            name.textContent = p.name
+            projectDiv.appendChild(name)
 
-        projectDiv.appendChild(btn)
+            const description = document.createElement('p')
+            description.textContent = p.description
+            projectDiv.appendChild(description)
 
-        parentDiv.appendChild(projectDiv)
-        projectApi.appendChild(parentDiv)
-      }
-    }
-  })
-  .catch((error) => {
-    console.error('Error:', error)
-  })
-  .finally(() => {
-    fadeProjects();
-  });
+            const btn = document.createElement('a')
+            btn.classList =
+              'bnt-more bg-primary text-text py-[8px] px-[20px] uppercase text-[14px] mb-[20px] mt-[10px] inline-block rounded-2 shadow-[0_1px_3px_-1px_rgba(0,0,0,0.6)] hover:bg-dark-primary cursor-pointer'
+            btn.textContent = 'More'
+            const link = p.link
+            btn.addEventListener('click', () => {
+              window.location.href = link
+            })
+
+            projectDiv.appendChild(btn)
+
+            parentDiv.appendChild(projectDiv)
+            projectApi.appendChild(parentDiv)
+          }
+        }
+      })
+      .catch((error) => {
+        console.error('Error:', error)
+      })
+  }
+
+
+  loadProjects();
+  fadeProjects();
 
 }
-
-loadProjects()
