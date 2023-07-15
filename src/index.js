@@ -1,8 +1,8 @@
 import useComponents from './libs/useComponents.js'
 
-// html components 
+// html components
 import header from './components/header.html'
-import blurBg from './components/blurBg.html'
+import blurBg from './components/blurbg.html'
 import home from './components/home.html'
 import about from './components/about.html'
 import timeline from './components/timeline.html'
@@ -22,17 +22,17 @@ import eventjs from './scripts/components/events.js'
 import testimonialjs from './scripts/components/testimonials.js'
 
 const components = [
-    { name: 'header', template: header, initiator: headerJs },
-    { name: 'blurBg', template: blurBg, initiator: null },
-    { name: 'home', template: home, initiator: homejs },
-    { name: 'about', template: about, initiator: null },
-    { name: 'timeline', template: timeline, initiator: null },
-    { name: 'members', template: members, initiator: null },
-    { name: 'modules', template: modules, initiator: modulejs },
-    { name: 'project', template: project, initiator: projectjs },
-    { name: 'events', template: events, initiator: eventjs },
-    { name: 'testimonial', template: testimonial, initiator: testimonialjs },
-    { name: 'footer', template: footer, initiator: null },
-  ]
+  { name: 'header', template: header, initiator: headerJs },
+  { name: 'blurBg', template: blurBg, initiator: null },
+  { name: 'home', template: home, initiator: homejs },
+  { name: 'about', template: about, initiator: null },
+  { name: 'timeline', template: timeline, initiator: null },
+  { name: 'members', template: members, initiator: null },
+  { name: 'modules', template: modules, initiator: modulejs },
+  { name: 'project', template: project, initiator: projectjs },
+  { name: 'events', template: events, initiator: eventjs },
+  { name: 'testimonial', template: testimonial, initiator: testimonialjs },
+  { name: 'footer', template: footer, initiator: null },
+]
 
 useComponents(components)
