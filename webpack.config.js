@@ -1,5 +1,5 @@
 const path = require('path')
-// import fetch from 'node-fetch';
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
@@ -12,6 +12,19 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
+
+    new CopyWebpackPlugin({
+      patterns:[
+        {
+          from:"src/api",
+          to:"api"
+        },
+        {
+          from:"src/images",
+          to:"images"
+        }
+      ]
+    })
   ],
   module: {
     rules: [
@@ -21,6 +34,7 @@ module.exports = {
       },
     ],
   },
+ 
   mode: 'development',
   devServer: {
     static: {
@@ -28,6 +42,7 @@ module.exports = {
     },
     port: 8080,
   },
+
 }
 
 

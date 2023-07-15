@@ -1,4 +1,4 @@
-
+import Swiper from 'swiper';
 export default function modulejs() {
 
   //Modules Section Card Carousel
@@ -34,33 +34,59 @@ export default function modulejs() {
   }
 
   // fetch api
-  function fetchdata() {
-    fetch('./api/modules.json')
-      .then((response) => response.json())
-      .then((data) => {
+  // function fetchdata() {
+  //   fetch('./api/modules.json')
+  //     .then((response) => response.json())
+  //     .then((data) => {
 
-        console.log(data)
-        const module = document.getElementById('blogCard')
+  //       console.log(data)
+  //       const module = document.getElementById('blogCard')
 
-        for (const p of data) {
+  //       for (const p of data) {
 
-          const div = document.createElement('div')
-          div.classList = "swiper-slide rounded-lg bg-white overflow-hidden"
-          const frame = document.createElement('iframe')
-          frame.classList = "h-full w-full"
-          frame.src = p.link
-          div.appendChild(frame)
-          module.appendChild(div)
-        }
+  //         const div = document.createElement('div')
+  //         div.classList = "swiper-slide rounded-lg bg-white overflow-hidden"
+  //         const frame = document.createElement('iframe')
+  //         frame.classList = "h-full w-full"
+  //         frame.src = p.link
+  //         div.appendChild(frame)
+  //         module.appendChild(div)
+  //       }
 
-      })
+  //     })
 
-      .catch((err) => {
-        console.error('Error:', err)
-      })
-  }
+  //     .catch((err) => {
+  //       console.error('Error:', err)
+  //     })
+  // }
 
-  fetchdata();
+  fetchData();
   moduleCarousel();
 
+}
+
+async function fetchData() {
+  try {
+    const response = await fetch('../../api/modules.json');
+    const data = await response.json();
+
+    console.log(data);
+
+    const module = document.getElementById('blogCard');
+
+    for (const p of data) {
+      const div = document.createElement('div');
+      div.classList = "swiper-slide rounded-lg bg-white overflow-hidden";
+
+      const frame = document.createElement('iframe');
+      frame.classList = "h-full w-full";
+      frame.src = p.link;
+
+      div.appendChild(frame);
+      module.appendChild(div);
+    }
+  } catch (err) {
+    console.error('Error:',err);
+    // Handle the error here, such as displaying an error message to the user
+  }
 }

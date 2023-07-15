@@ -28,9 +28,9 @@ const components = [
     { name: 'about', template: about, initiator: null },
     { name: 'timeline', template: timeline, initiator: null },
     { name: 'members', template: members, initiator: null },
-    // { name: 'modules', template: modules, initiator: modulejs },
-    // { name: 'project', template: project, initiator: projectjs },
-    // { name: 'events', template: events, initiator: eventjs },
+    { name: 'modules', template: modules, initiator: modulejs },
+    { name: 'project', template: project, initiator: projectjs },
+    { name: 'events', template: events, initiator: eventjs },
     { name: 'testimonial', template: testimonial, initiator: testimonialjs },
     { name: 'footer', template: footer, initiator: null },
   ]
