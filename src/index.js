@@ -2,7 +2,7 @@ import useComponents from './libs/useComponents.js'
 
 // html components 
 import header from './components/header.html'
-import blurBg from './components/blurBg.html'
+import blurBg from './components/blurbg.html'
 import home from './components/home.html'
 import about from './components/about.html'
 import timeline from './components/timeline.html'

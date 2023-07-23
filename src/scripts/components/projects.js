@@ -61,7 +61,6 @@ export default function projectjs() {// Projects Section
     fetch("../../api/projects.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         const projectApi = document.getElementById('projects')
         let count = 0
 
