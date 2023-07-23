@@ -1,4 +1,6 @@
-export default function testimonialjs(){// testimonials section
+// testimonials section
+
+export default function testimonialjs(){
 
 const content = document.querySelectorAll('.moreContent')
 const fullContent = document.querySelectorAll('.fullContent')
