@@ -61,7 +61,6 @@ export default function projectjs() {// Projects Section
     fetch("../../api/projects.json")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         const projectApi = document.getElementById('projects')
         let count = 0
 
@@ -82,7 +81,7 @@ export default function projectjs() {// Projects Section
 
             const projectDiv = document.createElement('div')
             projectDiv.classList =
-              'timeline-content  js--fadeInLeft max-w-full space-y-8 relative auto md:w-[45%] py-[20px] px-[30px] rounded-[10px] bg-[#4B6CB7] bg-opacity-40 shadow-[0_25px_20px_-15px_rgba(0,0,0,0.3)] ml-[40px] md:ml-0'
+              'timeline-content js--fadeInLeft max-w-full space-y-8 relative auto md:w-[45%] py-[20px] px-[30px] rounded-[10px] bg-[#4B6CB7] bg-opacity-40 shadow-[0_25px_20px_-15px_rgba(0,0,0,0.3)] ml-[40px] md:ml-0'
 
             const name = document.createElement('h2')
             name.classList = 'text-4xl'

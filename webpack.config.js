@@ -22,6 +22,10 @@ module.exports = {
         {
           from:"src/images",
           to:"images"
+        },
+        {
+          from:"src/styles/tailwind/output.css",
+          to:"output.css"
         }
       ]
     })
