@@ -1,3 +1,6 @@
+import tailwindCSS from './styles/tailwind.css'
+import mainCSS from './styles/main.css'
+
 import useComponents from './libs/useComponents.js'
 
 // html components

@@ -1,66 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/tailwind/output.css" />
+
+    <link rel="stylesheet" href="./styles/tailwind.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
 
     <!-- swiper lib -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
     <!-- scroll reveal func -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!-- icons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&family=Roboto&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&family=Poppins&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Velocity</title>
 
     <style>
-        .team-members-container:hover {
-            animation-play-state: paused;
-        }
+      .team-members-container:hover {
+        animation-play-state: paused;
+      }
 
-        .carousel.dragging.card {
-            cursor: grab;
-            user-select: none;
-        }
+      .carousel.dragging.card {
+        cursor: grab;
+        user-select: none;
+      }
 
-        #eventsCard:hover h1 {
-            top: 35%;
-        }
+      #eventsCard:hover h1 {
+        top: 35%;
+      }
 
-        .shadowText {
-            text-shadow: 1px 1px 5px #443e4b;
-            color: #000000;
-        }
+      .shadowText {
+        text-shadow: 1px 1px 5px #443e4b;
+        color: #000000;
+      }
 
-        html {
-            scroll-behavior: smooth;
-        }
+      html {
+        scroll-behavior: smooth;
+      }
     </style>
+  </head>
 
-</head>
-
-<body class="bg-bg-color text-white m-0">
+  <body class="bg-bg-color text-white m-0">
     <div data-component="header"></div>
     <main>
-        <div data-component="blurBg"></div>
-        <div data-component="home"></div>
-        <div data-component="about"></div>
-        <div data-component="timeline"></div>
-        <div data-component="members"></div>
-        <div data-component="modules"></div>
-        <div data-component="project"></div>
-        <div data-component="events"></div>
-        <div data-component="testimonial"></div>
+      <div data-component="blurBg"></div>
+      <div data-component="home"></div>
+      <div data-component="about"></div>
+      <div data-component="timeline"></div>
+      <div data-component="members"></div>
+      <div data-component="modules"></div>
+      <div data-component="project"></div>
+      <div data-component="events"></div>
+      <div data-component="testimonial"></div>
     </main>
     <div data-component="footer"></div>
-</body>
+  </body>
 </html>

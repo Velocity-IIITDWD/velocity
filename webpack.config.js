@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    filename: 'bundle.js',
+    filename: 'bundle.[hash].js',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -14,31 +14,33 @@ module.exports = {
     }),
 
     new CopyWebpackPlugin({
-      patterns:[
+      patterns: [
         {
-          from:"src/api",
-          to:"api"
+          from: 'src/api',
+          to: 'api',
         },
         {
-          from:"src/images",
-          to:"images"
+          from: 'src/images',
+          to: 'images',
         },
-        {
-          from:"src/styles/tailwind/output.css",
-          to:"output.css"
-        }
-      ]
-    })
+      ],
+    }),
   ],
   module: {
     rules: [
       {
         test: /\.html$/,
+        include: path.resolve(__dirname, 'src'),
         use: ['html-loader'],
+      },
+      {
+        test: /\.css$/i,
+        include: path.resolve(__dirname, 'src'),
+        use: ['style-loader', 'css-loader', 'postcss-loader'],
       },
     ],
   },
- 
+
   mode: 'development',
   devServer: {
     static: {
@@ -46,7 +48,4 @@ module.exports = {
     },
     port: 8080,
   },
-
 }
-
-
