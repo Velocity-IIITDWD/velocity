@@ -4,7 +4,7 @@ import mainCSS from './styles/main.css'
 
 // ---------------------------------------------- //
 
-import useComponents from './scripts/libs/useComponents.js'
+import useComponents from './scripts/libs/useComponents'
 
 // html components
 import header from './components/header.html'
@@ -20,12 +20,12 @@ import testimonial from './components/testimonial.html'
 import footer from './components/footer.html'
 
 // js components
-import headerJs from './scripts/components/headerJs.js'
-import homejs from './scripts/components/home.js'
-import modulejs from './scripts/components/modules.js'
-import projectjs from './scripts/components/projects.js'
-import eventjs from './scripts/components/events.js'
-import testimonialjs from './scripts/components/testimonials.js'
+import headerJs from './scripts/components/headerJs'
+import homejs from './scripts/components/home'
+import modulejs from './scripts/components/modules'
+import projectjs from './scripts/components/projects'
+import eventjs from './scripts/components/events'
+import testimonialjs from './scripts/components/testimonials'
 
 const components = [
   { name: 'header', template: header, initiator: headerJs },
