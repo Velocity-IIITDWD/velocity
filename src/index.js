@@ -1,5 +1,8 @@
+// do not fking change the below imports if you want your css to work correctly! 😾 0
 import tailwindCSS from './styles/tailwind.css'
 import mainCSS from './styles/main.css'
+
+// ---------------------------------------------- //
 
 import useComponents from './scripts/libs/useComponents.js'
 
