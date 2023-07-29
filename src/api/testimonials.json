@@ -1,30 +1,42 @@
 [
     {
         "id": 1,
-        "name": "John",
+        "name": "John 1",
         "img": "../images/sampleImg.jpeg",
-        "comment": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque."
+        "comment": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque."
     },
 
     {
         "id": 2,
-        "name": "John",
+        "name": "John 2",
         "img": "../images/sampleImg.jpeg",
-        "comment": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque."
+        "comment": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque."
     },
 
     {
         "id": 3,
-        "name": "John",
+        "name": "John 3",
         "img": "../images/sampleImg.jpeg",
-        "comment": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque."
+        "comment": "Lorem ipsum dolor In, commodi! Ex animi pariatur"
     },
 
     {
         "id": 4,
-        "name": "John",
+        "name": "John 4",
         "img": "../images/sampleImg.jpeg",
-        "comment": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque."
+        "comment": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque."
+    },
+    {
+        "id": 5,
+        "name": "John 5",
+        "img": "../images/sampleImg.jpeg",
+        "comment": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi! Ex animi pariatur unde neque.Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, commodi!"
+    },
+    {
+        "id": 6,
+        "name": "John 6",
+        "img": "../images/sampleImg.jpeg",
+        "comment": "Lorem ipsum, dolor"
     }
     
 ]

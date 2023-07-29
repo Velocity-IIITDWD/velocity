@@ -29,11 +29,11 @@ module.exports = {
         },
       },
       gridTemplateColumns: {
-        xlcolminmax: 'repeat(3, minmax(250px, 1fr))',
+        xlcolminmax: 'repeat(3, minmax(200px, 1fr))',
         colminmax: 'repeat(auto-fill, minmax(200px, 1fr))',
       },
       gridTemplateRows: {
-        xlrowminmax: 'repeat(4, minmax(120px, 140px))',
+        xlrowminmax: 'repeat(auto, minmax(150px, 200px))',
         mdrowminmax: 'repeat(4, minmax(85px, 140px))',
         rowminmax: 'repeat(3, minmax(85px, 200px))',
       },
