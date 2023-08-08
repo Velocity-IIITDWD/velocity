@@ -7,6 +7,7 @@ import mainCSS from './styles/main.css'
 import useComponents from './scripts/libs/useComponents'
 
 // html components
+import loader from './components/loader.html'
 import header from './components/header.html'
 import blurBg from './components/blurbg.html'
 import home from './components/home.html'
@@ -20,6 +21,7 @@ import testimonial from './components/testimonial.html'
 import footer from './components/footer.html'
 
 // js components
+import loaderJs from './scripts/components/loader'
 import headerJs from './scripts/components/headerJs'
 import homejs from './scripts/components/home'
 import modulejs from './scripts/components/modules'
@@ -28,6 +30,7 @@ import eventjs from './scripts/components/events'
 import testimonialjs from './scripts/components/testimonials'
 
 const components = [
+  { name: 'loader', template: loader, initiator: loaderJs },
   { name: 'header', template: header, initiator: headerJs },
   { name: 'blurBg', template: blurBg, initiator: null },
   { name: 'home', template: home, initiator: homejs },
