@@ -1,9 +1,9 @@
-import Swiper from 'swiper';
+
 export default function modulejs() {
 
   //Modules Section Card Carousel
   function moduleCarousel() {
-    var swiper = new Swiper('.card_slider', {
+    var swiper = new window.Swiper('.card_slider',{
       effect: 'coverflow',
       grabCursor: true,
       centeredSlides: true,
@@ -30,7 +30,7 @@ export default function modulejs() {
           slidesPerView: 2,
         },
       },
-    })
+  });
   }
 
   // fetch api
