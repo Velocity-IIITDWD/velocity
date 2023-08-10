@@ -5,6 +5,7 @@ import mainCSS from './styles/main.css'
 // ---------------------------------------------- //
 
 import useComponents from './scripts/libs/useComponents'
+import removeComponents from './scripts/libs/removeComponents'
 
 // html components
 import loader from './components/loader.html'
@@ -21,7 +22,6 @@ import testimonial from './components/testimonial.html'
 import footer from './components/footer.html'
 
 // js components
-import loaderJs from './scripts/components/loader'
 import headerJs from './scripts/components/headerJs'
 import homejs from './scripts/components/home'
 import modulejs from './scripts/components/modules'
@@ -29,8 +29,11 @@ import projectjs from './scripts/components/projects'
 import eventjs from './scripts/components/events'
 import testimonialjs from './scripts/components/testimonials'
 
+const loaderComponent = [
+  { name: 'loader', template: loader, initiator: null },
+]
+
 const components = [
-  { name: 'loader', template: loader, initiator: loaderJs },
   { name: 'header', template: header, initiator: headerJs },
   { name: 'blurBg', template: blurBg, initiator: null },
   { name: 'home', template: home, initiator: homejs },
@@ -44,4 +47,13 @@ const components = [
   { name: 'footer', template: footer, initiator: null },
 ]
 
-useComponents(components)
+useComponents(loaderComponent)
+function removeLoader(){
+  removeComponents(loaderComponent);
+  useComponents(components);
+}
+
+setTimeout(removeLoader , 2000)
+
+
+// useComponents(components)

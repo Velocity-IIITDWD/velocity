@@ -84,6 +84,5 @@ export default function testimonialjs() {
   }
 
   fetchData();
-  testimonialButton();
 
 }

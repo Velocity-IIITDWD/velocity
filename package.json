@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "gsap": "^3.11.5",
-    "swiper": "^10.0.4"
+    "swiper": "^10.1.0"
   },
   "description": "Site is Live at → [https://beta.velocityclub.live/](https://beta.velocityclub.live/)",
   "keywords": [],
