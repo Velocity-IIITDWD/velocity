@@ -34,29 +34,21 @@ export default function modulejs() {
   }
 
   // fetch api
-  // function fetchData() {
-  //   fetch('./api/modules.json')
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       const module = document.getElementById('blogCard')
+  function fetchData() {
+    fetch('./api/modules.json')
+      .then((response) => response.json())
+      .then((data) => {
+          const mainDiv = document.getElementById('blogCard');
 
-  //       for (const p of data) {
+          for(const p of data){
+            const iframee = document.createElement('iframe');
+            iframee.classList = "swiper-slide h-[200px] md:h-[300px] w-[350px] rounded-md border-none";
+            iframee.src = p.link;
+            mainDiv.appendChild(iframee);
+          }
+      })
+  }
 
-  //         const div = document.createElement('div')
-  //         div.classList = "swiper-slide rounded-lg bg-white overflow-hidden"
-  //         const frame = document.createElement('iframe')
-  //         frame.classList = "h-full w-full"
-  //         frame.src = p.link
-  //         div.appendChild(frame)
-  //         module.appendChild(div)
-  //       }
-  //     })
-  //     .catch((err) => {
-  //       console.error('Error:', err)
-  //     })
-  // }
-
-  // fetchData();
-  moduleCarousel();
-
+  fetchData();
+  setTimeout(moduleCarousel , 1000);
 }
