@@ -1,5 +1,5 @@
-import { newLogo, attachLogoTo } from "../utilities/logoFactory";
+import Logo3D from "../utilities/logoFactory";
 
-let { renderer } = newLogo();
+let logo = new Logo3D();
 
-export default () => attachLogoTo(document.getElementById('loader-logo-container'), renderer);
+export default () => logo.attachLogoTo(document.getElementById('loader-logo-container'));

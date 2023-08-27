@@ -1,4 +1,4 @@
-import { newLogo, attachLogoTo } from "../utilities/logoFactory";
+import Logo3D from "../utilities/logoFactory";
 
 export default function homejs() {
   // upcoming button
@@ -16,6 +16,6 @@ export default function homejs() {
     window.location.hash = "#projects";
   });
 
-  let { renderer, element } = newLogo();
-  attachLogoTo(document.getElementById('home-logo-container'), renderer);
+  let logo = new Logo3D();
+  logo.attachLogoTo(document.getElementById('home-logo-container'));
 }
