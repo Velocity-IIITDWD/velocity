@@ -4,6 +4,10 @@ function getSize(width, height) {
     return Math.min(width, height);
 }
 
+/**
+ * 
+ * @returns {{ renderer: THREE.WebGLRenderer, element: HTMLCanvasElement }}
+ */
 function newLogo() {
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
@@ -99,10 +103,19 @@ function attachLogoTo(/**@type {HTMLElement} */ parent, renderer) {
     let size = getSize(parent.clientWidth, parent.clientHeight);
     renderer.setSize(size, size);
 
-    new ResizeObserver(() => {
+    // https://stackoverflow.com/questions/76187282/react-resizeobserver-loop-completed-with-undelivered-notifications
+    const observerCallback = (entries) => {
+      window.requestAnimationFrame(() => {
+        if (!Array.isArray(entries) || !entries.length) return;
+        // 
         let size = getSize(parent.clientWidth, parent.clientHeight);        
         renderer.setSize(size, size);
-    }).observe(parent);
+        //
+      });
+    };
+    const resizeObserver = new ResizeObserver(observerCallback);
+    resizeObserver.observe(parent);
+
 
     parent.appendChild(renderer.domElement);
     renderer.domElement.classList.add('aspect-square');

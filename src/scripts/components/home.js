@@ -1,17 +1,21 @@
+import { newLogo, attachLogoTo } from "../utilities/logoFactory";
 
 export default function homejs() {
   // upcoming button
-  var button = document.getElementById("upcoming");
+  let button1 = document.getElementById("upcoming");
 
-  button.addEventListener("click", function () {
+  button1.addEventListener("click", function () {
     window.location.hash = "#timeline";
     // alert("bttj");
   });
 
   // upcoming button
-  var button = document.getElementById("ourProjects");
+  let button2 = document.getElementById("ourProjects");
 
-  button.addEventListener("click", function () {
+  button2.addEventListener("click", function () {
     window.location.hash = "#projects";
   });
+
+  let { renderer, element } = newLogo();
+  attachLogoTo(document.getElementById('home-logo-container'), renderer);
 }
