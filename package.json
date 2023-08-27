@@ -2,14 +2,30 @@
   "name": "velocity-website",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "css": "npx tailwindcss -i ./src/styles/tailwind/input.css -o ./src/styles/tailwind/output.css --watch"
+    "dev": "webpack serve",
+    "build": "webpack --mode production"
   },
   "devDependencies": {
-    "tailwindcss": "^3.2.7"
+    "autoprefixer": "^10.4.14",
+    "copy-webpack-plugin": "^11.0.0",
+    "css-loader": "^6.8.1",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "postcss": "^8.4.27",
+    "postcss-loader": "^7.3.3",
+    "style-loader": "^3.3.3",
+    "tailwindcss": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "gsap": "^3.11.5"
-  }
+    "gsap": "^3.11.5",
+    "swiper": "^10.1.0"
+  },
+  "description": "Site is Live at → [https://beta.velocityclub.live/](https://beta.velocityclub.live/)",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
