@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
 function getSize(width, height) {
-    return Math.min(width, height) * 0.75;
+    return Math.min(width, height);
 }
 
 function newLogo() {
