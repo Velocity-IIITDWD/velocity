@@ -16,6 +16,6 @@ export default function homejs() {
     window.location.hash = "#projects";
   });
 
-  let logo = new Logo3D();
+  let logo = new Logo3D(0.5);
   logo.attachLogoTo(document.getElementById('home-logo-container'));
 }

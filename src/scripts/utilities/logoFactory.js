@@ -5,7 +5,7 @@ function getSize(width, height) {
 }
 
 class Logo3D {
-  constructor() {
+  constructor(spinSpeedMultiplier = 1) {
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
 
@@ -51,8 +51,8 @@ class Logo3D {
 
       canvas.addEventListener('mousemove', (ev) => {
           if(mousePressed) {
-              velocityMouse[1] = ev.movementX * 0.0005;
-              velocityMouse[0] = ev.movementY * 0.0005;
+              velocityMouse[1] = ev.movementX * 0.0005 * spinSpeedMultiplier;
+              velocityMouse[0] = ev.movementY * 0.0005 * spinSpeedMultiplier;
           }
       });
 
@@ -66,8 +66,8 @@ class Logo3D {
               const movementX = lastTouch ? ev.touches[0].pageX - lastTouch[0] : 0;
               const movementY = lastTouch ? ev.touches[0].pageY - lastTouch[1] : 0;
 
-              velocityMouse[1] = movementX * 0.0005;
-              velocityMouse[0] = movementY * 0.0005;
+              velocityMouse[1] = movementX * 0.0005 * spinSpeedMultiplier;
+              velocityMouse[0] = movementY * 0.0005 * spinSpeedMultiplier;
               
               lastTouch = [ev.touches[0].pageX, ev.touches[0].pageY];
           }
