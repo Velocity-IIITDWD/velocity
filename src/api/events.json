@@ -29,9 +29,9 @@
 
     {
         "id" : 5,
-        "name" : "New event",
+        "name" : "GDSC x Velocity",
         "link" : "https://velocity-iiitdwd.netlify.app/",
-        "img" : "./images/eventsImg/cssBattles.jpg"
+        "img" : "./images/eventsImg/gdscXVelocity.JPG"
     }
 
 ]
