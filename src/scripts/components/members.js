@@ -108,33 +108,35 @@ async function loadMembers(role) {
 
 function main()
 {
-    loadMembers()
-    .then(()=>{
-        const isMediumWindow = window.innerWidth < 992;
-        if(!isMediumWindow)
-        {
-            const nonTechMembers = document.getElementById("nonTechMembers");
-            const webDevMembers = document.getElementById("webDevMembers");
-            const appDevMembers = document.getElementById("appDevMembers");
-            const techLeadMembers = document.getElementById("techLeadMembers");
-            const selectMembers = document.getElementById("selectMembers");
-        
-            techLeadMembers.addEventListener("click", ()=>{loadMembers("Tech")});
-            webDevMembers.addEventListener("click", ()=>{loadMembers("webDev")});
-            appDevMembers.addEventListener("click", ()=>{loadMembers("appDev")});
-            nonTechMembers.addEventListener("click", ()=>{loadMembers("nonTech")});
-        }
-        else
-        {
-            const selectMembers = document.getElementById("selectMembers");
-            selectMembers.addEventListener("change", (event)=>{
-                loadMembers(event.target.value);
-            })
-        }
-    });
+    const isMediumWindow = window.innerWidth < 992;
+    if(!isMediumWindow)
+    {
+        const nonTechMembers = document.getElementById("nonTechMembers");
+        const webDevMembers = document.getElementById("webDevMembers");
+        const appDevMembers = document.getElementById("appDevMembers");
+        const techLeadMembers = document.getElementById("techLeadMembers");
+        const selectMembers = document.getElementById("selectMembers");
+        const heading = document.getElementById("heading");
+    
+        heading.addEventListener("click", ()=>{loadMembers()});
+        techLeadMembers.addEventListener("click", ()=>{loadMembers("Tech")});
+        webDevMembers.addEventListener("click", ()=>{loadMembers("webDev")});
+        appDevMembers.addEventListener("click", ()=>{loadMembers("appDev")});
+        nonTechMembers.addEventListener("click", ()=>{loadMembers("nonTech")});
+    }
+    else
+    {
+        const selectMembers = document.getElementById("selectMembers");
+        selectMembers.addEventListener("change", (event)=>{
+            loadMembers(event.target.value);
+        })
+    };
 }
 
 export default function membersjs() {
 // members Section
-main();
+loadMembers().then(()=>
+{
+    main();
+});
 }
