@@ -52,5 +52,25 @@
             "linkedinLink": "",
             "gmailLink": ""
         }
+    ],
+    "nonTech":[
+        {
+            "id": 6,
+            "name": "",
+            "img": "./images/membersImg/members-img.jpg",
+            "githubLink": "",
+            "linkedinLink": "",
+            "gmailLink": ""
+        }
+    ],
+    "appDev":[
+        {
+            "id": 7,
+            "name": "",
+            "img": "./images/membersImg/members-img.jpg",
+            "githubLink": "",
+            "linkedinLink": "",
+            "gmailLink": ""
+        }
     ]
 }

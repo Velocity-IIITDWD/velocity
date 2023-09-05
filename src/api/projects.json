@@ -8,21 +8,21 @@
 
     {
         "id" : 2,
-        "name" : "Iridescence",
-        "description":"The Iridescence Club website is designed to promote and highlight the work of our talented members. It serves as a hub for showcasing stunning photographs and videos, sharing information about our club, and providing updates on upcoming events and collaborations.",
-        "link" : "https://github.com/Velocity-IIITDWD/iridescence"
+        "name" : "Iridisence",
+        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
+        "link" : "https://github.com/Velocity-IIITDWD/velocity"
     },
 
     {
         "id" : 3,
         "name" : "Quantum computing",
-        "description":"This club is for the quantum computing enthusiastics.",
+        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
         "link" : "https://github.com/Velocity-IIITDWD/velocity"
     },
 
     {
         "id" : 4,
-        "name" : "Techniosys",
+        "name" : "Technosys",
         "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
         "link" : "https://github.com/Velocity-IIITDWD/velocity"
     },
@@ -30,7 +30,7 @@
     {
         "id" : 5,
         "name" : "Velocity",
-        "description":"Our college website",
-        "link" : "https://github.com/Velocity-IIITDWD/College-Website"
+        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
+        "link" : "https://github.com/Velocity-IIITDWD/velocity"
     }
 ]

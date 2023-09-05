@@ -6,14 +6,11 @@
   <div class="heading flex flex-col items-center -space-y-3 md:space-y-6">
     <h2
       class="font-lato font-medium text-2xl md:text-5xl lg:text-[60px] leading-[72px]"
-      id="heading"
-      >
+    >
       Meet our Incredible Team
     </h2>
     <!-- Yellow heading underline -->
-    <div
-      class="h-0 w-[150px] md:w-[350px] lg:w-[412px] border-[1px] md:border-2 rounded-md border-[#ffa200]"
-    ></div>
+    <hr class="h-0 w-[150px] md:w-[350px] lg:w-[412px] border-[1px] md:border-2 rounded-md border-[#ffa200]" />
   </div>
 
   <!-- Team Roles Buttons -->
@@ -21,54 +18,50 @@
     class="team-roles hidden md:flex flex-row space-x-2 md:space-x-16 lg:space-x-32 px-5"
   >
     <div
-      id="team-card-1"
-      class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
+      id="Tech"
+      class="member-button relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
     >
       <span
         class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
       ></span>
       <span
         class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white"
-        id="techLeadMembers"
-        >Tech Lead</span
+       >Tech Lead</span
       >
     </div>
     <div
-      id="team-card-2"
-      class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
+      id="appDev"
+      class="member-button relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
     >
       <span
         class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
       ></span>
       <span
         class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white"
-        id="appDevMembers"
         >App Dev</span
       >
     </div>
     <div
-      id="team-card-3"
-      class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
+      id="webDev"
+      class="member-button relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
     >
       <span
         class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
       ></span>
       <span
         class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white"
-        id="webDevMembers"
         >Web Dev</span
       >
     </div>
     <div
-      id="team-card-4"
-      class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
+      id="nonTech"
+      class="member-button relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
     >
       <span
         class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
       ></span>
       <span
         class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white"
-        id="nonTechMembers"
         >Non Tech</span
       >
     </div>
@@ -79,10 +72,11 @@
       class="mb-3 w-40 text-sm font-roboto relative inline-flex items-center justify-start overflow-hidden font-medium transition-all duration-150 ease-out rounded-[5px] group cursor-pointer hover:bg-white bg-purple-600"
     >
       <select
-        data-te-select-init
+        data-to-select-init
         class="bg-transparent px-4 py-2 font-semibold cursor-pointer text-white group-hover:text-black h-full w-full"
         id="selectMembers"
         >
+        <option>All</option>
         <option value="Tech">Tech Lead</option>
         <option value="appDev">App Dev</option>
         <option value="webDev">Web Dev</option>
