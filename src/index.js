@@ -25,6 +25,7 @@ import footer from './components/footer.html'
 import headerJs from './scripts/components/headerJs'
 import homejs from './scripts/components/home'
 import modulejs from './scripts/components/modules'
+import membersjs from './scripts/components/members'
 import projectjs from './scripts/components/projects'
 import eventjs from './scripts/components/events'
 import testimonialjs from './scripts/components/testimonials'
@@ -39,7 +40,7 @@ const components = [
   { name: 'home', template: home, initiator: homejs },
   { name: 'about', template: about, initiator: null },
   { name: 'timeline', template: timeline, initiator: null },
-  { name: 'members', template: members, initiator: null },
+  { name: 'members', template: members, initiator: membersjs },
   { name: 'modules', template: modules, initiator: modulejs },
   { name: 'project', template: project, initiator: projectjs },
   { name: 'events', template: events, initiator: eventjs },
