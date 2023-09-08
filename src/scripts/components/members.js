@@ -56,6 +56,8 @@ function createAndAppendMembers(projectApi, p)
     gmail.appendChild(gmailIcon);
 }
 
+let response, data;
+
 // Fetching from API
 // For member section
 async function loadMembers(role) {
@@ -67,8 +69,7 @@ async function loadMembers(role) {
     membersDivCarousel.appendChild(projectApi);
 
     try {
-        const response = await fetch("../../api/members.json");
-        const data = await response.json();
+
         let membersAppended = [];
         
         if(role === undefined || role === 'All')
@@ -76,7 +77,6 @@ async function loadMembers(role) {
             membersAppended = [];
             for (let roleMembers in data) {
                 for (let p of data[roleMembers]) {
-                    console.log(p.name);
                     if(membersAppended.includes(p.id))
                     {
                         continue;
@@ -108,53 +108,56 @@ async function loadMembers(role) {
 
 function main()
 {
-    loadMembers()
-    .then(()=>{
-        // const isMediumWindow = window.innerWidth < 768;
-        const member_roles = document.querySelectorAll(".member-button");
-        
-        let chosen_button = "";
+    const member_roles = document.querySelectorAll(".member-button");
+    
+    let chosen_button = "";
 
-        member_roles.forEach((button)=>{
-            button.onclick = ()=>{
-                member_roles.forEach((btn)=>{
-                    btn.classList = "member-button relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer";
-                    btn.children[0].classList = "w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0";
-                    btn.children[1].classList = "relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white";
-                });
-                if(button.id === chosen_button)
-                {
-                    loadMembers();
-                    chosen_button = "";
-                }
-                else
-                {
-                    loadMembers(button.id);
-                    chosen_button = button.id;
-                    button.classList.remove("bg-white");
-                    button.classList.add("bg-purple-600");
-                    button.classList.remove("hover:bg-white");
-                    button.children[0].classList.remove("bg-purple-600");
-                    button.children[0].classList.add("bg-white-700");
-                    button.children[1].classList.remove("text-black");
-                    button.children[1].classList.add("text-white");
-                    button.children[1].classList.remove("group-hover:text-white");
-                    button.children[1].classList.add("group-hover:text-black");
-                }
-            };
-        });
+    member_roles.forEach((button)=>{
+        button.onclick = ()=>{
+            member_roles.forEach((btn)=>{
+                btn.classList = "member-button relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer";
+                btn.children[0].classList = "w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0";
+                btn.children[1].classList = "relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white";
+            });
+            if(button.id === chosen_button)
+            {
+                loadMembers();
+                chosen_button = "";
+            }
+            else
+            {
+                loadMembers(button.id);
+                chosen_button = button.id;
+                button.classList.remove("bg-white");
+                button.classList.add("bg-purple-600");
+                button.classList.remove("hover:bg-white");
+                button.children[0].classList.remove("bg-purple-600");
+                button.children[0].classList.add("bg-white-700");
+                button.children[1].classList.remove("text-black");
+                button.children[1].classList.add("text-white");
+                button.children[1].classList.remove("group-hover:text-white");
+                button.children[1].classList.add("group-hover:text-black");
+            }
+        };
+    });
 
-        const selectMembers = document.getElementById("selectMembers");
-        selectMembers.addEventListener("change", (event)=>{
-            loadMembers(event.target.value);
-        })
+    const selectMembers = document.getElementById("selectMembers");
+    selectMembers.addEventListener("change", (event)=>{
+        loadMembers(event.target.value);
     });
 }
 
+async function run(){
+    try{
+        response = await fetch("../../api/members.json")
+        data = await response.json();
+        await loadMembers();
+        main();
+    } catch (error) {
+        console.error(error);
+    }
+}
 export default function membersjs() {
     // members Section
-    loadMembers().then(()=>
-    {
-        main();
-    });
+    run();
 }
