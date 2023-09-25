@@ -27,9 +27,9 @@
     ]
     ,
 
-    "Frontend":[
+    "webDev":[
         {
-            "id": 1,
+            "id": 4,
             "name": "Imroz",
             "img": "./images/membersImg/members-img.jpg",
             "githubLink": "",
@@ -37,7 +37,7 @@
             "gmailLink": ""
         },
         {
-            "id": 2,
+            "id": 5,
             "name": "Aayushi",
             "img": "./images/membersImg/members-img.jpg",
             "githubLink": "",
@@ -47,6 +47,26 @@
         {
             "id": 3,
             "name": "Nancy",
+            "img": "./images/membersImg/members-img.jpg",
+            "githubLink": "",
+            "linkedinLink": "",
+            "gmailLink": ""
+        }
+    ],
+    "nonTech":[
+        {
+            "id": 6,
+            "name": "",
+            "img": "./images/membersImg/members-img.jpg",
+            "githubLink": "",
+            "linkedinLink": "",
+            "gmailLink": ""
+        }
+    ],
+    "appDev":[
+        {
+            "id": 7,
+            "name": "",
             "img": "./images/membersImg/members-img.jpg",
             "githubLink": "",
             "linkedinLink": "",
