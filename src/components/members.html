@@ -10,9 +10,7 @@
       Meet our Incredible Team
     </h2>
     <!-- Yellow heading underline -->
-    <div
-      class="h-0 w-[150px] md:w-[350px] lg:w-[412px] border-[1px] md:border-2 rounded-md border-[#ffa200]"
-    ></div>
+    <hr class="h-0 w-[150px] md:w-[350px] lg:w-[412px] border-[1px] md:border-2 rounded-md border-[#ffa200]" />
   </div>
 
   <!-- Team Roles Buttons -->
@@ -20,20 +18,20 @@
     class="team-roles hidden md:flex flex-row space-x-2 md:space-x-16 lg:space-x-32 px-5"
   >
     <div
-      id="team-card-1"
-      class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
+      id="Tech"
+      class="member-button relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
     >
       <span
         class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
       ></span>
       <span
         class="relative w-full text-left text-black transition-colors duration-300 ease-in-out group-hover:text-white"
-        >Tech Lead</span
+       >Tech Lead</span
       >
     </div>
     <div
-      id="team-card-2"
-      class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
+      id="appDev"
+      class="member-button relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
     >
       <span
         class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
@@ -44,8 +42,8 @@
       >
     </div>
     <div
-      id="team-card-3"
-      class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
+      id="webDev"
+      class="member-button relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
     >
       <span
         class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
@@ -56,8 +54,8 @@
       >
     </div>
     <div
-      id="team-card-4"
-      class="relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
+      id="nonTech"
+      class="member-button relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer"
     >
       <span
         class="w-48 h-48 rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"
@@ -74,13 +72,15 @@
       class="mb-3 w-40 text-sm font-roboto relative inline-flex items-center justify-start overflow-hidden font-medium transition-all duration-150 ease-out rounded-[5px] group cursor-pointer hover:bg-white bg-purple-600"
     >
       <select
-        data-te-select-init
+        data-to-select-init
         class="bg-transparent px-4 py-2 font-semibold cursor-pointer text-white group-hover:text-black h-full w-full"
-      >
-        <option value="1">Tech Lead</option>
-        <option value="2">App Dev</option>
-        <option value="3">Web Dev</option>
-        <option value="4">Non Tech</option>
+        id="selectMembers"
+        >
+        <option>All</option>
+        <option value="Tech">Tech Lead</option>
+        <option value="appDev">App Dev</option>
+        <option value="webDev">Web Dev</option>
+        <option value="nonTech">Non Tech</option>
       </select>
     </div>
   </div>
@@ -88,382 +88,8 @@
   <!-- Team Members Carousel -->
   <div
     class="team-members flex flex-row flex-wrap justify-center overflow-hidden relative h-auto w-[100%] max-w-full"
-  >
-    <div
-      class="team-members-container flex gap-16 w-calc[250px*6] animate-scroll"
+    id="membersDivCarousel"
     >
-      <div
-        class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden"
-      >
-        <div
-          class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]"
-        >
-          <!-- member image div -->
-          <div
-            class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm"
-          >
-            <!-- member image -->
-            <img src="../images/membersImg/members-img.jpg" />
-          </div>
-          <p class="font-roboto">Name1</p>
-          <!-- member's social media -->
-          <div
-            class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3"
-          >
-            <a href=""
-              ><img src="../images/socials/github.png" class="h-6 w-6"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/linkedin.png" class="h-5 w-5"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/gmail-logo.png" class="h-5 w-5"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden"
-      >
-        <div
-          class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]"
-        >
-          <!-- member image div -->
-          <div
-            class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm"
-          >
-            <!-- member image -->
-            <img src="../images/membersImg/members-img.jpg" />
-          </div>
-          <p class="font-roboto">Name2</p>
-          <!-- member's social media -->
-          <div
-            class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3"
-          >
-            <a href=""
-              ><img src="../images/socials/github.png" class="h-6 w-6"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/linkedin.png" class="h-5 w-5"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/gmail-logo.png" class="h-5 w-5"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden"
-      >
-        <div
-          class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]"
-        >
-          <!-- member image div -->
-          <div
-            class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm"
-          >
-            <!-- member image -->
-            <img src="../images/membersImg/members-img.jpg" />
-          </div>
-          <p class="font-roboto">Name3</p>
-          <!-- member's social media -->
-          <div
-            class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3"
-          >
-            <a href=""
-              ><img src="../images/socials/github.png" class="h-6 w-6"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/linkedin.png" class="h-5 w-5"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/gmail-logo.png" class="h-5 w-5"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden"
-      >
-        <div
-          class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]"
-        >
-          <!-- member image div -->
-          <div
-            class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm"
-          >
-            <!-- member image -->
-            <img src="../images/membersImg/members-img.jpg" />
-          </div>
-          <p class="font-roboto">Name4</p>
-          <!-- member's social media -->
-          <div
-            class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3"
-          >
-            <a href=""
-              ><img src="../images/socials/github.png" class="h-6 w-6"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/linkedin.png" class="h-5 w-5"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/gmail-logo.png" class="h-5 w-5"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden"
-      >
-        <div
-          class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]"
-        >
-          <!-- member image div -->
-          <div
-            class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm"
-          >
-            <!-- member image -->
-            <img src="../images/membersImg/members-img.jpg" />
-          </div>
-          <p class="font-roboto">Name5</p>
-          <!-- member's social media -->
-          <div
-            class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3"
-          >
-            <a href=""
-              ><img src="../images/socials/github.png" class="h-6 w-6"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/linkedin.png" class="h-5 w-5"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/gmail-logo.png" class="h-5 w-5"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden"
-      >
-        <div
-          class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]"
-        >
-          <!-- member image div -->
-          <div
-            class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm"
-          >
-            <!-- member image -->
-            <img src="../images/membersImg/members-img.jpg" />
-          </div>
-          <p class="font-roboto">Name6</p>
-          <!-- member's social media -->
-          <div
-            class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3"
-          >
-            <a href=""
-              ><img src="../images/socials/github.png" class="h-6 w-6"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/linkedin.png" class="h-5 w-5"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/gmail-logo.png" class="h-5 w-5"
-            /></a>
-          </div>
-        </div>
-      </div>
-      <!-- Loop -->
-      <div
-        class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden"
-      >
-        <div
-          class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]"
-        >
-          <!-- member image div -->
-          <div
-            class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm"
-          >
-            <!-- member image -->
-            <img src="../images/membersImg/members-img.jpg" />
-            <!-- <img src="../images/membersImg/members-img.jpg" /> -->
-          </div>
-          <p class="font-roboto">Name1</p>
-          <!-- member's social media -->
-          <div
-            class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3"
-          >
-            <a href=""
-              ><img src="../images/socials/github.png" class="h-6 w-6"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/linkedin.png" class="h-5 w-5"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/gmail-logo.png" class="h-5 w-5"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden"
-      >
-        <div
-          class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]"
-        >
-          <!-- member image div -->
-          <div
-            class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm"
-          >
-            <!-- member image -->
-            <img src="../images/membersImg/members-img.jpg" />
-          </div>
-          <p class="font-roboto">Name2</p>
-          <!-- member's social media -->
-          <div
-            class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3"
-          >
-            <a href=""
-              ><img src="../images/socials/github.png" class="h-6 w-6"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/linkedin.png" class="h-5 w-5"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/gmail-logo.png" class="h-5 w-5"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden"
-      >
-        <div
-          class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]"
-        >
-          <!-- member image div -->
-          <div
-            class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm"
-          >
-            <!-- member image -->
-            <img src="../images/membersImg/members-img.jpg" />
-          </div>
-          <p class="font-roboto">Name3</p>
-          <!-- member's social media -->
-          <div
-            class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3"
-          >
-            <a href=""
-              ><img src="../images/socials/github.png" class="h-6 w-6"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/linkedin.png" class="h-5 w-5"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/gmail-logo.png" class="h-5 w-5"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden"
-      >
-        <div
-          class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]"
-        >
-          <!-- member image div -->
-          <div
-            class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm"
-          >
-            <!-- member image -->
-            <img src="../images/membersImg/members-img.jpg" />
-          </div>
-          <p class="font-roboto">Name4</p>
-          <!-- member's social media -->
-          <div
-            class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3"
-          >
-            <a href=""
-              ><img src="../images/socials/github.png" class="h-6 w-6"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/linkedin.png" class="h-5 w-5"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/gmail-logo.png" class="h-5 w-5"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden"
-      >
-        <div
-          class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]"
-        >
-          <!-- member image div -->
-          <div
-            class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm"
-          >
-            <!-- member image -->
-            <img src="../images/membersImg/members-img.jpg" />
-          </div>
-          <p class="font-roboto">Name5</p>
-          <!-- member's social media -->
-          <div
-            class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3"
-          >
-            <a href=""
-              ><img src="../images/socials/github.png" class="h-6 w-6"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/linkedin.png" class="h-5 w-5"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/gmail-logo.png" class="h-5 w-5"
-            /></a>
-          </div>
-        </div>
-      </div>
-
-      <div
-        class="team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden"
-      >
-        <div
-          class="content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]"
-        >
-          <!-- member image div -->
-          <div
-            class="h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm"
-          >
-            <!-- member image -->
-            <img src="../images/membersImg/members-img.jpg" />
-          </div>
-          <p class="font-roboto">Name6</p>
-          <!-- member's social media -->
-          <div
-            class="h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3"
-          >
-            <a href=""
-              ><img src="../images/socials/github.png" class="h-6 w-6"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/linkedin.png" class="h-5 w-5"
-            /></a>
-            <a href=""
-              ><img src="../images/socials/gmail-logo.png" class="h-5 w-5"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </div>
+    
   </div>
 </section>

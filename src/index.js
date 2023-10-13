@@ -30,6 +30,7 @@ import eventjs from './scripts/components/events';
 import testimonialjs from './scripts/components/testimonials';
 import loaderjs from './scripts/components/loader';
 
+
 const loaderComponent = [
   { name: 'loader', template: loader, initiator: loaderjs },
 ];
@@ -40,7 +41,7 @@ const components = [
   { name: 'home', template: home, initiator: homejs },
   { name: 'about', template: about, initiator: null },
   { name: 'timeline', template: timeline, initiator: null },
-  { name: 'members', template: members, initiator: null },
+  { name: 'members', template: members, initiator: membersjs },
   { name: 'modules', template: modules, initiator: modulejs },
   { name: 'project', template: project, initiator: projectjs },
   { name: 'events', template: events, initiator: eventjs },
