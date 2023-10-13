@@ -5,7 +5,7 @@ function getSize(width, height) {
 }
 
 class Logo3D {
-  constructor(spinSpeedMultiplier = 1) {
+  constructor(spinSpeedMultiplier = 1, radius = 1) {
       const scene = new THREE.Scene();
       const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
 
@@ -13,7 +13,6 @@ class Logo3D {
       renderer.setSize(512, 512);
       renderer.setClearColor(0x000000, 0);
 
-      const radius = 1;
       const detail = 2;
       let velocityBase = [0, 0.0005, 0];
       let velocityMouse = [0, 0, 0];
