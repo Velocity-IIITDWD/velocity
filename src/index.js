@@ -29,6 +29,7 @@ import membersjs from './scripts/components/members'
 import projectjs from './scripts/components/projects'
 import eventjs from './scripts/components/events'
 import testimonialjs from './scripts/components/testimonials'
+import timelinejs from './scripts/components/timeline';
 
 const loaderComponent = [
   { name: 'loader', template: loader, initiator: null },
@@ -39,7 +40,7 @@ const components = [
   { name: 'blurBg', template: blurBg, initiator: null },
   { name: 'home', template: home, initiator: homejs },
   { name: 'about', template: about, initiator: null },
-  { name: 'timeline', template: timeline, initiator: null },
+  { name: 'timeline', template: timeline, initiator: timelinejs },
   { name: 'members', template: members, initiator: membersjs },
   { name: 'modules', template: modules, initiator: modulejs },
   { name: 'project', template: project, initiator: projectjs },
