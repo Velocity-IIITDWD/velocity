@@ -1,23 +1,18 @@
 function createAndAppendMembers(projectApi, p)
 {
     const parentDiv = document.createElement('div');
-    parentDiv.classList =
-        "team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden";
+    parentDiv.classList = "team-members-card h-[250px] w-[200px] md:h-[300px] md:w-[250px] bg-[#13011c] rounded-[10px] border-[1px] border-[#6A07CC] border-opacity-[70%] drop-shadow-team-card flex justify-center group relative overflow-hidden";
     projectApi.appendChild(parentDiv);
         
     const innerParentDiv = document.createElement('div');
-    innerParentDiv.classList =
-        'content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]';
+    innerParentDiv.classList = 'content flex flex-col items-center justify-center gap-2 group-hover:translate-y-[-20px] transition-all duration-[0.5s]';
     parentDiv.append(innerParentDiv);
 
 
     const memberImageDiv = document.createElement("div");
-    memberImageDiv.classList = "h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-sm";
+    memberImageDiv.classList = "h-[150px] w-[150px] md:h-[200px] md:w-[200px] bg-white rounded-md bg-cover bg-center";
+    memberImageDiv.style.backgroundImage = `url(${p.img})`;
     innerParentDiv.appendChild(memberImageDiv);
-
-    const image = document.createElement("img");
-    image.setAttribute("src", p.img);
-    memberImageDiv.appendChild(image);
 
     const para = document.createElement("p");
     para.classList = "font-roboto";
@@ -25,7 +20,7 @@ function createAndAppendMembers(projectApi, p)
     innerParentDiv.appendChild(para);
 
     const memberSocials = document.createElement("div");
-    memberSocials.classList = "h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute -bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3";
+    memberSocials.classList = "h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3";
     innerParentDiv.appendChild(memberSocials);
 
     const github = document.createElement("a");
@@ -91,7 +86,6 @@ async function loadMembers(role) {
             membersAppended = [];
             if(data[role]){}
             for (let p of data[role]) { 
-                console.log(p.name);  
                 if(membersAppended.includes(p.id))
                 {
                     continue;
@@ -100,7 +94,11 @@ async function loadMembers(role) {
                 createAndAppendMembers(projectApi, p);
             }
         }
-                
+
+        if(membersAppended.length * 300 < window.innerWidth) {
+            projectApi.classList.remove("animate-scroll");
+        }
+        
     } catch (error) {
         console.error('Error:', error);
     }
