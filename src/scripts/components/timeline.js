@@ -1,4 +1,10 @@
-let pathSvg, leftCurve, rightCurve, rocketPath, prevYear, nextYear, currYear;
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
+
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+
+let pathSvg, leftCurve, rightCurve, rocketPath, rocket, prevYear, nextYear, currYear, timelineContainer;
 
 
 function drawCurves() {
@@ -62,10 +68,40 @@ export default function() {
   leftCurve = document.getElementById('left-curve');
   rightCurve = document.getElementById('right-curve');
   rocketPath = document.getElementById('rocket-path');
+  rocket = document.getElementById('rocket');
+  timelineContainer = document.getElementById('timeline-container')
+  const rocketImg = document.querySelector('#rocket img');
 
   prevYear = document.getElementById('prev-year');
   nextYear = document.getElementById('next-year');
   currYear = document.getElementById('curr-year');
+
+  let prevDirection = 0;
+  gsap.timeline({
+      scrollTrigger: {
+          trigger: timelineContainer,
+          start: 'bottom bottom',
+          end: 'top top',
+          scrub: 2,
+          invalidateOnRefresh: true,
+          onUpdate: self => {
+              if (prevDirection !== self.direction) {
+                  prevDirection = self.direction;
+                  // can't flip the rocket image directly because gsap will overwrite transform each time
+                  // instead, let gsap control the div having the rocket image and we flip the image
+                  rocketImg.style.transform = self.direction === 1 ? null : `scale(-1, 1)`;
+              }
+          }
+      }
+  })
+  .to(rocket, {
+      motionPath: {
+          path: rocketPath,
+          align: rocketPath,
+          alignOrigin: [0.5, 1],
+          autoRotate: 0,
+      }
+  });
 
   drawCurves();
   window.addEventListener('resize', drawCurves);
