@@ -1,11 +1,30 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { MotionPathPlugin } from 'gsap/MotionPathPlugin';
+import { TextPlugin } from 'gsap/TextPlugin';
 
-gsap.registerPlugin(ScrollTrigger, MotionPathPlugin);
+gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, TextPlugin);
 
-let pathSvg, leftCurve, rightCurve, rocketPath, rocket, prevYear, nextYear, currYear, timelineContainer;
+let pathSvg, leftCurve, rightCurve, rocketPath, rocket, prevYear, nextYear, currYear, timelineContainer, currYearText;
 
+let year = new Date().getFullYear();
+const start = 2020;
+const end = year;
+
+const tl = gsap.timeline({ duration: 0.2 });
+const prevTimeline = gsap.timeline();
+const currTimeline = gsap.timeline();
+const nextTimeline = gsap.timeline();
+
+tl.pause();
+tl.add(prevTimeline).add(currTimeline).add(nextTimeline);
+
+const content = {
+    2020: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
+    2021: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat',
+    2022: 'Velocity Club, started working offline capacity, recruited more members and did their first event Coding With Coffee',
+    2023: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident',
+};
 
 function drawCurves() {
 
@@ -61,6 +80,28 @@ function drawCurves() {
 
 }
 
+function increaseYear() {
+  if (year === end)
+      return;
+  prevYear.style.color = '#FFF';
+  year++;
+  tl.invalidate();
+  tl.restart();
+  if (year === end)
+      nextYear.style.color = '#DDD';
+}
+
+function decreaseYear() {
+  if (year === start)
+      return;
+  nextYear.style.color = '#FFF';
+  year--;
+  tl.invalidate();
+  tl.restart();
+  if (year === start)
+      prevYear.style.color = '#DDD';
+}
+
 
 export default function() {
 
@@ -69,12 +110,19 @@ export default function() {
   rightCurve = document.getElementById('right-curve');
   rocketPath = document.getElementById('rocket-path');
   rocket = document.getElementById('rocket');
-  timelineContainer = document.getElementById('timeline-container')
+  timelineContainer = document.getElementById('timeline-container');
+  currYearText = document.getElementById('curr-year-text');
   const rocketImg = document.querySelector('#rocket img');
 
   prevYear = document.getElementById('prev-year');
   nextYear = document.getElementById('next-year');
   currYear = document.getElementById('curr-year');
+
+  currYear.textContent = year;
+  prevYear.textContent = year - 1;
+  nextYear.textContent = year + 1;
+  currYearText.textContent = content[year];
+  nextYear.style.color = '#DDD';
 
   let prevDirection = 0;
   gsap.timeline({
@@ -103,7 +151,25 @@ export default function() {
       }
   });
 
+  prevTimeline
+    .to(prevYear, { autoAlpha: 0})
+    .set(prevYear, { text: () => year - 1 })
+    .to(prevYear, { autoAlpha: 1 });
+    
+  currTimeline
+    .to(currYear, { autoAlpha: 0})
+    .set(currYear, { text: () => year})
+    .to(currYear, { autoAlpha: 1 });
+      
+  nextTimeline
+    .to(nextYear, { autoAlpha: 0})
+    .set(nextYear, { text: () => year + 1})
+    .to(nextYear, { autoAlpha: 1 })
+    .to(currYearText, { text: () => content[year] }, 0);
+
   drawCurves();
   window.addEventListener('resize', drawCurves);
+  prevYear.addEventListener('click', decreaseYear);
+  nextYear.addEventListener('click', increaseYear);
 
 }
