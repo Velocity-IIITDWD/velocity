@@ -24,6 +24,7 @@ import footer from './components/footer.html';
 // js components
 import headerJs from './scripts/components/headerJs';
 import homejs from './scripts/components/home';
+import membersjs from './scripts/components/members';
 import modulejs from './scripts/components/modules';
 import projectjs from './scripts/components/projects';
 import eventjs from './scripts/components/events';
