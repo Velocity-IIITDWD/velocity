@@ -1,26 +1,21 @@
 [
   {
-    "id": 1,
-    "link": "https://velocity-iiitdwd.netlify.app/"
-  },
-
-  {
     "id": 2,
-    "link": "https://velocity-iiitdwd.netlify.app/"
+    "link": "./images/eventsImg/cssBattles.jpg"
   },
 
   {
     "id": 3,
-    "link": "https://velocity-iiitdwd.netlify.app/"
+    "link": "./images/eventsImg/CwCoffee.JPG"
   },
 
   {
     "id": 4,
-    "link": "https://velocity-iiitdwd.netlify.app/"
+    "link": "./images/eventsImg/velodictory.JPG"
   },
 
   {
     "id": 5,
-    "link": "https://velocity-iiitdwd.netlify.app/"
+    "link": "./images/eventsImg/gdscXVelocity.JPG"
   }
 ]
