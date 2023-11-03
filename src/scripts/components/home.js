@@ -16,5 +16,7 @@ export default function() {
   });
 
   let logo = new Logo3D(0.5, 1);
-  logo.attachLogoTo(document.getElementById('home-logo-container'));
+  let logoContainer = document.getElementById('home-logo-container');
+  logoContainer.parentElement.classList.add(window.innerWidth > 768 ? 'z-20' : '-z-20');
+  logo.attachLogoTo(logoContainer);
 }
