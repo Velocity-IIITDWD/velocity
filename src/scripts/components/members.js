@@ -19,6 +19,13 @@ function createAndAppendMembers(projectApi, p)
     para.textContent = p.name;
     innerParentDiv.appendChild(para);
 
+    if(p.isLead) {
+        const title = document.createElement("p");
+        title.classList = "font-roboto";
+        title.textContent = p.title;
+        innerParentDiv.appendChild(title);
+    }
+
     const memberSocials = document.createElement("div");
     memberSocials.classList = "h-[24px] w-[120px] bg-[#5600e8] rounded-3xl absolute bottom-[30px] group-hover:bottom-0 transition-all duration-[0.5s] ease-in-out opacity-0 group-hover:opacity-100 flex justify-center items-center gap-3";
     innerParentDiv.appendChild(memberSocials);
@@ -51,56 +58,112 @@ function createAndAppendMembers(projectApi, p)
     gmail.appendChild(gmailIcon);
 }
 
-let response, data;
+let response, data, roles, jsonData;
 
-// Fetching from API
-// For member section
 async function loadMembers(role) {
     const membersDivCarousel = document.getElementById("membersDivCarousel");
     membersDivCarousel.textContent = "";
 
     const projectApi = document.createElement("div");
-    projectApi.classList = "team-members-container flex gap-16 w-[300px*6] animate-scroll";
+    projectApi.classList = "team-members-container flex gap-16 w-[300px*6] no-animate-scroll";
     membersDivCarousel.appendChild(projectApi);
+    
+    let membersAppended = 0;
 
-    try {
-
-        let membersAppended = [];
-        
-        if(role === undefined || role === 'All')
+    
+    try {    
+        if (role === undefined || role === 'All')
         {
-            membersAppended = [];
-            for (let roleMembers in data) {
-                for (let p of data[roleMembers]) {
-                    if(membersAppended.includes(p.id))
-                    {
-                        continue;
-                    }
-                    membersAppended.push(p.id);
+            for (let p of data) {
+                membersAppended++;
+                createAndAppendMembers(projectApi, p);
+            }
+        } else if (role === "Ex-Leads") {
+            for (let p of data) {
+                if(p.isLead && p.isCurrentMember == false) {
+                    membersAppended++;
+                    createAndAppendMembers(projectApi, p);
+                }
+            }
+        } else if (role === "Leads") {
+            for (let p of data) {
+                if(p.isLead && p.isCurrentMember) {
+                    membersAppended++;
+                    createAndAppendMembers(projectApi, p);
+                }
+            }
+        } else {
+            for (let p of data) {
+                if(p.roles.includes(role)) {
+                    membersAppended++;
                     createAndAppendMembers(projectApi, p);
                 }
             }
         }
-        else
-        {
-            membersAppended = [];
-            if(data[role]){}
-            for (let p of data[role]) { 
-                if(membersAppended.includes(p.id))
-                {
-                    continue;
-                }
-                membersAppended.push(p.id);
-                createAndAppendMembers(projectApi, p);
-            }
-        }
+        
+        const intersectionObserver = new IntersectionObserver((entries) => {
+            if(entries[0].intersectionRatio <= 0) return;
 
-        if(membersAppended.length * 300 < window.innerWidth) {
-            projectApi.classList.remove("animate-scroll");
-        }
+            if (membersAppended * 300 > window.innerWidth) {
+                projectApi.classList.replace("no-animate-scroll", "animate-scroll");
+                membersDivCarousel.classList.replace("justify-center", "justify-start");
+            } else {
+                membersDivCarousel.classList.replace("justify-start", "justify-center");
+                projectApi.classList.replace("animate-scroll", "no-animate-scroll");
+            }
+        });
+        intersectionObserver.observe(projectApi);
         
     } catch (error) {
         console.error('Error:', error);
+    }
+}
+
+async function loadRoles() {
+    let teamRoles = document.querySelector("#team-roles");
+    
+    let teamRolesMd = document.createElement("div");
+    teamRolesMd.classList = "team-roles max-md:hidden grid md:grid-cols-3 xl:grid-cols-6 md:gap-y-6 md:gap-x-16 lg:gap-x-28 px-5";
+    teamRoles.appendChild(teamRolesMd);
+
+    for (let role of roles) {
+        if (role === "All") continue;
+        let roleDiv = document.createElement("div");
+        roleDiv.id = role;
+        roleDiv.classList = "text-center member-button relative px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer";
+        teamRolesMd.appendChild(roleDiv);
+
+        let purpleCard = document.createElement("span");
+        purpleCard.classList = "w-[200px] h-[200px] rounded rotate-[-40deg] bg-purple-600 absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0";
+        roleDiv.appendChild(purpleCard);
+
+        let roleInnerDiv = document.createElement("div");
+        roleInnerDiv.classList = "flex items-center h-full";
+        roleDiv.appendChild(roleInnerDiv);
+        
+        let roleButton = document.createElement("span");
+        roleButton.classList = "relative w-full text-center text-black transition-colors duration-300 ease-in-out group-hover:text-white";
+        roleButton.textContent = role;
+        roleButton.style.marginTop = (roleDiv.offsetHeight - roleButton.offsetHeight)/2;
+        roleInnerDiv.appendChild(roleButton);
+    }
+
+    let teamRolesSm = document.createElement("div");
+    teamRolesSm.classList = "md:hidden mb-3 w-40 text-sm font-roboto relative inline-flex items-center justify-start overflow-hidden font-medium transition-all duration-150 ease-out rounded-[5px] group cursor-pointer hover:bg-white bg-purple-600";
+    teamRoles.appendChild(teamRolesSm);
+    
+    let teamRolesSmSelect = document.createElement("select");
+    teamRolesSmSelect.classList = "bg-transparent px-4 py-2 font-semibold cursor-pointer text-black";
+    teamRolesSmSelect.id = "selectMembers";
+    teamRolesSmSelect.style.backgroundColor = "#FFFFF7";
+    
+    teamRolesSm.appendChild(teamRolesSmSelect);
+
+    for (let role of roles) {
+        let option = document.createElement("option");
+        option.value = role;
+        option.textContent = role;
+        teamRolesSmSelect.appendChild(option);
     }
 }
 
@@ -147,8 +210,11 @@ function main()
 
 async function run(){
     try{
-        response = await fetch("../../api/members.json")
-        data = await response.json();
+        response = await fetch("../../api/members.json");
+        jsonData = await response.json();
+        data = await jsonData.Members;
+        roles = await jsonData.Roles;
+        await loadRoles();
         await loadMembers();
         main();
     } catch (error) {
