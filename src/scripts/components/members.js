@@ -100,6 +100,35 @@ async function loadMembers(role) {
                 }
             }
         }
+
+        if (membersAppended * 300 > window.innerWidth) {
+            for (let i=0; i<4; i++) {
+                if (role === undefined || role === 'All')
+                {
+                    for (let p of data) {
+                        createAndAppendMembers(projectApi, p);
+                    }
+                } else if (role === "Ex-Leads") {
+                    for (let p of data) {
+                        if(p.isLead && p.isCurrentMember == false) {
+                            createAndAppendMembers(projectApi, p);
+                        }
+                    }
+                } else if (role === "Leads") {
+                    for (let p of data) {
+                        if(p.isLead && p.isCurrentMember) {
+                            createAndAppendMembers(projectApi, p);
+                        }
+                    }
+                } else {
+                    for (let p of data) {
+                        if(p.roles.includes(role)) {
+                            createAndAppendMembers(projectApi, p);
+                        }
+                    }
+                }
+            }
+        }
         
         const intersectionObserver = new IntersectionObserver((entries) => {
             if(entries[0].intersectionRatio <= 0) return;
