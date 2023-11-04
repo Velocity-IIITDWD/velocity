@@ -8,7 +8,7 @@ export default function modulejs() {
       grabCursor: true,
       centeredSlides: true,
       spaceBetween: 50,
-      slidesPerView: 3,
+      slidesPerView: 'auto',
       loop: true,
       autoplay: true,
       coverflowEffect: {
@@ -22,14 +22,7 @@ export default function modulejs() {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      breakpoints: {
-        480: {
-          slidesPerView: 1,
-        },
-        1080: {
-          slidesPerView: 2
-        }
-      },
+      
   });
   }
 
@@ -42,7 +35,7 @@ export default function modulejs() {
 
           for(const p of data){
             const iframee = document.createElement('div');
-            iframee.classList = "relative rounded-md swiper-slide h-full w-full border-none";
+            iframee.classList = "relative rounded-md swiper-slide h-full w-full max-w-2xl border-none";
             mainDiv.appendChild(iframee);
 
             const img = document.createElement("img");
