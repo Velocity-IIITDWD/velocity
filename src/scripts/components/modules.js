@@ -8,7 +8,7 @@ export default function modulejs() {
       grabCursor: true,
       centeredSlides: true,
       spaceBetween: 50,
-      slidesPerView: '3',
+      slidesPerView: 3,
       loop: true,
       autoplay: true,
       coverflowEffect: {
@@ -23,12 +23,12 @@ export default function modulejs() {
         prevEl: '.swiper-button-prev',
       },
       breakpoints: {
-        320: {
+        480: {
           slidesPerView: 1,
         },
-        480: {
-          slidesPerView: 2,
-        },
+        1080: {
+          slidesPerView: 2
+        }
       },
   });
   }
@@ -42,14 +42,25 @@ export default function modulejs() {
 
           for(const p of data){
             const iframee = document.createElement('div');
-            iframee.classList = "swiper-slide h-[200px] md:h-[300px] w-[350px] border-none";
-            const img = document.createElement("img");
-            img.classList = "rounded-md";
-            img.src = p.link;
-            img.style.maxHeight = "100%";
-            img.style.margin = "auto";
-            iframee.appendChild(img);
+            iframee.classList = "relative rounded-md swiper-slide h-full w-full border-none";
             mainDiv.appendChild(iframee);
+
+            const img = document.createElement("img");
+            img.classList = "rounded-md h-full w-full";
+            img.src = p.img;
+            iframee.appendChild(img);
+            
+            const textDiv = document.createElement("div");
+            textDiv.classList = "ease-in-out duration-150 absolute rounded-md opacity-0 bg-transparent hover:opacity-95 hover:backdrop-blur-sm hover:bg-purple-300/60 inset-0 flex flex-col items-center justify-center w-full h-full";
+            iframee.appendChild(textDiv);
+
+            const button = document.createElement("a");
+            button.type = "button";
+            button.classList = "text-slate-750 bg-blue-600 rounded-md w-auto p-2"
+            button.href = p.link;
+            button.setAttribute("target", "_blank");
+            button.textContent = p.text;
+            textDiv.appendChild(button);
           }
       })
   }
