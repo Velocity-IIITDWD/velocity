@@ -7,12 +7,12 @@
     "build": "webpack --mode production"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
+    "autoprefixer": "^10.4.15",
     "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.8.1",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
-    "postcss": "^8.4.27",
+    "postcss": "^8.4.28",
     "postcss-loader": "^7.3.3",
     "style-loader": "^3.3.3",
     "tailwindcss": "^3.3.3",
@@ -22,7 +22,8 @@
   },
   "dependencies": {
     "gsap": "^3.11.5",
-    "swiper": "^10.1.0"
+    "swiper": "^10.1.0",
+    "three": "^0.155.0"
   },
   "description": "Site is Live at → [https://beta.velocityclub.live/](https://beta.velocityclub.live/)",
   "keywords": [],
