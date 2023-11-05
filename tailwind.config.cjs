@@ -15,13 +15,13 @@ module.exports = {
       animation: {
         'spin-slow': 'spin 5s linear infinite',
         'spin-slower': 'spin 12s linear infinite',
-        scroll: 'scrollCard 25s linear infinite',
+        scroll: 'scrollCard 200s linear infinite',
         scrollOpposite: 'scrollCardOp 25s linear infinite',
       },
       keyframes: {
         scrollCard: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(calc(-314px*4))' },
+          '100%': { transform: 'translateX(calc(-314px*40))' },
         },
         scrollCardOp: {
           '0%': { transform: 'translateX(calc(-314px*4))' },
