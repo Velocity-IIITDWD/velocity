@@ -1,5 +1,6 @@
 export default function eventjs() {
 
+  // Function to handle carousel functionality
   function eventCarousel() {
     const carousel = document.querySelector('#carousel')
     const caroudchildren = [...carousel.children]
@@ -167,7 +168,8 @@ export default function eventjs() {
     })
   }
 
-
+  
+  // Call functions to initialize carousel and fetch data
   fetchdata();
   eventCarousel();
 }
