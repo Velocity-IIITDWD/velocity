@@ -47,8 +47,8 @@ export default function eventjs() {
     carousel.addEventListener('mouseup', dragStop)
     carousel.addEventListener('mouseleave', () => isDragging = false)
     // Listen for touch events
-    container.addEventListener('touchstart', touchStart)
-    container.addEventListener('touchmove', touchmove)
+    carousel.addEventListener('touchstart', touchStart)
+    carousel.addEventListener('touchmove', touchmove)
   }
 
   // fetch api
