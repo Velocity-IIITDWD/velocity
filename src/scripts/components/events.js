@@ -1,11 +1,16 @@
 export default function eventjs() {
 
+  // Function to handle carousel functionality
   function eventCarousel() {
     const carousel = document.querySelector('#carousel')
     const caroudchildren = [...carousel.children]
 
     let isDragging = false
     let startX, startScrollLeft
+    let scrollPos = 0
+
+    // Mouse event handlers
+    //----------------------------------------------------------------------//
 
     const dragStart = (e) => {
       isDragging = true
@@ -27,25 +32,24 @@ export default function eventjs() {
       carousel.classList.remove('dragging')
     }
 
+    const touchStart = (event) => {
+      scrollPos = this.scrollLeft + event.touches[0].clientX
+    }
+
+    const touchmove = (event) => {
+      this.scrollLeft = scrollPos - event.touches[0].clientX
+    }
+
+    //----------------------------------------------------------------------//
+
+    // Listen for mouse events
     carousel.addEventListener('mousedown', dragStart)
     carousel.addEventListener('mousemove', dragging)
     carousel.addEventListener('mouseup', dragStop)
-    carousel.addEventListener('mouseleave', () => {
-      isDragging = false
-    })
-
-    //event carousel for mobile
-    const container = document.querySelector('#carousel')
-    const items = document.querySelectorAll('.card')
-    let scrollPos = 0
-
-    container.addEventListener('touchstart', function (event) {
-      scrollPos = this.scrollLeft + event.touches[0].clientX
-    })
-
-    container.addEventListener('touchmove', function (event) {
-      this.scrollLeft = scrollPos - event.touches[0].clientX
-    })
+    carousel.addEventListener('mouseleave', () => isDragging = false)
+    // Listen for touch events
+    carousel.addEventListener('touchstart', touchStart)
+    carousel.addEventListener('touchmove', touchmove)
   }
 
   // fetch api
@@ -56,6 +60,7 @@ export default function eventjs() {
       const eventsDiv = document.getElementById('carousel')
 
       let ecount = 0
+      // Add events to page after they are fetched
       for (const p of data) {
         ecount++
         if (ecount % 2 == 1) {
@@ -64,8 +69,7 @@ export default function eventjs() {
           liTag.id = 'cardUp'
           // card div
           const cardDiv = document.createElement('div')
-          cardDiv.classList =
-            'h-[235px] w-[350px] bg-white rounded-[15px] z-10 overflow-hidden relative flex justify-center items-center image-container'
+          cardDiv.classList = 'h-[235px] w-[350px] bg-white rounded-[15px] z-10 overflow-hidden relative flex justify-center items-center image-container'
 
           const img = document.createElement('img')
           img.classList = 'h-[97%] w-[97%] rounded-[15px]'
@@ -164,7 +168,8 @@ export default function eventjs() {
     })
   }
 
-
+  
+  // Call functions to initialize carousel and fetch data
   fetchdata();
   eventCarousel();
 }

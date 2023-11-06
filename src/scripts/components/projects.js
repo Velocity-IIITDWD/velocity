@@ -4,7 +4,7 @@ function fadeProjects() {
     const isSmallWindow = window.innerWidth < 768;
 
     sr.reveal('.js--fadeInLeft', {
-      origin: isSmallWindow ? 'right' : 'left',
+      origin: isSmallWindow ? 'right' : 'left',     // All projects will stay on right if window is small
       distance: '300px',
       easing: 'ease-in-out',
       duration: 800,
@@ -18,6 +18,7 @@ function fadeProjects() {
     });
   }
 
+  // If document is loaded, then call loadCallback, else wait for document load first
   if (document.readyState === 'complete') loadCallback();
   else window.addEventListener('load', loadCallback);
 }
@@ -31,6 +32,7 @@ function loadProjects() {
       const projectApi = document.getElementById('projects');
       let count = 0;
 
+      // Add each project in response to DOM
       for (const p of data) {
         count++;
         const parentDiv = document.createElement('div');
@@ -75,7 +77,6 @@ function loadProjects() {
 
         parentDiv.appendChild(projectDiv);
         projectApi.appendChild(parentDiv);
-
       }
     })
     .catch((error) => {
