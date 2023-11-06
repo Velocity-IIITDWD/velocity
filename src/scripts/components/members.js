@@ -152,14 +152,14 @@ async function loadRoles() {
     let teamRoles = document.querySelector("#team-roles");
     
     let teamRolesMd = document.createElement("div");
-    teamRolesMd.classList = "team-roles max-md:hidden grid md:grid-cols-3 xl:grid-cols-6 md:gap-y-6 md:gap-x-16 lg:gap-x-28 px-5";
+    teamRolesMd.classList = "team-roles max-md:hidden grid md:grid-cols-3 xl:grid-cols-6 md:gap-y-6 md:gap-x-16 lg:gap-x-16 px-5 lg:px-16";
     teamRoles.appendChild(teamRolesMd);
 
     for (let role of roles) {
         if (role === "All") continue;
         let roleDiv = document.createElement("div");
         roleDiv.id = role;
-        roleDiv.classList = "text-center member-button relative px-6 py-3 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer";
+        roleDiv.classList = "text-center member-button relative px-4 py-4 overflow-hidden font-medium transition-all bg-white rounded hover:bg-white group cursor-pointer";
         teamRolesMd.appendChild(roleDiv);
 
         let purpleCard = document.createElement("span");
@@ -171,7 +171,7 @@ async function loadRoles() {
         roleDiv.appendChild(roleInnerDiv);
         
         let roleButton = document.createElement("span");
-        roleButton.classList = "relative w-full text-center text-black transition-colors duration-300 ease-in-out group-hover:text-white";
+        roleButton.classList = "relative w-full text-center w-full text-black transition-colors duration-300 ease-in-out group-hover:text-white";
         roleButton.textContent = role;
         roleButton.style.marginTop = (roleDiv.offsetHeight - roleButton.offsetHeight)/2;
         roleInnerDiv.appendChild(roleButton);
