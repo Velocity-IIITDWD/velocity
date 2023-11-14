@@ -3,4 +3,17 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-/* Your custom CSS can go here */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@layer utilities {
+  @variants responsive {
+    .no-scrollbar::-webkit-scrollbar {  /* Chrome, Safari and Opera */
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;         /* IE and Edge */
+      scrollbar-width: none;            /* Firefox */
+    }
+  }
+}
