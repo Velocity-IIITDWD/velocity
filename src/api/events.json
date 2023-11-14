@@ -10,28 +10,28 @@
         "id" : 2,
         "name" : "Velohack",
         "link" : "https://velocity-iiitdwd.netlify.app/",
-        "img" : "./images/eventsImg/cssBattles.jpg"
+        "img" : "./images/eventsImg/velohack.JPG"
     },
 
     {
         "id" : 3,
-        "name" : "Codding with Coffee",
+        "name" : "Coding with Coffee",
         "link" : "https://velocity-iiitdwd.netlify.app/",
-        "img" : "./images/eventsImg/cssBattles.jpg"
+        "img" : "./images/eventsImg/CwCoffee.JPG"
     },
 
     {
         "id" : 4,
         "name" : "Velodictory",
         "link" : "https://velocity-iiitdwd.netlify.app/",
-        "img" : "./images/eventsImg/cssBattles.jpg"
+        "img" : "./images/eventsImg/velodictory.JPG"
     },
 
     {
         "id" : 5,
-        "name" : "New event",
+        "name" : "GDSC X Velocity Web Campaign",
         "link" : "https://velocity-iiitdwd.netlify.app/",
-        "img" : "./images/eventsImg/cssBattles.jpg"
+        "img" : "./images/eventsImg/gdscXVelocity.JPG"
     }
 
 ]

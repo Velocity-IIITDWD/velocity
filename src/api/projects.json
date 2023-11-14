@@ -1,36 +1,44 @@
 [
     {
         "id" : 1,
-        "name" : "ProjectX",
-        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
-        "link" : "https://github.com/Velocity-IIITDWD/velocity"
+        "name" : "New College Website",
+        "description": "A new and better website for iiitdwd.ac.in",
+        "link" : "https://github.com/Velocity-IIITDWD/College-Website"
     },
 
+    {
+        "id" : 1,
+        "name" : "Velocity events website",
+        "description":"The complete event management website from registration to ticketing.",
+        "link" : "https://events.velocityclub.live/"
+    },
+    
     {
         "id" : 2,
-        "name" : "Iridisence",
-        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
-        "link" : "https://github.com/Velocity-IIITDWD/velocity"
+        "name" : "Iridescence website",
+        "description":"The official website for the Photography, Videography & Editing Club of IIIT Dharwad. A dash of shades and hues immortalized through lens.",
+        "link" : "https://github.com/Velocity-IIITDWD/iridescence"
+    },
+    
+    {
+        "id" : 2,
+        "name" : "E-cell website",
+        "description":"E-cell website",
+        "link" : "https://velocity-ecell.netlify.app/"
     },
 
     {
-        "id" : 3,
-        "name" : "Quantum computing",
-        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
+        "id" : 1,
+        "name" : "Project X",
+        "description":"Project X",
         "link" : "https://github.com/Velocity-IIITDWD/velocity"
     },
 
+    
     {
-        "id" : 4,
-        "name" : "Technosys",
-        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
-        "link" : "https://github.com/Velocity-IIITDWD/velocity"
-    },
-
-    {
-        "id" : 5,
-        "name" : "Velocity",
-        "description":"ProjectX is a cutting-edge software application designed to revolutionize the way businesses manage their data. With ProjectX, you can easily store, organize, and analyze large amounts of data in real-time, giving you the insights you need to make informed decisions and stay ahead of the competition.",
+        "id" : 2,
+        "name" : "DSAI Soc website",
+        "description":"DSAI Society website",
         "link" : "https://github.com/Velocity-IIITDWD/velocity"
     }
 ]

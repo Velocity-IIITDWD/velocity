@@ -1,76 +1,235 @@
 {
-    "Tech":[
+    "Members":[
         {
-            "id": 1,
-            "name": "Aman",
-            "img": "./images/membersImg/members-img.jpg",
+            "id": 17,
+            "name": "Nihar Sanda",
+            "img": "../../images/membersImg/nihar_sanda.jpg",
             "githubLink": "",
             "linkedinLink": "",
-            "gmailLink": ""
+            "gmailLink": "",
+            "roles": [""],
+            "isCurrentMember": false,
+            "isLead": true,
+            "title": "Founder (2021)"
+        },
+        {
+            "id": 18,
+            "name":"Aman Gupta",
+            "img": "../../images/membersImg/Aman_Gupta.jpg",
+            "githubLink": "https://github.com/Decoy101",
+            "linkedinLink": "",
+            "gmailLink": "",
+            "roles": [""],
+            "isCurrentMember": false,
+            "isLead": true,
+            "title": "Ex-President (2022-23)"
+        },
+        {
+            "id": 0,
+            "name": "Pratik Pakhale",
+            "img": "../../images/membersImg/Pratik_pakhale.jpg",
+            "githubLink": "https://github.com/pratikpakhale",
+            "linkedinLink": "",
+            "gmailLink": "mailto:pratikpakhale20@gmail.com",
+            "roles": [""],
+            "isCurrentMember": true,
+            "isLead": true,
+            "title": "President (2023-24)"
+        },
+        {
+            "id": 1,
+            "name": "Ashitosh Sable",
+            "img": "../../images/membersImg/Blank-team-member-photo.jpg",
+            "githubLink": "https://github.com/ashitoshsable",
+            "linkedinLink": "",
+            "gmailLink": "mailto:21bcs096@iiitdwd.ac.in",
+            "roles": ["Frontend Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
         },
         {
             "id": 2,
-            "name": "Pratik",
-            "img": "./images/membersImg/members-img.jpg",
-            "githubLink": "",
+            "name": "Jaiyash Anmol Ratn",
+            "img": "../../images/membersImg/Blank-team-member-photo.jpg",
+            "githubLink": "https://github.com/Jaiyashanmol",
             "linkedinLink": "",
-            "gmailLink": ""
+            "gmailLink": "mailto:21bds022@iiitdwd.ac.in",
+            "roles": ["Frontend Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
         },
         {
             "id": 3,
-            "name": "Nancy",
-            "img": "./images/membersImg/members-img.jpg",
-            "githubLink": "",
+            "name": "Abhishikt Mahajan",
+            "img": "../../images/membersImg/Blank-team-member-photo.jpg",
+            "githubLink": "https://github.com/abhishiktmahajan",
             "linkedinLink": "",
-            "gmailLink": ""
-        }
-    ]
-    ,
-
-    "webDev":[
+            "gmailLink": "mailto:21bcs060@iiitdwd.ac.in",
+            "roles": ["Frontend Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
+        },
         {
             "id": 4,
-            "name": "Imroz",
-            "img": "./images/membersImg/members-img.jpg",
-            "githubLink": "",
+            "name": "G ROHITH YADAV ",
+            "img": "../../images/membersImg/Blank-team-member-photo.jpg",
+            "githubLink": "https://github.com/rohithyadav2004",
             "linkedinLink": "",
-            "gmailLink": ""
+            "gmailLink": "mailto:22bcs041@iiitdwd.ac.in",
+            "roles": ["Frontend Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
         },
         {
             "id": 5,
-            "name": "Aayushi",
-            "img": "./images/membersImg/members-img.jpg",
-            "githubLink": "",
+            "name": "Anish Raja",
+            "img": "../../images/membersImg/Anish_raja.jpg",
+            "githubLink": "https://github.com/Anish888999",
             "linkedinLink": "",
-            "gmailLink": ""
+            "gmailLink": "mailto:22bcs012@iiitdwd.ac.in",
+            "roles": ["Frontend Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
         },
         {
-            "id": 3,
-            "name": "Nancy",
-            "img": "./images/membersImg/members-img.jpg",
-            "githubLink": "",
-            "linkedinLink": "",
-            "gmailLink": ""
-        }
-    ],
-    "nonTech":[
-        {
             "id": 6,
-            "name": "",
-            "img": "./images/membersImg/members-img.jpg",
-            "githubLink": "",
+            "name": "C Nikhil Karthik",
+            "img": "../../images/membersImg/C_Nikhil_Karthik.jpg",
+            "githubLink": "https://github.com/C-NikhilKarthik",
             "linkedinLink": "",
-            "gmailLink": ""
-        }
-    ],
-    "appDev":[
+            "gmailLink": "mailto:21bcs024@iiitdwd.ac.in",
+            "roles": ["Frontend Developers", "Backend Developers", "DevOps Engineers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
+        },
         {
             "id": 7,
-            "name": "",
-            "img": "./images/membersImg/members-img.jpg",
-            "githubLink": "",
+            "name": "Krishna Jaiswal ",
+            "img": "../../images/membersImg/Blank-team-member-photo.jpg",
+            "githubLink": "https://github.com/Krishna-jaiswal-2",
             "linkedinLink": "",
-            "gmailLink": ""
+            "gmailLink": "mailto:21bcs056@iiitdwd.ac.in",
+            "roles": ["Frontend Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
+        },
+        {
+            "id": 8,
+            "name": "Aayushi Sinha",
+            "img": "../../images/membersImg/Blank-team-member-photo.jpg",
+            "githubLink": "https://github.com/aayushi-2003",
+            "linkedinLink": "",
+            "gmailLink": "mailto:21bcs120@iiitdwd.ac.in",
+            "roles": ["Frontend Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
+        },
+        {
+            "id": 9,
+            "name": "Nancy Yadav ",
+            "img": "../../images/membersImg/Blank-team-member-photo.jpg",
+            "githubLink": "https://github.com/Nancy-30",
+            "linkedinLink": "",
+            "gmailLink": "mailto:21bcs071@iiitdwd.ac.in",
+            "roles": ["Frontend Developers", "Backend Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
+        },
+        {
+            "id": 10,
+            "name": "Kshitiz Sachan",
+            "img": "../../images/membersImg/Kshitiz_Sachan.jpeg",
+            "githubLink": "https://github.com/KshitizSachan",
+            "linkedinLink": "",
+            "gmailLink": "mailto:21bcs057@gmail.com",
+            "roles": ["Frontend Developers", "Backend Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
+        },
+        {
+            "id": 11,
+            "name": "Mohammad Sameed Yallur",
+            "img": "../../images/membersImg/Blank-team-member-photo.jpg",
+            "githubLink": "https://github.com/SameedYallur",
+            "linkedinLink": "",
+            "gmailLink": "mailto:samyallur@gmail.com",
+            "roles": ["Frontend Developers", "Backend Developers", "App Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
+        },
+        {
+            "id": 12,
+            "name": "Harsh soni",
+            "img": "../../images/membersImg/harsh_soni.jpg",
+            "githubLink": "https://github.com/Harshsoni-harsh",
+            "linkedinLink": "",
+            "gmailLink": "mailto:22bcs046@iiitdwd.ac.in",
+            "roles": ["Frontend Developers", "Backend Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
+        },
+        {
+            "id": 13,
+            "name": "Vishal Kumar ",
+            "img": "../../images/membersImg/Vishal.JPG",
+            "githubLink": "https://github.com/kvishal2706",
+            "linkedinLink": "",
+            "gmailLink": "mailto:21bcs133@iiitdwd.ac.in",
+            "roles": ["Frontend Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
+        },
+        {
+            "id": 14,
+            "name": "Chinmay Shewale",
+            "img": "../../images/membersImg/Chinmay.jpg",
+            "githubLink": "https://github.com/chinma-yyy",
+            "linkedinLink": "https://www.linkedin.com/in/chinma-yyy",
+            "gmailLink": "mailto:shewalechinmay54@gmail.com",
+            "roles": ["Backend Developers", "DevOps Engineers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
+        },
+        {
+            "id": 15,
+            "name": "Abhigyan Niranjan",
+            "img": "../../images/membersImg/Blank-team-member-photo.jpg",
+            "githubLink": "https://github.com/SlightlyEpic",
+            "linkedinLink": "",
+            "gmailLink": "mailto:22bcs001@iiitdwd.ac.in",
+            "roles": ["Backend Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
+        },
+        {
+            "id": 16,
+            "name": "Yash Kumar",
+            "img": "../../images/membersImg/Blank-team-member-photo.jpg",
+            "githubLink": "https://github.com/yk3066",
+            "linkedinLink": "https://www.linkedin.com/in/yash-kumar-8b86771a7",
+            "gmailLink": "mailto:yashkumar3066@gmail.com",
+            "roles": ["App Developers"],
+            "isCurrentMember": true,
+            "isLead": false,
+            "title": ""
         }
+    ],
+    "Roles": [
+        "All", "Leads", "Ex-Leads", "Frontend Developers", "Backend Developers", "App Developers", "DevOps Engineers"
     ]
 }

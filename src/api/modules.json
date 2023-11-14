@@ -1,26 +1,29 @@
 [
   {
-    "id": 1,
-    "link": "https://velocity-iiitdwd.netlify.app/"
-  },
-
-  {
     "id": 2,
-    "link": "https://velocity-iiitdwd.netlify.app/"
+    "img": "./images/eventsImg/cssBattles.jpg",
+    "text": "CSS Battles",
+    "link": "https://www.notion.so/velocityiiitdwd/CSS-Battles-2f05abd01ecb4906a095ed397885a4a0"
   },
 
   {
     "id": 3,
-    "link": "https://velocity-iiitdwd.netlify.app/"
+    "img": "./images/eventsImg/CwCoffee.JPG",
+    "text": "Code with Coffee",
+    "link": "https://www.notion.so/velocityiiitdwd/Code-with-Coffee-9b414677505445598d32e64d9c71c72f"
   },
 
   {
     "id": 4,
-    "link": "https://velocity-iiitdwd.netlify.app/"
+    "img": "./images/eventsImg/velodictory.JPG",
+    "text": "Velodictory",
+    "link": "https://www.notion.so/velocityiiitdwd/Velodictory-49d2ac1a5c904420b2ebb4b334dbcfe1"
   },
 
   {
     "id": 5,
-    "link": "https://velocity-iiitdwd.netlify.app/"
+    "img": "./images/eventsImg/gdscXVelocity.JPG",
+    "text": "GDSC x Velocity",
+    "link": "https://www.notion.so/velocityiiitdwd/GDSC-x-Velocity-3ad7c0b1b9ba4a46aedffb8c82be76e3"
   }
 ]
