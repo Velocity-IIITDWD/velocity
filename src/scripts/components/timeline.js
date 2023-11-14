@@ -5,11 +5,11 @@ import { TextPlugin } from 'gsap/TextPlugin';
 
 gsap.registerPlugin(ScrollTrigger, MotionPathPlugin, TextPlugin);
 
-let pathSvg, leftCurve, rightCurve, rocketPath, rocket, prevYear, nextYear, currYear, timelineContainer, currYearText, rocketImg, windowWidth;
+let pathSvg, leftCurve, rightCurve, rocketPath, rocket, prevYear, nextYear, currYear, timelineContainer, currYearText, rocketImg, windowWidth, rightControl, leftControl;
 
 let year = new Date().getFullYear();
-const start = 2020;
-const end = year;
+const startYear = 2020;
+const endYear = year;
 
 const mediumSize = 768; // tailwind's 'md' size in px
 
@@ -126,7 +126,7 @@ function drawMdLgScreenCurves() {
   const x7 = x8 - (x8 - x5) * 0.49828318586272624;
   const y7 = y2;
 
-    leftCurve.setAttribute('d', `M ${x1} ${y1} C ${x2} ${y2}, ${x3} ${y3}, ${x4} ${y4}`);
+   leftCurve.setAttribute('d', `M ${x1} ${y1} C ${x2} ${y2}, ${x3} ${y3}, ${x4} ${y4}`);
   rightCurve.setAttribute('d', `M ${x5} ${y5} C ${x6} ${y6}, ${x7} ${y7}, ${x8} ${y8}`);
   rocketPath.setAttribute('d', `
       M ${x1 - prevYearRect.width * .75} ${y1} 
@@ -177,6 +177,10 @@ function setupSmScreen() {
         endTrigger: years[i + 1],
         end: 'left 3px',
         invalidateOnRefresh: true,
+        onEnter: () => onYearDivScroll(endYear - i - 1),
+        onEnterBack: () => onYearDivScroll(endYear - i - 1),
+        onLeave: () => onYearDivScroll(endYear - i - 2),
+        onLeaveBack: () => onYearDivScroll(endYear - i),
         onUpdate: self => {
           if (prevDirection !== self.direction) {
             prevDirection = self.direction;
@@ -194,6 +198,9 @@ function setupSmScreen() {
       },
       ease: 'none',
     });
+
+    onYearDivScroll(year);
+    document.querySelector(`.year-div:nth-of-type(${endYear - year + 1})`).scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
 
 }
 
@@ -236,35 +243,51 @@ function setupMdLgScreen() {
   })
   .to(rocket, {
       motionPath: {
-          path: rocketPath,
-          align: rocketPath,
-          alignOrigin: [0.5, 1],
-          autoRotate: 0,
+        path: rocketPath,
+        align: rocketPath,
+        alignOrigin: [0.5, 1],
+        autoRotate: 0,
       }
   });
 
 }
 
 function increaseYear() {
-  if (year === end)
+  if (year === endYear)
     return;
   prevYear.style.color = '#FFF';
   year++;
   tl.invalidate();
   tl.restart();
-  if (year === end)
+  if (year === endYear)
     nextYear.style.color = '#DDD';
 }
 
 function decreaseYear() {
-  if (year === start)
+  if (year === startYear)
     return;
   nextYear.style.color = '#FFF';
   year--;
   tl.invalidate();
   tl.restart();
-  if (year === start)
+  if (year === startYear)
     prevYear.style.color = '#DDD';
+}
+
+function onYearDivScroll(_year) {
+  if (_year < startYear) // when the starting year is in view and the browser is resized, onLeave might be triggered which will cause _year to become start - 1
+    return;
+  year = _year;
+  if (year === startYear) {
+    leftControl.style.display = null;
+    rightControl.style.display = 'none';
+  } else if (year === endYear) {
+    leftControl.style.display = 'none';
+    rightControl.style.display = null;
+  } else {
+    leftControl.style.display = null;
+    rightControl.style.display = null;
+  }
 }
 
 function onResize() {
@@ -295,6 +318,8 @@ export default function() {
   timelineContainer = document.getElementById('timeline-container');
   currYearText = document.getElementById('curr-year-text');
   rocketImg = document.querySelector('#rocket img');
+  leftControl = document.getElementById('left-control');
+  rightControl = document.getElementById('right-control');
 
   prevYear = document.getElementById('prev-year');
   nextYear = document.getElementById('next-year');
@@ -325,6 +350,30 @@ export default function() {
     .set(nextYear, { text: () => year + 1})
     .to(nextYear, { autoAlpha: 1 })
     .to(currYearText, { text: () => content[year] }, 0);
+
+  leftControl.style.display = 'none';
+
+  leftControl.addEventListener('click', () => {
+    if (year !== endYear) {
+      year++;
+      document.querySelector(`.year-div:nth-of-type(${endYear - year + 1})`).scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      if (year === endYear)
+        leftControl.style.display = 'none';
+    }
+    if (year !== startYear)
+      rightControl.style.display = null;
+  });
+
+  rightControl.addEventListener('click', () => {
+    if (year !== startYear) {
+      year--;
+      document.querySelector(`.year-div:nth-of-type(${endYear - year + 1})`).scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+      if (year === startYear)
+        rightControl.style.display = 'none';
+    }
+    if (year !== endYear)
+      leftControl.style.display = null;
+  });
 
   window.addEventListener('resize', onResize);
   prevYear.addEventListener('click', decreaseYear);
