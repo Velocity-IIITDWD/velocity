@@ -1,4 +1,4 @@
-<section id="timeline" class="flex items-center justify-center h-auto font-lato relative">
+<section id="timeline" class="flex items-center justify-center h-auto font-lato relative overflow-hidden">
 <!-- hexagon -->
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -14,31 +14,31 @@
 </svg>
 
 <div 
-  class="hidden md:flex font-inter relative items-center justify-evenly w-full h-80 mt-6 md:mt-6 mx-16 mb-6 md:mb-14 lg:mb-20 rounded-[20px] bg-gradient-to-l from-[#09219F] to-[#2A4DCA] shadow-md"
+  class="flex flex-row gap-48 md:gap-0 font-inter p-4 w-full md:h-80 mt-6 mx-4 md:mx-10 mb-6 md:mb-14 lg:mb-20 rounded-[20px] bg-gradient-to-l from-[#09219F] to-[#2A4DCA] shadow-md relative items-center md:justify-evenly overflow-x-scroll md:overflow-auto snap-x snap-mandatory no-scrollbar"
   id='timeline-container'
 >
 
   <!-- Rocket -->
   <div id="rocket" class="absolute" >
-    <img class='w-24 h-24' src="../images/rocket.png" alt="rocket" >
+    <img class='w-20 h-20 md:w-24 md:h-24' src="../images/rocket.png" alt="rocket" >
   </div>
 
   <!-- Curves and Rocket Path -->
   <svg class="absolute w-full h-full" id="path-svg">
-    <path fill="none" stroke="white" stroke-dasharray="3" stroke-width="1" id="left-curve" />
-    <path fill="none" stroke="white" stroke-dasharray="3" stroke-width="1" id="right-curve" />
+    <path fill="none" stroke="white" stroke-dasharray="3" stroke-width="1" class="hidden md:block" id="left-curve" />
+    <path fill="none" stroke="white" stroke-dasharray="3" stroke-width="1" class="hidden md:block" id="right-curve" />
     <path fill="none" id="rocket-path"/>
   </svg>
 
   <!-- Previous Year -->
-  <div class="flex flex-col justify-end items-start h-48 w-[30%]">
+  <div class="hidden md:flex flex-col justify-end items-start h-48 w-[30%]">
     <p class="text-4xl m-10 mb-4">
       <span id="prev-year" class="relative cursor-pointer"></span>
     </p>
   </div>
 
   <!-- Current Year -->
-  <div class="flex flex-col justify-center items-center h-48 w-[30%]">
+  <div class="hidden md:flex flex-col justify-center items-center h-48 w-[30%]">
     <p class="text-5xl lg:text-6xl p-5 font-bold absolute -mt-28 lg:-mt-20">
       <span id="curr-year"></span>
     </p>
@@ -46,7 +46,7 @@
   </div>
 
   <!-- Next Year -->
-  <div class="flex flex-col justify-end items-end h-48 w-[30%]">
+  <div class="hidden md:flex flex-col justify-end items-end h-48 w-[30%]">
     <p class="text-4xl m-10 mb-4" >
       <span id="next-year" class="relative cursor-pointer"></span>
     </p>
